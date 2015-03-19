@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="29px" viewBox="0 0 50 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Select lang</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="MH-MOBILE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="MH---Index" sketch:type="MSArtboardGroup" transform="translate(-215.000000, -5334.000000)" fill="#666666">
+            <g id="FOOTER" sketch:type="MSLayerGroup" transform="translate(-3.000000, 4249.000000)">
+                <g id="Region-&amp;-Currency" transform="translate(3.000000, 947.000000)" sketch:type="MSShapeGroup">
+                    <g id="Select-lang" transform="translate(23.000000, 103.000000)">
+                        <path d="M217.053926,63.4316 L215.640296,62.1208 L240.055259,35.5664667 L241.470815,36.8772667 L217.053926,63.4316" id="Fill-1"></path>
+                        <path d="M216.944148,63.4316 L192.529185,36.8772667 L193.942815,35.5664667 L218.359704,62.1208 L216.944148,63.4316" id="Fill-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

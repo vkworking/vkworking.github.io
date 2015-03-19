@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>phone-yellow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="MH-MOBILE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="MH---Index" sketch:type="MSArtboardGroup" transform="translate(-22.000000, -5509.000000)">
+            <g id="FOOTER" sketch:type="MSLayerGroup" transform="translate(-3.000000, 4249.000000)">
+                <g id="Support" transform="translate(3.000000, 1196.000000)" sketch:type="MSShapeGroup">
+                    <g id="phone-yellow" transform="translate(24.000000, 66.000000)">
+                        <circle id="Oval-69" stroke="#0B40FF" stroke-width="3" cx="48" cy="48" r="48"></circle>
+                        <path d="M39.873,39.806 C42.792,36.887 45.333,35.087 40.162,28.656 C34.991,22.221 31.545,27.161 28.717,29.989 C25.452,33.253 28.545,45.414 40.564,57.437 C52.585,69.456 64.747,72.547 68.009,69.285 C70.836,66.457 75.778,63.01 69.344,57.838 C62.911,52.668 61.111,55.209 58.192,58.128 C56.154,60.167 50.997,55.91 46.544,51.456 C42.092,47.001 37.836,41.845 39.873,39.806 L39.873,39.806 Z" id="Shape" fill="#0B40FF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
