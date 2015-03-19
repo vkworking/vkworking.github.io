@@ -21,6 +21,11 @@ clear: both;
     max-width: 800px;
     margin: 0 auto;
 }
+.general-head-second{
+    width: 100%;
+    height: 96px;
+    background: rgba(0, 0, 0, 1);
+}
 .general-head{
 	width: 100%; /*---<temp>---*/
 	height: 278px;
@@ -40,8 +45,24 @@ clear: both;
 	background: url(../img/menu-icon.svg) no-repeat 0 0;
 	float:left;
 	margin: 25px 0 0 22px;
-    cursor: pointer;
 }
+.customURL{
+    width: 93.75%;
+    padding: 0 3.125%;
+    float: left;
+    background: #fff;
+    margin: 23px 0 56px 0;
+}
+.customURL p{  
+    font-size: 28px;
+    text-align: left;
+    color: #8196AF;
+    line-height: 36px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .head-logo{
     display: block;
 	width:300px;
@@ -62,12 +83,12 @@ clear: both;
 .head-bottom{
 	width:100%;
     float: right;
-    display: none;
 }
 .search{
 	width: 93.125%;
     position: relative;
     margin: 50px 3.4375% 0;
+    display: block;
     
 }
 input[name='top-search']{
@@ -165,6 +186,7 @@ a[name='item-link']:nth-child(1) .item-picture  {
 	text-transform: uppercase;
 	color: #8196AF;
     margin: 0px 0px 20px 3.125%; /* left 20px from 640 */
+/*    overflow: hidden;*/
 }
 
 div[name="interview-chapter"],
@@ -173,18 +195,16 @@ div[name="inst-chapter"]{
 	margin-left:0;
 }
 div[name="inst-chapter"]{
-    padding-top: 83px;
     margin-left: 3.125%;
 }
 div[name="interview-chapter"],
 div[name="blog-chapter"]{
     padding-left: 0;
 }
-/*
-div[name="blog-chapter"]{
-    padding-top: 50px;
+.container-name.cut p{
+/*make*/
+
 }
-*/
 /* ----------------------< slider #1 >--------------------------------*/
 .slider-main{
     width: 100%;
@@ -203,10 +223,14 @@ div[name="blog-chapter"]{
     margin: 0 auto;
 }
 .slide{
-	display:inline-block;
+/*	display:inline-block;*/
+    float: left;
 	width:250px;
 	height:100%;
-	margin-right:10px;
+	margin-right:20px;
+}
+.slide:last-child{
+    margin-right: 0;
 }
 /*.slider-container:last-child{
 	margin-right:0;
@@ -237,7 +261,7 @@ div[name="blog-chapter"]{
 	color: #7f7f7f;*/
 } 
 .slide-price span:before{
-	content:",";
+	content:".";
 }
 .slide-label{
 	width:114px;
@@ -269,15 +293,15 @@ div[name="blog-chapter"]{
     float: left;
 	background: #fff;
 }
+.blog-container{
+     margin-top: 57px;   
+}
 .interview-general,
 .blog-general{
 	width: 93.75%;
     height: 100%;
 	margin: 0 auto;
 	background:#fff;
-}
-.blog-general{
-    margin-top: 57px;
 }
 .inter-people,
 .blog-note{
@@ -330,7 +354,7 @@ div[name="blog-chapter"]{
     width: 100%;
 /*    margin: 0 auto;*/
     float: left;
-    margin-top: 50px;
+    margin-top: 75px;
 }
 .inst-general{
     width: 96.875%; /* 620/640 */
@@ -341,7 +365,7 @@ div[name="blog-chapter"]{
     /* margin: 0 auto; */
 }
 .feed-container{
-    width: 800px; /*800px;  total width for all feeds */
+    width: 780px; /*800px;  total width for all feeds */
     height: 230px;
     float: left;
 }
@@ -353,9 +377,12 @@ div[name="blog-chapter"]{
     height: 223px;
     width: 180px; /* 180/800 */
 /*    display: inline-block;*/
-    margin-right: 2.5%; /*20/800*/
+    margin-right: 20px; /*fix*/
     float: left;
     position: relative;
+}
+.feed-element:last-child{
+    margin-right: 0;
 }
 .feed-bg{
     width: 100%;
@@ -364,7 +391,7 @@ div[name="blog-chapter"]{
     background-repeat: no-repeat;
 }
 .feed-rate{
-    width:129px;
+    width:151px;
     height: 24px;
     float: right;
     margin-top: 19px;
@@ -374,11 +401,13 @@ div[name="blog-chapter"]{
 .rate-comment{
     width: 50%;
     height: 100%;
-    float: left;
+    float: right;
 }
+/*
 .rate-comment{
     float: right;
 }
+*/
 .feed-like{
 /*    display: inline-block;*/
     float: right;
@@ -406,7 +435,7 @@ div[name="blog-chapter"]{
     height: 20px;
     background: url(../img/inst-feed/comment.svg) no-repeat 0 0;
     background-size: contain;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 /* -----------------------start menu--------------- */
@@ -485,9 +514,9 @@ div[name="blog-chapter"]{
 }
 
 .menu-item-name{
-    width: 88.75%; /*568px*/
-    height: 100%;
-    margin-top: 36px;
+    width: 100%;/*568px*/
+    height: 118px;
+    line-height: 118px;
 }
 .menu-item .menu-item-name p,
 .item-currency .menu-item-name p{
@@ -501,15 +530,7 @@ div[name="blog-chapter"]{
     margin-left: 3.125%;
     text-transform: uppercase;
 }
-.sub-menu-toggle{
-    width: 8.90625%; /*57px/640*/
-    height: 32px;
-    background: url(../img/menu-togge.svg) no-repeat 0 0;
-    background-size: contain;
-    margin-top: 10px;
-    float: right;
-    cursor: pointer;
-}
+
 /* .sub-menu-toggle:hover{
     transform: rotate(180deg);
     transition: .3s;
@@ -622,9 +643,10 @@ div[name="blog-chapter"]{
     font-size: 30px;
     color: #a1a1a1;
     padding-left: 4.841402337229%;
+    border-radius: 0;
 }
 .add-email{
-    width: 16.026711185309%;
+    width: 95px;
     height: 95px;
     background: #AFC4DB url(../img/add-email.svg) no-repeat 50% 50%;
 /*    border: 1px solid #afc4db;*/
@@ -655,33 +677,15 @@ div[name="footer-info"]{
     color: #4E4E4E;
 }
 /* ------------ media request part --------------- */
-/* @media screen and (max-device-width: 530px) {
-    .head-logo{
-        width: 200px;
-        height: 47px;
-        margin-top: 20px;
-    } 
-    .search{
-        margin-top: 20px;
-    }
-    input[name='top-search']{
-        height: 80px;
-    }
-    input[name="search-btn"]{
-        top: 20px;
-        right: 27px;
-    }
-    
-} */
 
 
 
 /* ------------------ >start topmenu ----------------- */
 
 .headMenuContainer{
-  width:100%;
-max-width: 737px;
-  float:left;
+    width:100%;
+    display: none;  /* trigger to headMenu*/
+    float:left;
 }
 .headMenuGeneral{
   width:100%;
@@ -689,16 +693,29 @@ max-width: 737px;
 /*    max-width: 727px*/
   /* position:absolute; */
 }
+/* ---- >custom item's style ----*/
+.subMenuOneItem.viewAll,
+.subMenuTwoItem.viewAll{
+    font-style: italic;
+}
+.subMenuOneItem.newWeek a{
+    color: #FC3768;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/* -------------------- */
 .headMenuItem a{
   width:100%;
-  height:78px;
+  height:118px;
   border-top: 2px solid #ddd;
   float:left;
   background: #8196AF;
   text-decoration: none;
   font-size: 40px;
   color: #fff;
-  padding: 40px 0 0 63px;   
+    line-height: 118px; /* equel height block */
+    text-indent: 63px;
 }
 .headMenuItem:last-child a{
   border-bottom: 2px solid #ddd;
@@ -707,53 +724,47 @@ max-width: 737px;
 .subMenuOne{
   width:100%;
   float:left;
-  display: block;   /* trigger one subMenu */
+  display: none;   /* trigger one subMenu */
 }
 .subMenuOneItem a{
-  width: 100%; 
-  height: 78px;
+  width: 100%;
+  height: 118px;
   /* border: 2px solid #ddd; */
   background: #A6B5C7;
 }
 .toggleMenu{
-  width:50px;
+  width:57px;
   height:27px;
   background: url(../img/menu-togge.svg) no-repeat 50% 50%;
   background-size: contain;
   float: right;
-  margin: 8px 17px 0 0;
+  margin: 45px 21px 0 0;
+
 }
 /* >second sub menu */
 .subMenuTwo{
   width:100%;
     max-width: 800px;
   float:left;
-  display: block;   /* trigger two subMenu*/
+  display: none;   /* trigger two subMenu*/
 }
 
 .subMenuTwoItem a{
   width:100%;
-  height:78px;
+  height:76px;
+    line-height: 76px;
+/*  padding: 15px 0;*/
   background: #fff;
   border: none;
   color: #8196AF;
 }
+.subMenuTwoItem a:hover{
+    background: #eee;
+}
 .subMenuTwoItem:first-child a{
     border-top: 2px solid #ddd;
+    padding-top: 19px;
 }
-
-
-@media screen and (max-device-width: 530px){    
+.subMenuTwoItem:last-child a{
+    padding-bottom: 26px;
 }
-.people-report {
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    
-}
-
-.slide-name {
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
