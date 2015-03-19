@@ -4,7 +4,7 @@
 /* ----------------------< start general settings >---------------------- */
 body{
 	font-family: "Gill Sans", "Arial", sans-serif;
-    width: 100%;
+/*    width: 100%;*/
     min-width: 600px;
     max-width: 800px; 
     margin: 0 auto;
@@ -676,7 +676,7 @@ div[name="footer-info"]{
 
 
 
-/* -- >start menu -- */
+/* ------------------ >start topmenu ----------------- */
 
 .headMenuContainer{
   width:100%;
