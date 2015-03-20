@@ -1,4 +1,8 @@
 @import url('reset.css');
+@font-face{
+    font-family:'rub';
+    src:url(iconfonts/RUBSN.otf);
+}
 /* ----------------------< stop reset >---------------------- */
 
 /* ----------------------< start general settings >---------------------- */
@@ -912,6 +916,7 @@ div[name="footer-info"]{
 .productFull-container {
     width: 100%;
     float: left;
+    position: relative;
     margin-bottom: 60px;
     z-index: 1;
 }
@@ -964,12 +969,13 @@ div[name="footer-info"]{
 }
 .fullBadgeSale{
     font-size: 30px;
-    line-height: normal;
+    line-height: 75px;
 /*    зсунути якось вниз*/
 }
 .savePercent{
     font-size: 40px;
-    line-height: normal;
+    line-height: 0;
+    margin-left: 10px;
 }
 .productFull-pic img {
     width: 100%;
@@ -982,6 +988,7 @@ div[name="footer-info"]{
     color: #000;
     line-height: 38px;
     float:left;
+    margin-top: 18px;
 }
 
 .productFull-sub {
@@ -989,6 +996,109 @@ div[name="footer-info"]{
     float: left;
     font-size: 24px;
     color: #666;
-    text-align: left;
+    text-align: left; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 29px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.addToCart {
+    float: left;
+    width: 250px;
+    height: 80px;
+    border: none;
+    background: #8196AF;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.productFull-price {
+    float: right;
+    font-size: 48px;
+    font-family: 'Myriad Pro', sans-serif;
+    color: #8196AF; 
+    line-height: 80px;
+}
+
+.currency-char.rub{
+    font-family: 'rub';
+}
+
+.shoppingBag-container {
+    width: 93.233333333333%;
+    position: absolute;
+    left: 3.333333333334%;
+    top: 50px;
+    z-index: 109;
+    background: #fff;
+    border: 1px solid #979797;
     
+}
+
+.shoppingBag-general {
+    width: 88.571428571429%;
+    float: left;
+    margin-left: 5.714285714286%;
+}
+
+.shoppingBag-head {
+    width: 100%;
+    height: 36px;
+    margin: 28px 0 42px 0;
+}
+
+.shoppingBag-chapt span{
+    font-size: 28px;
+    color: #333;
+    line-height: 32px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.shoppingBag-chapt {
+    width: 80.645161290323%;
+    float: left;
+}
+
+.shoppingBag-close {
+    width: 36px;
+    height: 36px;
+    background: url(../img/close.svg) 50% 50% no-repeat;
+    background-size: contain;
+    float: right;
+}
+
+.SBmain-img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-position: 50% 50%;
+    background-size: 100px;
+    
+}
+
+.SBmain-order {
+    width: 76.612903225806%;
+    float: right;
+}
+.SBmain-order p[name="head"]{
+    font-size: 36px;
+    color: #000;
+    text-align: left;
+}
+.SBmain-order p[name="sum"]{
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000;
+}
+.SBmain-order p[name="quantity"]{
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 18px;
+    color: #666;
 }
