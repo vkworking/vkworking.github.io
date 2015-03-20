@@ -242,6 +242,10 @@ div[name="blog-chapter"]{
 	background-size: 250px auto;
 	background-repeat:no-repeat;
 }
+.slide-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .slide-name span{
 	font-size: 25px;
 	color: #000;
@@ -799,20 +803,23 @@ div[name="footer-info"]{
 }
 
 .listMain-head {
-    width: 100%;
+    width: 93.75%;
     float: left;
     clear: both;
-    margin-bottom: 150px;  /* temp */
+    margin-bottom: 50px;
+    position: relative;
+    margin-left: 3.125%;
+    z-index: 99;
 }
 
 .headListMain-changer{
-    width: 50%;
+    width: 45.333333333333%;
     height: 74px;
     float: left;
 }
 
 .headListMain-sort {
-    width: 49.7%;
+    width: 54.266666666667%;
     height: 72px;
     float:left;
     border: 1px solid #979797;
@@ -821,7 +828,7 @@ div[name="footer-info"]{
 .sortOption{
     width: 100%;
     height: 100%;
-    float: left;
+    float: right;
     background: #fff;
     font-size: 30px;
     color: #a1a1a1;
@@ -853,26 +860,135 @@ div[name="footer-info"]{
     transform: rotate(180deg);
     transition: all .5s;
 }
-.productView-full {
-    width: 33.333333%;
-    height: 100%;
+
+.productView-full,
+.productView-small,
+.productView-list{
+    width: 50px;
+    height: 50px;
     float: left;
-    background: red;
-    margin: 0;
+    margin: 13px 15% 0 0;
+    cursor: pointer;
+}
+.productView-list{
+    margin: 13px 11.029411764706% 0 0;
 }
 
-.productView-small {
-    width: 33.333333%;
-    height: 100%;
-    float: left;
-    background: yellow;
-    margin: 0;
+.productList-main.fullView{display: block;}
+.productList-main.smallView{display: none;}
+.productList-main.listView{display: none;}
+
+/*full*/
+.fullView .productView-full{
+    background: url(../img/viewer/viewf.svg) no-repeat 50% 50%;
+}
+.fullView .productView-small{
+    background: url(../img/viewer/views-no.svg) no-repeat 50% 50%;
+}
+.fullView .productView-list{
+    background: url(../img/viewer/viewl-no.svg) no-repeat 50% 50%;
+}
+/*small*/
+.smallView .productView-full{
+    background: url(../img/viewer/viewf-no.svg) no-repeat 50% 50%;
+}
+.smallView .productView-small{
+    background: url(../img/viewer/views.svg) no-repeat 50% 50%;
+}
+.smallView .productView-list{
+    background: url(../img/viewer/viewl-no.svg) no-repeat 50% 50%;
+}
+/*list*/
+.listView .productView-full{
+    background: url(../img/viewer/viewf-no.svg) no-repeat 50% 50%;
+}
+.listView .productView-small{
+    background: url(../img/viewer/views-no.svg) no-repeat 50% 50%;
+}
+.listView .productView-list{
+    background: url(../img/viewer/viewl.svg) no-repeat 50% 50%;
 }
 
-.productView-list {
-    width: 33.333333%;
-    height: 100%;
+.productFull-container {
+    width: 100%;
     float: left;
-    background: green;
-    margin: 0;
+    margin-bottom: 60px;
+    z-index: 1;
+}
+
+.productFull-general {
+    width: 93.75%;
+    margin: 0 auto;
+}
+
+.productFull-pic {
+    float: left;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: relative;
+}
+
+.productLabel-best,
+.productLabel-sale,
+.productLabel-new{
+    width: 120px;
+    height: 120px;
+    background: #00CCCC;
+    border-radius: 100px;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.productLabel-sale{
+    background: #FC3768;
+}
+.productLabel-new{
+    background: #8196AF;
+}
+/*   >badge pack */
+.fullBadgeBest,
+.fullBadgeSale,
+.fullBadgeNew,
+.savePercent{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 40px;
+    line-height: 120px;
+    text-align: center;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.fullBadgeSale{
+    font-size: 30px;
+    line-height: normal;
+/*    зсунути якось вниз*/
+}
+.savePercent{
+    font-size: 40px;
+    line-height: normal;
+}
+.productFull-pic img {
+    width: 100%;
+    height: auto;
+}
+
+.productFull-name {
+    width: 100%;
+    font-size: 40px;
+    color: #000;
+    line-height: 38px;
+    float:left;
+}
+
+.productFull-sub {
+    width: 100%;
+    float: left;
+    font-size: 24px;
+    color: #666;
+    text-align: left;
+    
 }
