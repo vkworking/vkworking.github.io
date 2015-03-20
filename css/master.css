@@ -649,6 +649,7 @@ div[name="blog-chapter"]{
     height: 95px;
     background: #AFC4DB url(../img/add-email.svg) no-repeat 50% 50%;
     border: none;
+    float: left;
     cursor: pointer;
     transition: .5s;
 }
