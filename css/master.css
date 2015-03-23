@@ -91,14 +91,17 @@ clear: both;
 .search-page{
 	width: 93.75%;
     position: relative;
-    margin: 50px 3.125% 50px;
+    margin: 50px 3.125%;
     float: left;   
 }
 .search{
 	width: 93.75%;
     position: relative;
-    margin: 50px 3.125% 50px;
+    margin: 0 auto;
+    /*
+    margin: 50px 3.125%;
     float: left;   
+*/
 }
 input[name='top-search']{
 	width:96%;
@@ -890,7 +893,7 @@ div[name="footer-info"]{
     margin: 13px 11.029411764706% 0 0;
 }
 
-.productList-main.fullView{display: none;}
+.productList-main.fullView{display: block;}
 .productList-main.smallView{display: block;}
 .productList-main.listView{display: none;}
 
