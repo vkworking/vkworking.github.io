@@ -92,12 +92,16 @@ clear: both;
 	width: 93.75%;
     position: relative;
     margin: 50px 3.125% 50px;
-    float: left;
-/*    display: block;*/
-    
+    float: left;   
+}
+.search{
+	width: 93.75%;
+    position: relative;
+    margin: 50px 3.125% 50px;
+    float: left;   
 }
 input[name='top-search']{
-	width:96.666666666667%;
+	width:96%;
 	height:94px;
     padding-left: 3.333333333333%;
 	border: 2px solid #8196AF;
