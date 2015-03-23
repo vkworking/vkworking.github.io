@@ -812,7 +812,7 @@ div[name="footer-info"]{
 }
 
 .productList-general {
-    width: 100%;
+    width: 93.75%;
     margin: 0 auto;
 }
 
@@ -907,8 +907,8 @@ div[name="footer-info"]{
 }
 
 .productList-main.fullView{display: none;}
-.productList-main.smallView{display: block;}
-.productList-main.listView{display: none;}
+.productList-main.smallView{display: none;}
+.productList-main.listView{display: block;}
 
 /*full*/
 .fullView .productView-full{
@@ -1313,4 +1313,51 @@ div[name="footer-info"]{
 .cataRightSide {
     width: 48.333333333333%;
     float: right;
+}
+
+.productList-pic {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.productList-pic img{
+    width:100%;
+    height: 100%;
+}
+
+.productList-price {
+    width: 47.244094488189%;
+    height: 50px;
+    background: #8196AF;
+    color: #fff;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    float: right;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+.listInfo-bottom {
+    width: 63.5%;
+    float:right;
+}
+
+.listItem-shipping {
+    
+}
+
+.itemShipping-value {
+    width: 47.244094488189%;
+    height: 50px;
+    float: left;
+    box-shadow: inset 0 0 3px 0 #8196AF;
+    font-size: 30px;
+    line-height: 50px;
+    font-family: "Helvetica", sans-serif;
+    color: #8196AF;
 }
