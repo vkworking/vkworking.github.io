@@ -89,10 +89,11 @@ clear: both;
     float: right;
 }
 .search{
-	width: 93.125%;
+	width: 93.75%;
     position: relative;
-    margin: 50px 3.4375% 0;
-    display: block;
+    margin: 50px 3.125% 0;
+    float: left;
+/*    display: block;*/
     
 }
 input[name='top-search']{
@@ -104,10 +105,12 @@ input[name='top-search']{
     font-weight: lighter;
 	color: rgb(33, 33, 33);
     margin: 0 auto;
+    border-radius: none;
+    box-shadow: none;
 }
 #top-search>input::webkit-input-placeholder,
 #top-search>input::moz-input-placeholder{
-    color: rgb(193, 193, 193);
+    color: rgba(193, 193, 193);
 }
 input[name="search-btn"]{
 	width:40px;
@@ -794,6 +797,7 @@ div[name="footer-info"]{
     width: 93.75%;
     float: left;
     margin-left: 3.125%;
+    margin-bottom: 31px;
 }
 .productList-head p{
     font-size: 28px;
@@ -827,6 +831,7 @@ div[name="footer-info"]{
     height: 72px;
     float:left;
     border: 1px solid #979797;
+    border-right: none;
     transition: .5s;
 }
 .sortOption{
@@ -1031,7 +1036,7 @@ div[name="footer-info"]{
     width: 93.233333333333%;
     position: absolute;
     left: 3.333333333334%;
-    top: 50px;
+    top: 200px;
     z-index: 109;
     background: #fff;
     border: 1px solid #979797;
@@ -1061,7 +1066,7 @@ div[name="footer-info"]{
 }
 
 .shoppingBag-chapt {
-    width: 80.645161290323%;
+    width: 90;
     float: left;
 }
 
@@ -1085,20 +1090,83 @@ div[name="footer-info"]{
 .SBmain-order {
     width: 76.612903225806%;
     float: right;
+    margin-top: 10px;
 }
 .SBmain-order p[name="head"]{
     font-size: 36px;
     color: #000;
     text-align: left;
+    line-height: 29px;
+    margin-bottom: 10px;
 }
 .SBmain-order p[name="sum"]{
     font-family: 'Myriad Pro', sans-serif;
     font-size: 24px;
-    line-height: 29px;
     color: #000;
+    line-height: 29px;
+    text-align: left;
+    margin-bottom: 5px;
 }
 .SBmain-order p[name="quantity"]{
     font-family: 'Myriad Pro', sans-serif;
     font-size: 18px;
     color: #666;
+    line-height: 23px;
+    margin-bottom: 25px;
+}
+
+.SBcheckout, .SBcontinue {
+    border: none;
+    width: 100%;
+    height: 70px;
+    float: left;
+    margin-bottom: 21px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 43px;
+    text-align: center;
+    color: #fff;
+    background: #00CCCC;
+    text-transform: uppercase;
+    
+}
+.SBcontinue{
+    margin-bottom: 34px;
+    background: #ccc;
+}
+
+.shoppingButtons {
+    width: 100%;
+    float: left;
+    margin-top: 41px;
+}
+
+.shoppingBag-main {
+    margin-bottom: 40px;
+}
+
+.SBmain-totalOrder {
+    float: left;
+    font-size: 36px;
+    color: #333;
+    line-height: 41px;
+    
+    text-align: left;
+    text-transform: uppercase;
+}
+.SBmain-totalOrder span{
+    font-family: 'Myriad Pro', sans-serif;
+    line-height: 43px;
+    color: #000;
+}
+
+.searchResult-general {
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 32px;
+    color: #8196AF;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
