@@ -645,7 +645,7 @@ div[name="blog-chapter"]{
     position: relative;
 }
 .email-inp input[type="text"]{
-    width: 78%;
+    width: 82.666666666667%;
     height: 93px;
     padding-left: 4.841402337229%;
     border: none;
@@ -660,7 +660,10 @@ div[name="blog-chapter"]{
     height: 95px;
     background: #AFC4DB url(../img/add-email.svg) no-repeat 50% 50%;
     border: none;
-    float: left;
+/*    float: right;*/
+    position: absolute;
+    right: 0;
+    top: 0;
     cursor: pointer;
     transition: .5s;
 }
