@@ -97,12 +97,10 @@ clear: both;
 .search{
 	width: 93.75%;
     position: relative;
-    margin: 50px auto;
-/*    box-sizing: padding-box;*/
-    /*
-    margin: 50px 3.125%;
-    float: left;   
-*/
+    margin-top: 50px;
+    margin-left: 2.8125%;
+/*    margin: 50px auto;*/
+    float: left;
 }
 input[name='top-search']{
 	width:100%;
@@ -113,9 +111,9 @@ input[name='top-search']{
     font-weight: lighter;
 	color: rgb(33, 33, 33);
     margin: 0 auto;
-    border-radius: none;
-    box-shadow: none;
-    box-sizing: padding-box;
+    border-radius: 0;
+    box-shadow: 0;
+    box-sizing: border-box;
 }
 #top-search>input::webkit-input-placeholder,
 #top-search>input::moz-input-placeholder{
@@ -895,7 +893,7 @@ div[name="footer-info"]{
     margin: 13px 11.029411764706% 0 0;
 }
 
-.productList-main.fullView{display: block;}
+.productList-main.fullView{display: none;}
 .productList-main.smallView{display: block;}
 .productList-main.listView{display: none;}
 
