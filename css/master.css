@@ -656,8 +656,8 @@ div[name="blog-chapter"]{
     border-radius: 0;
 }
 .add-email{
-    width: 95px;
-    height: 95px;
+    width: 97px;
+    height: 97px;
     background: #AFC4DB url(../img/add-email.svg) no-repeat 50% 50%;
     border: none;
 /*    float: right;*/
