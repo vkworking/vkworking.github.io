@@ -199,14 +199,14 @@ a[name='item-link']:nth-child(1) .item-picture  {
 	font-size: 28px;
 	text-transform: uppercase;
 	color: #8196AF;
-    margin: 0px 0px 20px 3.125%; /* left 20px from 640 */
+    margin: 0px 20px 20px 3.125%; /* left 20px from 640 */
     overflow: hidden;
 }
 .container-name p{
     overflow: hidden;
     white-space: nowrap;
 }
-.container-name p:after{
+.container-name.cut p:after{
     content: "";
     display: inline-block;
     width: 100%;
