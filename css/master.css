@@ -88,10 +88,10 @@ clear: both;
 	width:100%;
     float: right;
 }
-.search{
+.search-page{
 	width: 93.75%;
     position: relative;
-    margin: 50px 3.125% 0;
+    margin: 50px 3.125% 50px;
     float: left;
 /*    display: block;*/
     
@@ -804,7 +804,7 @@ div[name="footer-info"]{
 }
 .productList-head p{
     font-size: 28px;
-    color: #333;
+    color: #8196AF;
     text-transform: uppercase;
     text-align: center;
 }
@@ -886,8 +886,8 @@ div[name="footer-info"]{
     margin: 13px 11.029411764706% 0 0;
 }
 
-.productList-main.fullView{display: block;}
-.productList-main.smallView{display: none;}
+.productList-main.fullView{display: none;}
+.productList-main.smallView{display: block;}
 .productList-main.listView{display: none;}
 
 /*full*/
@@ -956,6 +956,12 @@ div[name="footer-info"]{
     top: 10px;
     right: 10px;
 }
+.productSmall-pic .productLabel-best,
+.productSmall-pic .productLabel-sale,
+.productSmall-pic .productLabel-new{
+    width: 80px;
+    height: 80px;
+}
 .productLabel-sale{
     background: #FC3768;
 }
@@ -963,6 +969,7 @@ div[name="footer-info"]{
     background: #8196AF;
 }
 /*   >badge pack */
+/*    >full*/
 .fullBadgeBest,
 .fullBadgeSale,
 .fullBadgeNew,
@@ -978,14 +985,39 @@ div[name="footer-info"]{
 .fullBadgeSale{
     font-size: 30px;
     line-height: 75px;
-/*    зсунути якось вниз*/
 }
-.savePercent{
+.fullBadgeSale+.savePercent{
     font-size: 40px;
     line-height: 0;
     margin-left: 10px;
 }
-.productFull-pic img {
+/*    >small*/
+.smallBadgeBest,
+.smallBadgeSale,
+.smallBadgeNew,
+.savePercent{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 30px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.smallBadgeSale{
+    font-size: 24px;
+    line-height: 50px;
+}
+.smallBadgeSale+.savePercent{
+    font-size: 30px;
+    line-height: 0;
+/*    margin-left: 10px;*/
+}
+/*    >list*/
+
+
+.productFull-pic img,
+.productSmall-pic img{
     width: 100%;
     height: auto;
 }
@@ -1031,8 +1063,12 @@ div[name="footer-info"]{
     line-height: 80px;
 }
 
+.productSmall-price .currency-char{
+    line-height: 50px;
+}
 .currency-char.rub{
     font-family: 'rub';
+    line-height: 40px;
 }
 
 .shoppingBag-container {
@@ -1172,4 +1208,89 @@ div[name="footer-info"]{
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.smallSideRight {
+    width: 48.333333333333%;
+    float: right;
+    background: red;
+}
+
+.smallSideLeft {
+    width: 48.333333333333%;
+    float: left;
+    background: green;
+}
+
+.productSmall-container {
+    width: 100%;
+    float: left;
+    clear: right;
+    position: relative;
+    margin-bottom: 29px;
+/*    margin-right: 1.666666666667%;*/
+    z-index: 1;
+}
+.productSmall-container:nth-child(2n){
+    margin-right: 0;
+    float: right;
+    clear: left;
+}
+.productSmall-pic {
+    float: left;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: relative;
+}
+
+.productSmall-general {
+    width: 100%;
+}
+
+.smallView .productCatalogue{
+    width: 93.75%;
+    margin: 0 auto;
+}
+
+.productSmall-name span{
+    width: 100%;
+    font-size: 30px;
+    color: #000;
+    line-height: 38px;
+/*    margin-top: 10px;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+}
+
+.productSmall-price {
+    width: 51.034482758621%;
+    height: 50px;
+    background: #8196AF;
+    color: #fff;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+.cataLeftSide {
+    width: 48.333333333333%;
+    float: left;
+}
+
+.cataRightSide {
+    width: 48.333333333333%;
+    float: right;
 }
