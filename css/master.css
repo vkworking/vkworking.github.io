@@ -132,7 +132,7 @@ input[name="search-btn"]{
 .main{
 	width:100%; /* original width- 640px;max width 800px*/
 	background:#fff;
-    overflow-x: scroll;
+/*    overflow-x: scroll;*/
     margin: 0 auto;
 }
 .goods-part{
@@ -809,10 +809,11 @@ div[name="footer-info"]{
     width: 100%;
     max-width: 800px;
     float: left;
+    margin-bottom: 40px;
 }
 
 .productList-general {
-    width: 93.75%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -833,7 +834,7 @@ div[name="footer-info"]{
     width: 100%;
 }
 
-.listMain-head {
+.listCataMain-head {
     width: 93.75%;
     float: left;
     clear: both;
@@ -852,7 +853,7 @@ div[name="footer-info"]{
 .headListMain-sort {
     width: 54.266666666667%;
     height: 72px;
-    float:left;
+    float:right;
     border: 1px solid #979797;
     border-right: none;
     transition: .5s;
@@ -1269,8 +1270,9 @@ div[name="footer-info"]{
     width: 100%;
 }
 
-.smallView .productCatalogue{
-    width: 93.75%;
+.smallView .productCatalogue,
+.listView .productCatalogue{
+    width: 93.75%; /*93.75%;*/
     margin: 0 auto;
 }
 
@@ -1319,10 +1321,13 @@ div[name="footer-info"]{
     width: 200px;
     height: 200px;
     float: left;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 .productList-pic img{
     width:100%;
-    height: 100%;
+    height: auto;
 }
 
 .productList-price {
@@ -1343,21 +1348,86 @@ div[name="footer-info"]{
 }
 
 .listInfo-bottom {
-    width: 63.5%;
+    width: 100%;
     float:right;
 }
 
 .listItem-shipping {
-    
+    width: 47.244094488189%;
+    float: right;
 }
 
-.itemShipping-value {
-    width: 47.244094488189%;
+.itemShipping-value,
+.itemDelivery-value{
+    width: 100%;
     height: 50px;
-    float: left;
-    box-shadow: inset 0 0 3px 0 #8196AF;
+    float: right;
+    box-shadow: inset 0 0 0 1px #cdcdcd;
     font-size: 30px;
     line-height: 50px;
-    font-family: "Helvetica", sans-serif;
-    color: #8196AF;
+    text-align: center;
+    color: #000;
+}
+.itemDelivery-value{
+    float: left;
+}
+
+.squareBadge {
+    width: 47.244094488189%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Helvetica', sans-serif;
+    float: left;
+}
+.squareBadge.SQbest{
+    color: #00CCCC;
+    box-shadow: inset 0 0 0 1px #00CCCC;
+}
+.squareBadge.SQnew{
+    color: #8196af;
+    box-shadow: 0 0 0 1px #8196af;
+}
+.squareBadge.SQsale{
+    color: #FC3768;
+    box-shadow: inset 0 0 0 1px #FC3768;
+}
+
+.itemShipping-head,
+.itemDelivery-head{
+    font-size: 22px;
+    color: #a1a1a1;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.listItem-delivery {
+    width: 47.244094488189%;
+    float: left;
+}
+.listItem-delivery,
+.listItem-shipping{
+    margin-bottom: 15px;
+}
+
+.productList-info {
+    width: 63.5%;
+    float: right;
+    margin-top: 4px;
+}
+
+.listInfo-head {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;   
+}
+.listInfo-head p{
+    font-size: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000;
+    line-height: 29px;
 }
