@@ -669,20 +669,26 @@ div[name="blog-chapter"]{
     height: 93px;
     padding-left: 6.666666666667%;
     border: 0;
-    border-right: 96px solid #AFC4DB; /*96px*/
+/*    border-right: 96px solid #AFC4DB;*/
     float: left;
     background: #fff; /*  placeholder settings  */
     font-size: 30px;
     color: #a1a1a1;
     border-radius: 0;
+    z-index: 1;
 }
 .add-email{
-    width: 50px;
-    height: 50px;
-    background: url(../img/add-email.svg) no-repeat 50% 50%;
+    width: 15%;
+    max-width: 110px;
+    height: 95px;
+    background: #000 url(../img/add-email.svg) no-repeat 50% 50%;
+    float: left;
+    z-index: 99;
+/*
     position: absolute;
-    right: 46px; /*3.666666666667%;*/ 
+    right: 46px; 3.666666666667%; 
     top: 22px;
+*/
     cursor: pointer;
     transition: .5s;
 }
