@@ -664,7 +664,7 @@ div[name="blog-chapter"]{
     margin: 0 auto 81px;
     position: relative;
     white-space: nowrap;
-    overflow: hidden;
+/*    overflow: hidden;*/
 }
 .email-inp input[type="text"]{
     width: 77.333333333333%;
