@@ -665,11 +665,11 @@ div[name="blog-chapter"]{
     position: relative;
 }
 .email-inp input[type="text"]{
-    width: 82.666666666667%;
+    width: 77.333333333333%;
     height: 93px;
-    padding-left: 4.841402337229%;
+    padding-left: 6.666666666667%;
     border: 0;
-    border-right: 96px solid #AFC4DB;
+    border-right: 96px solid #AFC4DB; /*96px*/
     float: left;
     background: #fff; /*  placeholder settings  */
     font-size: 30px;
@@ -681,7 +681,7 @@ div[name="blog-chapter"]{
     height: 50px;
     background: url(../img/add-email.svg) no-repeat 50% 50%;
     position: absolute;
-    right: 20px;
+    right: 46px; /*3.666666666667%;*/ 
     top: 22px;
     cursor: pointer;
     transition: .5s;
