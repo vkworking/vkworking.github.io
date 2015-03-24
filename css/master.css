@@ -668,7 +668,8 @@ div[name="blog-chapter"]{
     width: 82.666666666667%;
     height: 93px;
     padding-left: 4.841402337229%;
-    border: none;
+    border: 0;
+    border-right: 96px solid #AFC4DB;
     float: left;
     background: #fff; /*  placeholder settings  */
     font-size: 30px;
@@ -676,21 +677,16 @@ div[name="blog-chapter"]{
     border-radius: 0;
 }
 .add-email{
-    width: 97px;
-    height: 97px;
-    background: #AFC4DB url(../img/add-email.svg) no-repeat 50% 50%;
-    border: none;
-/*    float: right;*/
+    width: 50px;
+    height: 50px;
+    background: url(../img/add-email.svg) no-repeat 50% 50%;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 20px;
+    top: 22px;
     cursor: pointer;
     transition: .5s;
 }
-.add-email:hover{
-    background-color: #8FA4BA;
-    transition: all ease .5s;
-}
+
 div[name="footer-info"]{
     font-size: 28px;
     color: #333333;
