@@ -1444,7 +1444,8 @@ div[name="footer-info"]{
 }
 
 .shopBag-container,
-.checkout-container{
+.checkout-container,
+.thank-container{
     width: 100%;
     float: left;
 }
@@ -1721,7 +1722,8 @@ div[name="footer-info"]{
 }
 
 .shopStage-third {
-    display: none;
+    display: block;
+    margin-left: 5%;
 }
 
 .shopStage-first {
@@ -1729,7 +1731,8 @@ div[name="footer-info"]{
     float: left;
 }
 .shopStage-first p,
-.shopStage-second p{
+.shopStage-second p,
+.shopStage-third p{
     float: left;
     width: 50%;
     overflow: hidden;
@@ -1739,14 +1742,26 @@ div[name="footer-info"]{
 .shopStage-second p{
     text-align: center;
 }
+.shopStage-third p{
+    text-align: right;
+    padding-right: 5%;
+    width: 45%;
+}
+
 .shopStage-first span,
-.shopStage-second span{
+.shopStage-second span,
+.shopStage-third span{
     float: left;
     width: 25%;
 }
 .shopStage-second span:last-child{
     width: 20%;
 }
+.shopStage-second span:nth-child(1),
+.shopStage-second span:nth-child(2),{
+ width: 20%;   
+}
+
 .stepRightArrow {
     display: inline-block;
     width: 14px;
@@ -1759,6 +1774,10 @@ div[name="footer-info"]{
     margin-left: 5%;
 }
 .shopStage-second span:first-child .stepRightArrow{
+    margin-right: 0; 
+    margin-left: 44.666666666667%;   
+}
+.shopStage-third span .stepRightArrow{
     margin-right: 0; 
     margin-left: 44.666666666667%;   
 }
@@ -1909,6 +1928,118 @@ form[name='clientShippingInfo'] a{
 }
 
 .shippingForm-general {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.shipFormBody {
+    width: 100%;
+    float: left;
+}
+
+.paymentMethodSame {
+    float: left;
+    width: 99%;
+    height: 95px;
+    border: 0;
+    background: #00CCCC;
+    box-shadow: 6px 6px 0 0 rgba(149, 149, 149, .5);
+    margin-top: 38px;
+}
+
+.paymentMethodBody {
+    width: 100%;
+    float: left;
+    margin-bottom: 100px;
+}
+
+.paymentLogo {
+    margin-left: 6.666666666667%;
+    
+}
+.paymentMethodSame:nth-child(1) .paymentLogo{
+    width: 119px;
+    height: 33px;
+    float: left;
+    background: url(../img/paypal.svg) no-repeat 0 0;
+    background-size: contain;
+    margin-top: 32px;
+}
+.paymentMethodSame:nth-child(2) .paymentLogo:first-child{
+    width: 75px;
+    height: 25px;
+    float: left;
+    background: url(../img/visa.svg) no-repeat 0 0;
+    background-size: contain;
+    margin-top: 35px;
+}
+.paymentMethodSame:nth-child(2) .paymentLogo2{
+    width: 51px;
+    height: 31px;
+    float: left;
+    margin-left: 19px;
+    background: url(../img/mactercard.svg) no-repeat 0 0;
+    background-size: contain;
+    margin-top: 32px;
+}
+.paymentMethodSame:nth-child(3) .paymentLogo{
+    width: 75px;
+    height: 75px;
+    float: left;
+    background: url(../img/twocheckout.svg) no-repeat 0 0;
+    background-size: contain;
+    margin-top: 10px;
+}
+
+.paymentName {
+    width: 60%;
+    float: right;
+    text-align: right;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 29px;
+    margin-right: 5%;
+    line-height: 95px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.paymentMethod-container {
+    width: 100%;
+    float: left;
+}
+
+.paymentMethod-general {
     width: 93.75%;
     margin: 0 auto;
+}
+
+.checkout-general,
+.thank-general{
+    width: 93.75%;
+    margin: 0 auto;
+}
+
+.ourBigHeartContainer,
+.orderNumContainer,
+.thanksGivingContainer{
+    width: 100%;
+    float: left;
+}
+.thanksGivingGeneral{
+    width: 520px;
+    margin: 0 auto;
+}
+.orderNumGeneral{
+    width: 520px;
+    margin: 0 auto;
+}
+.ourBigHeartGeneral{
+    width: 221px;
+    height: 195px;
+    margin: 0 auto;
+    background: #fff url(../img/bigheart.svg) no-repeat 0 0;
+    background-size: contain;
 }
