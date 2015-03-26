@@ -1907,3 +1907,8 @@ form[name='clientShippingInfo'] a{
     line-height: 21px;
     text-align: left;
 }
+
+.shippingForm-general {
+    width: 93.75%;
+    margin: 0 auto;
+}
