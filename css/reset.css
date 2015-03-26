@@ -46,5 +46,7 @@ table {
     width: 100%;
     float: left;
 }
-
+input[type=text]{
+    border-radius: 0;
+}
 
