@@ -25,6 +25,7 @@ clear: both;
     max-width: 800px;
     margin: 0 auto;
 }
+/*black bg header*/
 .general-head-second{
     width: 100%;
     height: 96px;
@@ -1442,15 +1443,16 @@ div[name="footer-info"]{
     line-height: 29px;
 }
 
-.shopBag-container {
+.shopBag-container,
+.checkout-container{
     width: 100%;
     float: left;
 }
 
-.shopBag-general {
+.shopBag-general,
+.ckeckout-general{
     width: 93.5%;
     margin: 0 auto;
-/*    border-bottom: 1px solid #979797;*/
 }
 
 
@@ -1709,7 +1711,7 @@ div[name="footer-info"]{
 }
 
 .shopStage-second {
-    display: none;
+    display: block;
     float: left;
     width: 100%;
 }
@@ -1734,6 +1736,9 @@ div[name="footer-info"]{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.shopStage-second p{
+    text-align: center;
+}
 .shopStage-first span,
 .shopStage-second span{
     float: left;
@@ -1749,6 +1754,13 @@ div[name="footer-info"]{
     background: url(../img/rigthArrow.svg) no-repeat 50% 50%;
     background-size: contain;
     margin-right: 44.666666666667%;
+}
+.shopStage-second span:first-child{
+    margin-left: 5%;
+}
+.shopStage-second span:first-child .stepRightArrow{
+    margin-right: 0; 
+    margin-left: 44.666666666667%;   
 }
 
 .discountCode{
@@ -1825,4 +1837,73 @@ div[name="footer-info"]{
     position: absolute;
     top: -5px;
     right: -10px;
+}
+form[name='clientShippingInfo'] input{
+    width: 93.333333333333%;
+    height: 95px;
+    padding-left:6.666666666667%;
+    float: left;
+    background: #fff;
+    border: 2px solid #D6D6D6;
+    border-radius: 0;
+    color: #999;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+form[name='clientShippingInfo'] input[id="clientCountry"]{
+    color: #000;
+}
+form[name='clientShippingInfo'] label{
+    font-size: 30px;
+    color: #000;
+    line-height: 50px;
+    text-align: left;
+    width: 100%;
+    float: left;
+}
+form[name='clientShippingInfo'] label[for="clientCountry"]{
+    width: 50%;
+    float: left;
+}
+
+form[name='clientShippingInfo'] a{
+    font-size: 30px;
+    line-height: 50px;
+    color: #8196AF;
+    text-align: right;
+    text-decoration: none;
+    width: 50%;
+    float: right;
+    outline: none;
+}
+
+
+
+
+
+.shippingForm-container {
+    width: 100%;
+    float: left;
+}
+
+.shipFormHeader {
+    width: 100%;
+    height: 65px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.shipFormHeader p{
+    font-size: 30px;
+    color: #000;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 41px;
+}
+.shipFormHeader span{
+    font-size: 20px;
+    color: #999;
+    line-height: 21px;
+    text-align: left;
 }
