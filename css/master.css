@@ -1,4 +1,5 @@
 @import url('reset.css');
+@import url(posts.css);
 @font-face{
     font-family:'rub';
     src:url(iconfonts/RUBSN.otf);
@@ -359,6 +360,11 @@ div[name="blog-chapter"]{
 	float:left;
     margin-left:20px;
 	position:relative;
+}
+.people-report,
+.note-text{
+    max-height: 150px;
+    overflow: hidden;
 }
 .people-report p,
 .note-text p{
@@ -1845,6 +1851,7 @@ div[name="footer-info"]{
 }
 
 .head-basket .basketQuantity{
+    display: none;
     width: 30px;
     height: 30px;
     background: #00CCCC;
@@ -1982,7 +1989,7 @@ form[name='clientShippingInfo'] a{
     background-size: contain;
     margin-top: 32px;
 }
-.paymentMethodSame:nth-child(3) .paymentLogo{
+.paymentMethodSame .paymentLogo.twocheck{
     width: 75px;
     height: 75px;
     float: left;
