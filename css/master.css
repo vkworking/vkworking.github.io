@@ -2028,6 +2028,14 @@ form[name='clientShippingInfo'] a{
     width: 100%;
     float: left;
 }
+.ourBigHeartContainer{
+    margin-top: 82px;
+    margin-bottom: 140px;
+    
+}
+.orderNumContainer{
+    margin-top: 35px;
+}
 .thanksGivingGeneral{
     width: 520px;
     margin: 0 auto;
@@ -2042,4 +2050,27 @@ form[name='clientShippingInfo'] a{
     margin: 0 auto;
     background: #fff url(../img/bigheart.svg) no-repeat 0 0;
     background-size: contain;
+}
+
+.orderMessage {
+    font-size: 30px;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    line-height: 41px;
+}
+
+.thanksMessage {
+    font-size: 48px;
+    color: #8196AF;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    
+}
+
+.thanksGivingContaiter {
+    width: 100%;
+    float: left;
+    margin-top: 100px;
 }
