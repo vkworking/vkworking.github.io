@@ -32,6 +32,13 @@ clear: both;
     height: 96px;
     background: rgba(0, 0, 0, 1);
 }
+.general-head-third{
+    width: 100%;
+    height: 96px;
+    background: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 0;
+}
 .general-head{
 	width: 100%; /*---<temp>---*/
 	height: 278px;
@@ -59,16 +66,20 @@ clear: both;
     background: #fff;
     margin: 23px 0 56px 0;
 }
-.customURL p{  
+.customURL p,
+.customURL a{  
     font-size: 28px;
     text-align: left;
     color: #8196AF;
     line-height: 36px;
+    text-decoration: none;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
+.customURL a:not(:last-child):after{
+    content: ' /';
+}
 .head-logo{
     display: block;
 	width:300px;
@@ -2080,4 +2091,222 @@ form[name='clientShippingInfo'] a{
     width: 100%;
     float: left;
     margin-top: 100px;
+}
+
+
+
+.head-wideLogo {
+    width: 100%;
+    height: 160px;
+    float: left;
+    background: url(../img/secondbg.png) no-repeat 100% 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.itemCartContainer {
+    width: 100%;
+    float: left;
+}
+
+.itemCartGeneral {
+    width: 93.75%;
+    margin: 0 auto;
+}
+
+.itemSlideContainer {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.itemSlideContainer img{
+    width: 100%;
+}
+
+.slideNavigation {
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.30);
+}
+
+.btnAddToCart,
+.btnExpressCheckout{
+    float: left;
+    width: 99%;
+    height: 95px;
+    border: 0;
+    background: #00CCCC;
+    box-shadow: 6px 6px 0 0 rgba(149, 149, 149, .5);
+    margin-top: 38px;
+    font-size: 30px;
+    color: #fff;
+    line-height:100px;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight:600;
+    position: relative;
+    padding-right: 4.333333333333%;
+}
+.btnAddToCart{
+    background: #8196AF;
+}
+.btnAddToCart span,
+.btnExpressCheckout span{
+    display: block;
+    position: absolute;
+    left: 4.333333333333%;
+    background-size: contain;
+    
+}
+.btnAddToCart span{
+    width: 42px;
+    height: 45px;
+    background: url(../img/tocart.svg) no-repeat 0 0;
+    top: 25px;
+}
+.btnExpressCheckout span{
+    width: 119px;
+    height: 33px;
+    background: url(../img/paypal.svg) no-repeat 0 0;
+    top: 32px;
+}
+
+.itemDetail,
+.itemShippingReturn,
+.socialShareButton{
+    width: 100%;
+    float: left;
+    border: 1px solid #979797;
+}
+
+.infoAboutDelivery {
+    width: 100%;
+    float: left;
+}
+
+.itemShippingReturn {
+
+}
+
+.deliveryTime,
+.freeReturn {
+    width: 50%;
+    float: left;
+}
+.freeReturn{
+    float: right;
+}
+
+.deliveryTime .logo {
+    width: 56px;
+    height:  69px;
+    margin: 0 auto;
+    background: url(../img/clock.svg) no-repeat 0 0;
+    background-size: contain;
+}
+.freeReturn .logo {
+    width: 54px;
+    height: 58px;
+    margin: 0 auto;
+    background: url(../img/return.svg) no-repeat 0 0;
+    background-size: contain;
+}
+
+.socialShareButton a{
+    display: inline-block;
+    width: 73px;
+    height: 72px;
+    background-size: contain;
+    
+}
+.socialShareButton a:first-child{
+    background: url(../img/social/fb.svg) no-repeat 0 0;
+}
+.socialShareButton a:nth-child(2){
+    background: url(../img/social/tw.svg) no-repeat 0 0;
+}
+.socialShareButton a:nth-child(3){
+    background: url(../img/social/pin.svg) no-repeat 0 0;
+}
+.socialShareButton a:nth-child(4){
+    background: url(../img/social/gplus.svg) no-repeat 0 0;
+}
+.socialShareButton a:nth-child(5){
+    background: url(../img/social/mail.svg) no-repeat 0 0;
+}
+
+.askQuestionns {
+    width: 100%;
+    float: left;
+}
+
+.askQuestionMain {
+    width: 100%;
+    height: 100px;
+    float: left;
+    background: #8196AF;
+    font-size: 30px;
+    color: #fff;
+    text-indent: 6.666666666667%;
+    line-height: 100px;
+    font-weight: 600;
+}
+.askQuestionMain span:after{
+    content: url(../img/downarrow.svg);
+    margin-left: 3.5%;
+}
+
+.askQuestionRequest {
+    width: 100%;
+    float: left;
+    background: rgba(129,150,175,0.70);
+}
+.askQuestionRequest input[type=text],
+.askQuestionRequest textarea{
+    width: 100%;
+    height: 85px;
+    border: 0;
+    float: left;
+}
+.askQuestionRequest textarea{
+    width: 100%;
+    background: #fff;
+    height: 250px;
+    resize: none;
+}
+.askQuestionRequest label{
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    color: #fff;
+    line-height: 43px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.askQuestionRequest input[type=submit]{
+    width: 49.807692307692%;
+    height: 93px;
+    float: right;
+    border: 0;
+    background: #00CCCC;
+    font-size: 30px;
+    color: #fff;
+    line-height: 43px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 6px 6px 0 0 rgba(149, 149, 149, .5);
+    margin-top: 50px;
+    margin-bottom: 61px;
+    
+}
+
+
+
+.askQuestionRequestContainer {
+    width: 86.666666666667%;
+    float: left;
+    margin-left: 6.666666666667%;
 }
