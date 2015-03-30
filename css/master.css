@@ -1913,11 +1913,6 @@ form[name='clientShippingInfo'] a{
     float: right;
     outline: none;
 }
-
-
-
-
-
 .shippingForm-container {
     width: 100%;
     float: left;
@@ -2179,17 +2174,37 @@ form[name='clientShippingInfo'] a{
     width: 100%;
     float: left;
     border: 1px solid #979797;
+    box-sizing: border-box;
+    padding: 30px 6.666666666667%;
 }
+.itemDetail span,
+.itemShippingReturn span{
+    font-size: 30px;
+    color: #000;
+    font-weight: 600;
+    text-align: left;
+    line-height: 36px;
+    text-transform: uppercase;
+    float: left;
+    margin-bottom: 30px;
+    clear: both;
 
-.infoAboutDelivery {
+}
+.itemDetail p,
+.itemShippingReturn p{
+    color: #333;
+    font-size: 30px;
+    line-height: 50px;
+    float: left;
+    margin-bottom: 30px;
+}
+.itemDetail table{
+    float: left;
+}
+.infoAboutDelivery{
     width: 100%;
     float: left;
 }
-
-.itemShippingReturn {
-
-}
-
 .deliveryTime,
 .freeReturn {
     width: 50%;
@@ -2198,7 +2213,6 @@ form[name='clientShippingInfo'] a{
 .freeReturn{
     float: right;
 }
-
 .deliveryTime .logo {
     width: 56px;
     height:  69px;
@@ -2213,6 +2227,18 @@ form[name='clientShippingInfo'] a{
     background: url(../img/return.svg) no-repeat 0 0;
     background-size: contain;
 }
+.socialShareButton{
+    float: left;
+    
+}
+.socialShareButton span{
+    float: left;
+    margin-bottom: 55px;
+    font-size: 30px;
+    color: #000;
+    font-weight: 600;
+    
+}
 
 .socialShareButton a{
     display: inline-block;
@@ -2221,19 +2247,20 @@ form[name='clientShippingInfo'] a{
     background-size: contain;
     
 }
-.socialShareButton a:first-child{
+.socialShareButton a:first-of-type{
     background: url(../img/social/fb.svg) no-repeat 0 0;
+    padding-left: 5px;
 }
-.socialShareButton a:nth-child(2){
+.socialShareButton a:nth-of-type(2){
     background: url(../img/social/tw.svg) no-repeat 0 0;
 }
-.socialShareButton a:nth-child(3){
+.socialShareButton a:nth-of-type(3){
     background: url(../img/social/pin.svg) no-repeat 0 0;
 }
-.socialShareButton a:nth-child(4){
+.socialShareButton a:nth-of-type(4){
     background: url(../img/social/gplus.svg) no-repeat 0 0;
 }
-.socialShareButton a:nth-child(5){
+.socialShareButton a:nth-of-type(5){
     background: url(../img/social/mail.svg) no-repeat 0 0;
 }
 
@@ -2286,7 +2313,7 @@ form[name='clientShippingInfo'] a{
     margin-bottom: 10px;
     margin-top: 30px;
 }
-.askQuestionRequest input[type=submit]{
+.askQuestionRequest button{
     width: 49.807692307692%;
     height: 93px;
     float: right;
@@ -2302,9 +2329,6 @@ form[name='clientShippingInfo'] a{
     margin-bottom: 61px;
     
 }
-
-
-
 .askQuestionRequestContainer {
     width: 86.666666666667%;
     float: left;
