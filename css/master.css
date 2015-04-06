@@ -2101,12 +2101,14 @@ form[name='clientShippingInfo'] a{
 .itemSlideContainer img{
     width: 100%;
 }
-
+.customURL.itemFullCart {
+    margin-bottom: 20px;
+}
 .slideNavigation {
     width: 100%;
     height: 75px;
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
     background: rgba(0,0,0,0.30);
 }
 .slideArrow{
@@ -2146,6 +2148,52 @@ form[name='clientShippingInfo'] a{
 .navDots li:last-child{
     margin-right: 0;
 }
+
+.itemCost {
+    float: left;
+    width: 50%;
+}
+.itemCost > span {
+    color: #000;
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 48px;
+}
+.itemCost .oldItemPrice {
+    color: #fc3768;
+    float: left;
+    font-size: 36px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.itemShippingCost {
+    float: right;
+    width: 50%;
+}
+.itemShippingCost > p {
+    color: #666666;
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-align: right;
+}
+.itemShippingCost span {
+    color: #000;
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 48px;
+    margin-left: 14px;
+}
+.itemPayInfo > span {
+    color: #000;
+    float: left;
+    font-size: 40px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+.itemPayInfo > p {
+    color: #666666;
+    float: left;
+    font-size: 30px;
+}
 .btnAddToCart,
 .btnExpressCheckout{
     float: left;
@@ -2154,7 +2202,6 @@ form[name='clientShippingInfo'] a{
     border: 0;
     background: #00CCCC;
     box-shadow: 6px 6px 0 0 rgba(149, 149, 149, .5);
-    margin-top: 38px;
     font-size: 30px;
     color: #fff;
     line-height:100px;
@@ -2163,9 +2210,15 @@ form[name='clientShippingInfo'] a{
     font-weight:500;
     position: relative;
     padding-right: 4.333333333333%;
+    cursor: pointer;
 }
 .btnAddToCart{
     background: #8196AF;
+    margin-top: 30px;
+}
+.btnExpressCheckout{
+    margin-top: 23px;
+    margin-bottom: 50px;
 }
 .btnAddToCart span,
 .btnExpressCheckout span{
@@ -2220,6 +2273,24 @@ form[name='clientShippingInfo'] a{
 .itemDetail table{
     float: left;
 }
+.itemDetail td {
+    border: 2px solid #d6d6d6;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 26px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    width: 135px;
+}
+.itemDetail th {
+    color: #909294;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+}
+
 .infoAboutDelivery{
     width: 100%;
     float: left;
@@ -2228,6 +2299,14 @@ form[name='clientShippingInfo'] a{
 .freeReturn {
     width: 50%;
     float: left;
+}
+.deliveryTime > span, .freeReturn > span {
+    color: #333;
+    display: block;
+    font-size: 30px;
+    margin: 18px auto 45px;
+    text-align: center;
+    width: 70%;
 }
 .freeReturn{
     float: right;
@@ -2262,6 +2341,7 @@ form[name='clientShippingInfo'] a{
     height: 72px;
     width: 73px;
     margin-right: 6.666666666667%;
+    margin-bottom: 20px;
 }
 .socialShareButton a:first-of-type{
     background: url(../img/social/fb.svg) no-repeat 0 0;
@@ -2296,28 +2376,41 @@ form[name='clientShippingInfo'] a{
     line-height: 100px;
     font-weight: 600;
 }
-.askQuestionMain span:after{
-    content: url(../img/downarrow.svg);
-    margin-left: 3.5%;
+.askQuestionMain span{
+    width: 50px;
+    height: 30px;
+    float: right;
+    background-image: url(../img/downarrow.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 35px;
+    margin-right: 4.166666666667%;
 }
-
+.askQuestionMain .noActiveArrow{
+    background-image: url(../img/menu-togge.svg);
+    background-size: contain;
+}
 .askQuestionRequest {
     width: 100%;
     float: left;
     background: rgba(129,150,175,0.70);
 }
-.askQuestionRequest input[type=text],
-.askQuestionRequest textarea{
-    width: 100%;
-    height: 85px;
-    border: 0;
+.askQuestionRequest input[type="text"], .askQuestionRequest textarea {
+    border: 0 none;
+    box-sizing: border-box;
+    color: #666;
     float: left;
+    font-size: 36px;
+    height: 85px;
+    padding: 0 30px;
+    width: 100%;
 }
 .askQuestionRequest textarea{
     width: 100%;
     background: #fff;
     height: 250px;
     resize: none;
+    padding: 10px 30px
 }
 .askQuestionRequest label{
     width: 100%;
@@ -2348,4 +2441,52 @@ form[name='clientShippingInfo'] a{
     width: 86.666666666667%;
     float: left;
     margin-left: 6.666666666667%;
+}
+
+/* ---------< about us >-------  */
+.aboutChapter{
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+    text-align: left;    
+    font-size: 28px;
+    line-height: 32px;
+    color: #8196AF;
+    text-transform: uppercase;
+}
+.aboutUsContainer{
+    width: 100%;
+    float: left;
+}
+.aboutUsGeneral{
+    width: 93.75%;
+    margin: 0 auto;
+}
+.aboutUsSection{
+    width: 100%;
+    float: left;
+    border-top: 1px solid #979797;
+}
+.sectionContent > p {
+    color: #333;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.boldParagraph {
+    font-weight: 600;
+}
+.importantText {
+    color: #8196af;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+}
+.sectionHeader > span {
+    float: left;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
