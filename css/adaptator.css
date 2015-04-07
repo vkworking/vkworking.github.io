@@ -1,0 +1,20 @@
+@media screen and (max-width:639px){
+    .head-wideLogo {
+    height: 145px;
+    }
+}
+@media screen and (min-width:640px){
+    .head-wideLogo {
+    height: 150px;
+    }
+}
+@media screen and (min-width:700px){
+    .head-wideLogo {
+    height: 155px;
+    }
+}
+@media screen and (min-width:760px){
+    .head-wideLogo {
+    height: 160px;
+    }
+}
