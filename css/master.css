@@ -2470,7 +2470,8 @@ form[name='clientShippingInfo'] a{
 }
 
 .sectionContent > p {
-    color: #333;
+    color: #333 !important;
+    text-decoration: none !important;
     font-family: "Myriad Pro",sans-serif;
     font-size: 28px;
     line-height: 50px;
