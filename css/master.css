@@ -1874,6 +1874,7 @@ form[name='clientShippingInfo'] input{
     color: #999;
     font-size: 30px;
     margin-bottom: 15px;
+    box-sizing: border-box;
 }
 form[name='clientShippingInfo'] input[id="clientCountry"]{
     color: #000;
