@@ -678,7 +678,7 @@ div[name="blog-chapter"]{
 }
 .email-inp {
     width: 93.75%; /* 600/640 */
-    height: 95px;
+    height: 93px;
     margin: 0 auto 81px;
     overflow: hidden;
 }
@@ -697,7 +697,7 @@ div[name="blog-chapter"]{
 .add-email{
     width: 20%;
     max-width: 110px;
-    height: 95px;
+    height: 93px;
     background: #AFC4DB url(../img/add-email.svg) no-repeat 50% 50%;
     float: left;
     cursor: pointer;
