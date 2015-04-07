@@ -692,9 +692,10 @@ div[name="blog-chapter"]{
     font-size: 30px;
     color: #a1a1a1;
     border-radius: 0;
+    box-sizing: border-box;
 }
 .add-email{
-    width: 15%;
+    width: 20%;
     max-width: 110px;
     height: 95px;
     background: #AFC4DB url(../img/add-email.svg) no-repeat 50% 50%;
