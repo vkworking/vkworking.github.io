@@ -2549,3 +2549,7 @@ form[name='clientShippingInfo'] a{
     background-position: top center;
     margin-right: 28px;
 }
+.contactInfo {
+    float: left;
+    width: 53%;
+}
