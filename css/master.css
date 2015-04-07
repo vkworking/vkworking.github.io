@@ -2165,6 +2165,7 @@ form[name='clientShippingInfo'] a{
     font-size: 36px;
     margin-bottom: 15px;
     margin-top: 15px;
+    text-decoration: line-through;
 }
 .itemShippingCost {
     float: right;
