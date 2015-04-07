@@ -2462,31 +2462,90 @@ form[name='clientShippingInfo'] a{
     width: 93.75%;
     margin: 0 auto;
 }
-.aboutUsSection{
-    width: 100%;
-    float: left;
+.aboutUsSection {
     border-top: 1px solid #979797;
+    float: left;
+    margin-bottom: 36px;
+    width: 100%;
 }
+
 .sectionContent > p {
     color: #333;
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 28px;
+    line-height: 50px;
+/*    margin-bottom: 30px;*/
+    text-align: left;
+}
+.sectionContent p + p {
+    margin-top: 30px;
+}
+.boldParagraph + p {
+    margin-top: 0 !important;
+}
+.aboutUsSection.altStyle .sectionContent > p{
+    font-family: 'Gill Sans', 'Arial', sans-serif;
     font-size: 30px;
     line-height: 42px;
-    margin-bottom: 30px;
-    text-align: left;
+}
+.aboutUsSection.altStyle .sectionContent p + p{
+    margin-top: 19px;
+}
+.aboutUsSection.altStyle .sectionHeader{
+     margin-top: 35px !important;
+ }
+.altStyle .boldParagraph {
+    margin-bottom: 11px !important;
+    margin-top: 26px !important;
 }
 .boldParagraph {
     font-weight: 600;
 }
-.importantText {
+.altStyle .importantText {
     color: #8196af;
-    font-size: 36px;
+    font-size: 36px !important;
     font-weight: 600;
-    line-height: 45px;
+    line-height: 45px !important;
     text-align: left;
+    margin-top: 35px !important;
 }
 .sectionHeader > span {
     float: left;
     font-size: 28px;
     margin-bottom: 10px;
     text-transform: uppercase;
+    line-height: 55px;
+}
+.contactFace{
+    width: 220px;
+    height: 220px;
+    float: left;
+    background-image: url(../img/about/contactface.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+.aboutUsSection.usContacts p{
+    font-size: 34px;
+    color: #333;
+    font-family: 'Myriad Pro', sans-serif;
+    text-align: left;
+}
+.sectionHeader {
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+.sectionHeader span{
+    margin-bottom: 15px;
+}
+.sectionHeadIco {
+    width: 50px;
+    height: 55px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-right: 28px;
 }
