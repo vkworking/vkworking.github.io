@@ -2,6 +2,9 @@
     .head-wideLogo {
     height: 145px;
     }
+    .socialShareButton a {
+    margin-right: 5%;
+    }
 }
 @media screen and (min-width:640px){
     .head-wideLogo {
@@ -12,9 +15,15 @@
     .head-wideLogo {
     height: 155px;
     }
+    .socialShareButton a {
+    margin-right: 8%;
+    }
 }
 @media screen and (min-width:760px){
     .head-wideLogo {
-    height: 160px;
+        height: 160px;
+    }
+    .socialShareButton a {
+        margin-right: 10%;
     }
 }
