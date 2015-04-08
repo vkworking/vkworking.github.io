@@ -3,9 +3,9 @@
 	<head>
 		<title>madeheart.com</title>
 		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="handheld" title="no title" charset="utf-8">
-		<script src="http://code.jquery.com/jquery-2.1.3.min.js"> </script>
 	</head>
 	<body>
 		<div class="header">
@@ -17,7 +17,7 @@
 				</div>
 				<div class="clearfix"></div>
 									<!-- ----------------------- >general top menu ----------------------- -->
-               <div class="headMenuContainer">
+               <div class="headMenuContainer activeHeadMenu">
 				    <div class="headMenuGeneral">
 				    
 <!--                    start menu items-->
@@ -536,5 +536,15 @@
 		    </div>
 		    
 		</div>	
+		<script>
+            function headMenuShow(){
+                var menuButton = document.getElementsByClassName("toggle-menu")[0];
+                var menuContainer = document.getElementsByClassName("headMenuContainer")[0];
+                
+                Event.add(menuButton,'click',function(){
+                    menuContainer.classList.remove("activeHeadMenu");
+                });
+            }
+        </script>
 	</body>
 </html>

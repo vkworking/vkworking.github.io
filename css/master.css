@@ -57,6 +57,7 @@ clear: both;
 	background: url(../img/menu-icon.svg) no-repeat 0 0;
 	float:left;
 	margin: 25px 0 0 22px;
+    cursor: pointer;
 }
 .customURL{
     width: 93.75%;
@@ -125,8 +126,7 @@ input[name='top-search']{
 	color: rgb(33, 33, 33);
     margin: 0 auto;
     border-radius: 0;
-    box-shadow: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 #top-search>input::webkit-input-placeholder,
 #top-search>input::moz-input-placeholder{
@@ -539,7 +539,7 @@ div[name="blog-chapter"]{
 }
 .select-region li,
 .select-currency li{
-    width: 238;
+    width: 238px;
     height: 69px;
     background: #fff;
     color: #000;
@@ -650,7 +650,7 @@ div[name="blog-chapter"]{
     font-weight: bold;
 }
 .adress{
-    width: 70.%; /*490px/640*/
+    width: 70%; /*490px/640*/
     height: 132px;
     margin-bottom: 64px;
     margin-left: 23.4375%; /* 151px */
@@ -727,8 +727,11 @@ div[name="footer-info"]{
 
 .headMenuContainer{
     width:100%;
-    display: none;  /* trigger to headMenu*/
     float:left;
+    display: none;
+}
+.headMenuContainer.activeHeadMenu{
+    display: block;  /* trigger to headMenu*/
 }
 .headMenuGeneral{
   width:100%;
@@ -1142,7 +1145,7 @@ div[name="footer-info"]{
 }
 
 .shoppingBag-chapt {
-    width: 90;
+/*    width: 90px;*/
     float: left;
 }
 
@@ -1763,7 +1766,7 @@ div[name="footer-info"]{
     width: 20%;
 }
 .shopStage-second span:nth-child(1),
-.shopStage-second span:nth-child(2),{
+.shopStage-second span:nth-child(2){
  width: 20%;   
 }
 
@@ -2332,7 +2335,7 @@ form[name='clientShippingInfo'] a{
 }
 .freeReturn .logo {
     width: 54px;
-    height: 58px;
+    height: 69px;
     margin: 0 auto;
     background: url(../img/return.svg) no-repeat 0 0;
     background-size: contain;
