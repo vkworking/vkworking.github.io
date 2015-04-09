@@ -539,13 +539,13 @@ div[name="blog-chapter"]{
 }
 .menuItemName p,
 .menuItemName a{
-	color: #fff;
+	box-sizing: border-box;
+    color: #fff;
+    float: left;
     font-size: 40px;
     margin-left: 7.8125%;
-	text-decoration: none;
-	width: 100%;
-	box-sizing: border-box;
-	float: left;
+    text-decoration: none;
+    width: 70%;
 }
 .menuItemName a{
 	float: left;
