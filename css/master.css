@@ -543,6 +543,9 @@ div[name="blog-chapter"]{
     font-size: 40px;
     margin-left: 7.8125%;
 	text-decoration: none;
+	width: 100%;
+	box-sizing: border-box;
+	float: left;
 }
 .menuItemName a{
 	float: left;
