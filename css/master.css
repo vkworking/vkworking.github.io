@@ -116,6 +116,9 @@ clear: both;
 /*    margin: 50px auto;*/
     float: left;
 }
+.search.hideMenu{
+    display: none; 
+}
 input[name='top-search']{
 	width:100%;
 	height:94px;
@@ -772,6 +775,9 @@ div[name="footer-info"]{
   float:left;
   display: none;   /* trigger one subMenu */
 }
+.subMenuOne.showItems {
+    display: block;
+}
 .subMenuOneItem a{
   width: 100%;
   height: 118px;
@@ -798,6 +804,9 @@ div[name="footer-info"]{
     max-width: 800px;
   float:left;
   display: none;   /* trigger two subMenu*/
+}
+.subMenuTwo.showLastItem {
+    display: block;
 }
 
 .subMenuTwoItem a{

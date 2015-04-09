@@ -6,6 +6,10 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="handheld" title="no title" charset="utf-8">
+	<script type="text/javascript" src="https://madeheart.com/lib/js/when/when.js?222229999911199803:00:00."></script>
+        <script type="text/javascript" src="https://madeheart.com/goldcut/js/stacktrace.js?222229999911199803:00:00."></script>
+        <script type="text/javascript" src="https://madeheart.com/goldcut/js/gcdom.js?222229999911199803:00:00."></script>
+		<script ></script>
 	</head>
 	<body>
 		<div class="header">
@@ -17,7 +21,7 @@
 				</div>
 				<div class="clearfix"></div>
 									<!-- ----------------------- >general top menu ----------------------- -->
-               <div class="headMenuContainer activeHeadMenu">
+               <div class="headMenuContainer">
 				    <div class="headMenuGeneral">
 				    
 <!--                    start menu items-->
@@ -538,13 +542,47 @@
 		</div>	
 		<script>
             function headMenuShow(){
+             
                 var menuButton = document.getElementsByClassName("toggle-menu")[0];
                 var menuContainer = document.getElementsByClassName("headMenuContainer")[0];
-                
+                var searchInput = document.getElementsByClassName("search")[0];
                 Event.add(menuButton,'click',function(){
-                    menuContainer.classList.remove("activeHeadMenu");
+                    menuContainer.classList.toggle("activeHeadMenu");
+                    searchInput.classList.toggle("hideMenu");
                 });
             }
+            headMenuShow();
+        </script>
+        <script>
+         function lastMenu(){
+             var subMenuItem = document.getElementsByClassName("subMenuOneItem");
+                for(var i=0;i< subMenuItem.length; i++){
+                    
+                    Event.add(subMenuItem[i],'click',function(){
+                    var lastMenuItem = this.getElementsByClassName("subMenuTwo")[0];
+                    lastMenuItem.classList.toggle("showLastItems");
+                        
+                });
+                }
+         }
+            
+            lastMenu();
+        </script>
+        <script>
+            function showSubMenu(){
+                var mainMenuItem = document.getElementsByClassName("headMenuItem");
+                
+                for(var i=0;i < mainMenuItem.length; i++){
+                    
+                    Event.add(mainMenuItem[i],'click',function(){
+                    var secondMenuItem = this.getElementsByClassName("subMenuOne")[0];
+                    secondMenuItem.classList.toggle("showItems");
+                        
+                });
+                }
+            }
+            
+            showSubMenu();
         </script>
 	</body>
 </html>
