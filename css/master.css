@@ -411,7 +411,7 @@ div[name="blog-chapter"]{
 }
 .inst-general{
     width: 96.875%; /* 620/640 */
-    height: 233px;
+/*    height: 233px;*/
     float:left;
     overflow-x: scroll;
     margin-left: 3.125%; /*20px;*/
@@ -492,16 +492,67 @@ div[name="blog-chapter"]{
 }
 
 /* -----------------------start menu--------------- */
-.menu-container{
+
+.menuContainer{
     width: 100%;
-/*    margin: 0 auto;*/
     float: left;
-    margin-top: 35px;
 }
-.menu-general{
+.menuGeneral{
     width: 100%;
     background: #fff;
+	margin-top: 35px;
+	
 }
+.menuItemList{
+	width: 100%;
+	float: left;
+}
+.secondItemList{
+	width: 100%;
+	float: left;
+	display: none; 
+}
+.firstMenuItem{
+	width: 100%;
+	height: auto; 
+    min-height: 120px;
+    border-top: 2px solid #ddd; 
+    background: #8196AF;
+	box-sizing: border-box;
+	float: left;
+}
+.secondMenuItem{
+	width: 100%;
+    height: 120px;
+    border-top: 2px solid #ddd; 
+    background: #A6B5C7;
+	box-sizing: border-box;
+	float: left;
+	margin-top: -2px;
+}
+.menuItemName{
+	cursor: pointer;
+    height: 120px;
+    line-height: 120px;
+    width: 100%;
+	float: left;
+}
+.menuItemName p,
+.menuItemName a{
+	color: #fff;
+    font-size: 40px;
+    margin-left: 7.8125%;
+	text-decoration: none;
+}
+.menuItemName a{
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+.secondItemList.activeHeadMenu{
+	display: block;
+}
+
 .menu-list{
     display: block;
     float: left;
@@ -566,10 +617,11 @@ div[name="blog-chapter"]{
     cursor: pointer;
 }
 
-.menu-item-name{
-    width: 100%;/*568px*/
+.menu-item-name {
+    cursor: pointer;
     height: 118px;
     line-height: 118px;
+    width: 100%;
 }
 .menu-item .menu-item-name p,
 .item-currency .menu-item-name p{
@@ -592,6 +644,9 @@ div[name="blog-chapter"]{
     width: 100%;
     float: left;
     display: none;
+}
+.sub-menu.activeHeadMenu {
+    display: block;
 }
 .sub-item{
     height: 118px;
@@ -668,6 +723,7 @@ div[name="blog-chapter"]{
 }
 .contact-container{
     width: 100%;
+	float: left;
 }
 /* --------------- start footer part -------------*/
 .footer{
@@ -784,14 +840,17 @@ div[name="footer-info"]{
   /* border: 2px solid #ddd; */
   background: #A6B5C7;
 }
-.toggleMenu{
-  width:57px;
-  height:27px;
-  background: url(../img/menu-togge.svg) no-repeat 50% 50%;
-  background-size: contain;
-  float: right;
-  margin: 45px 21px 0 0;
-
+.toggleMenu {
+    background: url("../img/menu-togge.svg") no-repeat scroll 50% 50% / contain rgba(0, 0, 0, 0);
+    float: right;
+    height: 27px;
+    margin: 45px 21px 0 0;
+    transition: all 0.5s ease 0s;
+    width: 57px;
+}
+.toggleMenu.toggleActive {
+    transform: rotate(180deg);
+    transition: all 0.5s ease 0s;
 }
 .sortOption .toggleMenu{
     background: url(../img/menu-togge-grey.svg) no-repeat 50% 50%;
