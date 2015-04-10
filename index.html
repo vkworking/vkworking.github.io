@@ -9,6 +9,7 @@
 		<script type="text/javascript" src="https://madeheart.com/lib/js/when/when.js?222229999911199803:00:00."></script>
         <script type="text/javascript" src="https://madeheart.com/goldcut/js/stacktrace.js?222229999911199803:00:00."></script>
         <script type="text/javascript" src="https://madeheart.com/goldcut/js/gcdom.js?222229999911199803:00:00."></script>
+        <script src="js/master.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -603,73 +604,7 @@
 		    
 		</div>	
 -->
-		<script>
-            function headMenuShow(){
-             
-                var menuButton = document.getElementsByClassName("toggle-menu")[0];
-                var menuContainer = document.getElementsByClassName("headMenuContainer")[0];
-                var searchInput = document.getElementsByClassName("search")[0];
-                Event.add(menuButton,'click',function(){
-                    menuContainer.classList.toggle("activeHeadMenu");
-                    searchInput.classList.toggle("hideMenu");
-                });
-            }
-            headMenuShow();
-        </script>
-
-        <script>
-            function showSubMenu(){
-                var mainMenuItem = document.getElementsByClassName("headMenuItem");
-                
-                for(var i=0;i < mainMenuItem.length; i++){
-                    
-                    Event.add(mainMenuItem[i],'click',function(){
-                    var secondMenuItem = this.getElementsByClassName("subMenuOne")[0];
-                    var arrowDown = this.getElementsByClassName("toggleMenu")[0];
-					secondMenuItem.classList.toggle("showItems");
-					arrowDown.classList.toggle("toggleActive");
-					
-                        
-                });
-                }
-            }
-            
-            showSubMenu();
-        </script>
-         <script>
-            function showFooterSubMenu(){
-                var footerMenuItem = document.getElementsByClassName("firstMenuItem");
-                
-                for(var i=0;i < footerMenuItem.length; i++){
-                    
-                    Event.add(footerMenuItem[i],'click',function(){
-                    var subFooterMenu = this.getElementsByClassName("secondItemList")[0];
-                    var arrowDown = this.getElementsByClassName("toggleMenu")[0];
-					subFooterMenu.classList.toggle("activeHeadMenu");
-					arrowDown.classList.toggle("toggleActive");
-					
-                        });
-                }
-            }
-            
-            showFooterSubMenu();
-        </script>
 <!--
-        <script>
-         function lastMenu(){
-             var subMenuItem = document.getElementsByClassName("subMenuOneItem");
-                for(var j=0; j< subMenuItem.length; j++){
-                    
-                    Event.add(subMenuItem[j],'click',function(){
-                    var lastMenuItem = subMenuItem.getElementsByClassName("subMenuTwo")[0];
-                    lastMenuItem.classList.toggle("showLastItems");
-                        
-                });
-            }
-         }
-            
-            lastMenu();
-        </script>
--->
+
 	</body>
 </html>

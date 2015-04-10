@@ -542,7 +542,7 @@ div[name="blog-chapter"]{
     color: #fff;
     float: left;
     font-size: 40px;
-    margin-left: 7.8125%;
+    padding-left: 7.8125%;
     text-decoration: none;
     width: 70%;
 }
@@ -2462,6 +2462,7 @@ form[name='clientShippingInfo'] a{
     text-indent: 6.666666666667%;
     line-height: 100px;
     font-weight: 600;
+	 margin-bottom: 50px;
 }
 .askQuestionMain span{
     width: 50px;
