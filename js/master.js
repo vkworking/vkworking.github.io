@@ -1,6 +1,9 @@
 window.onload = function () {
 // перемикач для головного меню - тогл класу activeHeadMenu
 	'use strict';
+// видалити після завершення роботи	
+	 alert('Документ завантажився, можна тестувати анімацію');
+	
 	function headMenuShow() {
              
                 var menuButton = document.getElementsByClassName("toggle-menu")[0];
