@@ -565,6 +565,7 @@ div[name="blog-chapter"]{
     font-size: 28px;
     line-height: normal;
     margin-top: 53px;
+    padding-left: 3.125%;
     text-transform: uppercase;
     width: 100%;
 }
@@ -608,10 +609,10 @@ div[name="blog-chapter"]{
 .hiddenOption.visibleOption {
     display: block;
 }
-.hiddenOption .selectOption{
-	box-sizing: border-box;
-	border-top: 1px solid #ddd;
-	box-shadow: 0 1px 0 0 #ddd;
+.hiddenOption .selectOption {
+    border-top: 1px solid #ddd;
+    box-shadow: 0 0 1px 0 #ddd;
+    box-sizing: border-box;
 }
 .regionArrow {
     background-image: url("../img/currency-toggle.svg");
@@ -927,11 +928,7 @@ div[name="footer-info"]{
     transform: rotate(180deg);
     transition: all 0.5s ease 0s;
 }
-.sortOption .toggleMenu{
-    background: url(../img/menu-togge-grey.svg) no-repeat 50% 50%;
-    margin: 27px 10px 0 0;
-    background-size: contain;
-}
+
 /* >second sub menu */
 .subMenuTwo{
   width:100%;
@@ -975,14 +972,13 @@ div[name="footer-info"]{
 }
 
 .productList-general {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.productList-head {
     width: 93.75%;
+    margin: 0 auto;
+	position: relative;
+}
+.productList-head {
+    width: 100%;
     float: left;
-    margin-left: 3.125%;
     margin-bottom: 31px;
 }
 .productList-head p{
@@ -991,119 +987,120 @@ div[name="footer-info"]{
     text-transform: uppercase;
     text-align: center;
 }
-
 .productList-main {
+    float: left;
+    margin-top: 125px;
+    position: relative;
     width: 100%;
 }
-
 .listCataMain-head {
     width: 93.75%;
     float: left;
-    clear: both;
-    margin-bottom: 50px;
     position: relative;
     margin-left: 3.125%;
     z-index: 99;
 }
 
-.headListMain-changer{
+.modeViewChanger{
     width: 45.333333333333%;
     height: 74px;
     float: left;
 }
 
-.headListMain-sort {
+.sortList {
     width: 54.266666666667%;
-    height: 72px;
+    min-height: 72px;
+	height: auto;
     float:right;
-    border: 1px solid #979797;
-    border-right: none;
     transition: .5s;
+	position: relative;
+	z-index: 99;
 }
 .sortOption{
     width: 100%;
     height: 100%;
-    float: right;
+    float: left;
     background: #fff;
-    font-size: 30px;
+    padding-left: 17px;
+    border: 1px solid #a1a1a1;
+    z-index: 99;
+	box-sizing: border-box;
+    overflow: hidden;
+
+}
+.sortOption p{
+	font-size: 30px;
     color: #a1a1a1;
     line-height: 72px;
-    border: 1px solid #a1a1a1;
-    border-top: none;
-    display: none;
-    z-index: 999;
-    text-indent: 17px;
-    /* >overflow options 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-     /overflow options */
-    
+	text-overflow: ellipsis;
+    white-space: nowrap;  
+
 }
 .sortOption:hover{
     background: #f9f9f9;
 }
-.sortOption:first-child{
-    display: block;
-/*    border-bottom: none;*/
+.hiddenOption .sortOption {
+    border-top: medium none;
 }
-.headListMain-sort:hover .sortOption{
-    display: block;
-/*    transition: .5s;*/
-}
-.headListMain-sort:hover .sortOption .toggleMenu{
-    transform: rotate(180deg);
-    transition: all .5s;
-}
-
-.productView-full,
-.productView-small,
-.productView-list{
+.fullModeView,
+.smallModeView,
+.listModeView{
     width: 50px;
     height: 50px;
     float: left;
     margin: 13px 15% 0 0;
     cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: .3s;
 }
-.productView-list{
+.fullModeView{
+	background-image: url(../img/viewer/viewf-no.svg);
+}
+.smallModeView{
+	background-image: url(../img/viewer/views-no.svg);
+}
+.listModeView{
+	background-image: url(../img/viewer/viewl-no.svg);
+}
+.fullModeView.activeMode,
+.fullModeView:active{
+	background-image: url(../img/viewer/viewf.svg);
+	transition: .3s;
+}
+.smallModeView.activeMode,
+.smallModeView:active{
+	background-image: url(../img/viewer/views.svg);
+	transition: .3s;
+}
+.listModeView.activeMode,
+.listModeView:active{
+	background-image: url(../img/viewer/viewl.svg);
+	transition: .3s;
+}
+.listModeView{
     margin: 13px 11.029411764706% 0 0;
 }
-
-.productList-main.fullView{display: none;}
-.productList-main.smallView{display: none;}
-.productList-main.listView{display: block;}
-
-/*full*/
-.fullView .productView-full{
-    background: url(../img/viewer/viewf.svg) no-repeat 50% 50%;
+.toggleMenuTwo{  
+	background: url(../img/menu-togge-grey.svg) no-repeat 50% 50%;
+    background-size: contain;
+	width: 57px;
+	height: 32px;
+	position: absolute;
+	top: 25px;
+    transition: all 0.5s ease 0s;
+	right: 15px;
+	z-index: 199;
 }
-.fullView .productView-small{
-    background: url(../img/viewer/views-no.svg) no-repeat 50% 50%;
+.toggleMenuTwo.toggleActive {
+    transform: rotate(180deg);
+    transition: all 0.5s ease 0s;
 }
-.fullView .productView-list{
-    background: url(../img/viewer/viewl-no.svg) no-repeat 50% 50%;
+.catalogueTools{
+	width: 100%;
+	float: left;
+	position: absolute;
 }
-/*small*/
-.smallView .productView-full{
-    background: url(../img/viewer/viewf-no.svg) no-repeat 50% 50%;
-}
-.smallView .productView-small{
-    background: url(../img/viewer/views.svg) no-repeat 50% 50%;
-}
-.smallView .productView-list{
-    background: url(../img/viewer/viewl-no.svg) no-repeat 50% 50%;
-}
-/*list*/
-.listView .productView-full{
-    background: url(../img/viewer/viewf-no.svg) no-repeat 50% 50%;
-}
-.listView .productView-small{
-    background: url(../img/viewer/views-no.svg) no-repeat 50% 50%;
-}
-.listView .productView-list{
-    background: url(../img/viewer/viewl.svg) no-repeat 50% 50%;
-}
-
 .productFull-container {
     width: 100%;
     float: left;
@@ -1113,8 +1110,8 @@ div[name="footer-info"]{
 }
 
 .productFull-general {
-    width: 93.75%;
-    margin: 0 auto;
+	width: 100%;
+	float: left;
 }
 
 .productFull-pic {
@@ -1125,7 +1122,6 @@ div[name="footer-info"]{
     background-position: 0 0;
     position: relative;
 }
-
 .productLabel-best,
 .productLabel-sale,
 .productLabel-new{
@@ -1432,12 +1428,14 @@ div[name="footer-info"]{
     width: 100%;
 }
 
-.smallView .productCatalogue,
-.listView .productCatalogue{
-    width: 93.75%; /*93.75%;*/
-    margin: 0 auto;
+.productCatalogue{
+    width: 100%; /*93.75%;*/
+    float: left;
+	display: none;
 }
-
+.productCatalogue.activeView{
+    display: block;
+}
 .productSmall-name span{
     width: 100%;
     font-size: 30px;
@@ -1468,17 +1466,14 @@ div[name="footer-info"]{
     white-space: nowrap;
     
 }
-
 .cataLeftSide {
     width: 48.333333333333%;
     float: left;
 }
-
 .cataRightSide {
     width: 48.333333333333%;
     float: right;
 }
-
 .productList-pic {
     width: 200px;
     height: 200px;
@@ -1491,7 +1486,6 @@ div[name="footer-info"]{
     width:100%;
     height: auto;
 }
-
 .productList-price {
     width: 47.244094488189%;
     height: 50px;

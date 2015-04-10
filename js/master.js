@@ -2,7 +2,7 @@ window.onload = function () {
 // перемикач для головного меню - тогл класу activeHeadMenu
 	'use strict';
 // видалити після завершення роботи	
-	 alert('Документ завантажився, можна тестувати анімацію');
+	// alert('Документ завантажився, можна тестувати анімацію');
 	
 	function headMenuShow() {
              
@@ -58,6 +58,19 @@ showFooterSubMenu();
                 };
             }
 showOption();
+	// спосіб сортування - тогл класу visibleOption
+	function sortOption() {
+                var optionSelect = document.getElementsByClassName("sortList")[0];
+                    Event.add(optionSelect,'click',function(){
+                    var showItem = this.getElementsByClassName("hiddenOption")[0];
+                    var arrowDown = this.getElementsByClassName("toggleMenuTwo")[0];
+			showItem .classList.toggle("visibleOption");
+			arrowDown.classList.toggle("toggleActive");
+                    });
+            }
+sortOption();
+    
+    // зміна режиму перегляду - тогл класу activeView
 }
 
         

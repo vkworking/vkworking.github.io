@@ -6,7 +6,11 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no"/>
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="handheld" title="no title" charset="utf-8">
-		<script src="http://code.jquery.com/jquery-2.1.3.min.js"> </script>
+        <link rel="stylesheet" href="css/adaptator.css">
+		<script type="text/javascript" src="https://madeheart.com/lib/js/when/when.js?222229999911199803:00:00."></script>
+        <script type="text/javascript" src="https://madeheart.com/goldcut/js/stacktrace.js?222229999911199803:00:00."></script>
+        <script type="text/javascript" src="https://madeheart.com/goldcut/js/gcdom.js?222229999911199803:00:00."></script>
+        <script src="js/master.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -179,32 +183,37 @@
 			</div>
             </div>
 <!-- --------------------- /stop slider new item ----------------------- -->
+
 <!-- --------------------- > start products catalogue ------------------ -->
 
-            <div class="productList-container">
-                <div class="productList-general">
-                    <div class="productList-head"><p>TEA POTS AND COFFEE POTS</p></div>
-
-                  <!-- ---------------- >full view ----------------- -->
-                   
-                    <div class="productList-main fullView">
-                        <div class="listCataMain-head">
-                            <div class="headListMain-changer">
-                                <div class="productView-full"></div>
-                                <div class="productView-small"></div>
-                                <div class="productView-list"></div>    
-                            </div>
-                            <div class="headListMain-sort">
-                               <ul>
-                                   <li class="sortOption"><span>Sort by relevant</span><div class="toggleMenu"></div></li>
-                                   <li class="sortOption"><span>Sort by popular</span></li>
-                                   <li class="sortOption"><span>Sort by -item-</span></li>
-                               </ul>
-                            </div>
+        <div class="productList-container">
+            <div class="productList-general">
+                <div class="productList-head"><p>TEA POTS AND COFFEE POTS</p></div>
+						<div class="clearfix"></div>
+                 <!-- >menu view mode and sort -->
+                 <div class="catalogueTools">
+                     <div class="modeViewChanger">
+                         <div class="fullModeView"></div>
+                         <div class="smallModeView activeMode"></div>
+                         <div class="listModeView"></div>    
+                     </div>
+                     <div class="sortList">
+                     	<div class="toggleMenuTwo"></div>
+                        <div class="sortOption"><p>Sort by relevant</p></div>
+                        <div class="hiddenOption">
+                        	<div class="sortOption"><p>Sort by popular</p></div>
+                        	<div class="sortOption"><p>Sort by -item-</p></div>
                         </div>
-                        <div class="productCatalogue">      <!-- ------- general part ------- -->
-<!-- ----------------------- >item #1-->
-                            <div class="productFull-container">
+                     </div>
+                 </div>
+                 	<div class="clearfix"></div>
+                 
+                 <!-- /menu view mode and sort -->
+                  
+                      <!-- full view -->
+            <div class="productList-main">
+                <div class="productCatalogue fullView">    
+	<!-- >item #1--><div class="productFull-container">
                             <div class="productFull-general">
                                 <div class="productFull-pic">
                                     <img src="img/productview/full/item1.png" alt="ceramic teapot 1l">
@@ -219,10 +228,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-<!-- ----------------------- /item#1-->       
-<!-- ----------------------- >item #2-->
-                            <div class="productFull-container">
+                        </div><!-- /item#1-->       
+	<!-- >item #2--><div class="productFull-container">
                             <div class="productFull-general">
                                 <div class="productFull-pic">
                                     <img src="img/productview/full/item2.png" alt="ceramic teapot 1l">
@@ -265,10 +272,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-<!-- ----------------------- /item#2-->        
-<!-- ----------------------- >item #3-->
-                            <div class="productFull-container">
+                        </div><!-- /item#2-->        
+	<!-- >item #3--><div class="productFull-container">
                             <div class="productFull-general">
                                 <div class="productFull-pic">
                                     <img src="img/productview/full/item3.png" alt="ceramic teapot 1l">
@@ -285,60 +290,35 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-<!-- ----------------------- /item#3-->                           
-                   
-                    
-                             
-                        </div>
-                    </div>
-
-
-<!-- --------------------------- small view ------------------- -->
-                   
-                    <div class="productList-main smallView">
-                        <div class="listCataMain-head">
-                            <div class="headListMain-changer">
-                                <div class="productView-full"></div>
-                                <div class="productView-small"></div>
-                                <div class="productView-list"></div>    
+                        </div><!-- /item#3-->                  
+                </div>
+					<!-- >small view -->
+                <div class="productCatalogue smallView activeView">                  
+                <div class="cataLeftSide">  <!-- left column -->
+    <!-- >item #1 --><div class="productSmall-container"> 
+                         <div class="productSmall-general">
+                            <div class="productSmall-pic">
+                                <img src="img/productview/small/item6.png" alt="">
+                                <div class="productLabel-best">
+                                    <span class="smallBadgeBest">best</span>
+                                </div>
+                                <div class="productSmall-price">
+                                    <span><span class="currency-char rub">7 </span>3 908</span>
+                                </div>
                             </div>
-                        
-                        <div class="headListMain-sort">
-                               <ul>
-                                   <li class="sortOption"><span>Sort by relevant</span><div class="toggleMenu"></div></li>
-                                   <li class="sortOption"><span>Sort by popular</span></li>
-                                   <li class="sortOption"><span>Sort by -item-</span></li>
-                               </ul>
-                            </div>
-                        </div>
-
-                    <div class="productCatalogue">      <!-- ------------------------- general part ------------------- -->                       
-                <div class="cataLeftSide">   <!-- delete if you will use one columns -->
-                <!-- >item left #1 --><div class="productSmall-container"> <!-- change colunm's width if you will need use one column from 100% to 48.333333333333% -->
-                                     <div class="productSmall-general">
-                                         <div class="productSmall-pic">
-                                             <img src="img/productview/small/item6.png" alt="">
-                                             <div class="productLabel-best"><span class="smallBadgeBest">best</span></div>
-                                             <div class="productSmall-price"><span><span class="currency-char rub">7 </span>3 908</span></div>
-                                         </div>
-                                         <div class="productSmall-footer">
-                                             <div class="productSmall-name"><span>Clay painted bowl, for about go clay fot</span></div>
-                                         </div>
-                                         
-                                         
-                                     </div>
-                <!-- /item left  #1 --></div>
-                <!-- >item left #2 --><div class="productSmall-container">
+                            <div class="productSmall-footer">
+                                <div class="productSmall-name">
+                                    <span>Clay painted bowl, for about go clay fot</span>
+                                </div>
+                            </div>            
+                         </div>
+                    </div><!-- /item #1 -->
+    <!-- >item #2 --><div class="productSmall-container">
                                      <div class="productSmall-general">
                                          <div class="productSmall-pic">
                                              <img src="img/productview/small/item7.png" alt="">
-<!--
-                                             <div class="productLabel-sale">
-                                                <span class="smallBadgeSale">save<br></span>
-                                                <span class="savePercent">15%</span>
-                                             </span></div>
--->                                       <div class="productSmall-price"><span><span class="currency-char rub">7 </span>3 908</span></div>
+
+                                     <div class="productSmall-price"><span><span class="currency-char rub">7 </span>3 908</span></div>
                                          </div>
                                          <div class="productSmall-footer">
                                              <div class="productSmall-name"><span>Clay painted bowl, for about go clay fot</span></div>
@@ -346,8 +326,8 @@
                                          
                                          
                                      </div>
-                <!-- /item left #2 --></div>
-                <!-- >item left #3 --><div class="productSmall-container">
+                    </div><!-- /item #2 -->
+    <!-- >item #3 --><div class="productSmall-container">
                                      <div class="productSmall-general">
                                          <div class="productSmall-pic">
                                              <img src="img/productview/small/item5.png" alt="">
@@ -359,12 +339,12 @@
                                          
                                          
                                      </div>
-                <!-- /item left #3 --></div>
-                <!-- >item left #4 --><div class="productSmall-container">
+                    </div><!-- /item #3 -->
+    <!-- >item #4 --><div class="productSmall-container">
                                      <div class="productSmall-general">
                                          <div class="productSmall-pic">
                                              <img src="img/productview/small/item3.png" alt="">
-<!--                                             <div class="productLabel-new"><span class="smallBadgeNew">new</span></div>-->                                     <div class="productSmall-price"><span><span class="currency-char rub">7 </span>3 908</span></div>
+                                  <div class="productSmall-price"><span><span class="currency-char rub">7 </span>3 908</span></div>
                                          </div>
                                          <div class="productSmall-footer">
                                              <div class="productSmall-name"><span>Clay painted bowl, for about go clay fot</span></div>
@@ -372,8 +352,8 @@
                                          
                                          
                                      </div>
-                <!-- /item left #4 --></div>
-                <!-- >item left #5 --><div class="productSmall-container">
+                        </div><!-- /item #4 -->
+    <!-- >item #5 --><div class="productSmall-container">
                                      <div class="productSmall-general">
                                          <div class="productSmall-pic">
                                              <img src="img/productview/small/item1.png" alt="">
@@ -386,13 +366,10 @@
                                          
                                          
                                      </div>
-                <!-- /item left #5 --></div>                
-                
-        
-                </div> <!-- delete if you need one column -->
-                
-                <div class="cataRightSide">   <!-- delete if you need one column -->
-                <!-- >item  right #1 --><div class="productSmall-container">
+                </div><!-- /item #5 -->             
+                </div> 
+                <div class="cataRightSide listView"> <!-- right column -->
+    <!-- >item #1 --><div class="productSmall-container">
                                      <div class="productSmall-general">
                                          <div class="productSmall-pic">
                                              <img src="img/productview/small/item5.png" alt="">
@@ -409,8 +386,8 @@
                                          
                                          
                                      </div>
-                <!-- /item  right #1 --></div>                                
-                <!-- >item  right #2 --><div class="productSmall-container">
+                </div><!-- /item #1 -->              
+    <!-- >item #2 --><div class="productSmall-container">
                                      <div class="productSmall-general">
                                          <div class="productSmall-pic">
                                              <img src="img/productview/small/item4.png" alt="">
@@ -423,8 +400,8 @@
                                          
                                          
                                      </div>
-                <!-- /item  right #2 --></div>
-                <!-- >item  right #3 --><div class="productSmall-container">
+                            </div><!-- /item #2 -->
+    <!-- >item #3 --><div class="productSmall-container">
                                      <div class="productSmall-general">
                                          <div class="productSmall-pic">
                                              <img src="img/productview/small/item6.png" alt="">
@@ -436,8 +413,8 @@
                                          
                                          
                                      </div>
-                <!-- /item  right #3 --></div>
-                <!-- >item  right #4 --><div class="productSmall-container">
+                </div><!-- /item #3 -->
+    <!-- >item #4 --><div class="productSmall-container">
                                      <div class="productSmall-general">
                                          <div class="productSmall-pic">
                                              <img src="img/productview/small/item2.png" alt="">
@@ -449,32 +426,12 @@
                                          
                                          
                                      </div>
-            <!-- /item  right #4 --></div>
-                            </div>    <!-- delete if you need one column -->                          
-
-                          </div>
-                        </div>
-                    </div>
-                                                                                                                
-<!-- ---------------------------    list view --------------------- -->
-                    <div class="productList-main listView">
-                        <div class="listCataMain-head">
-                            <div class="headListMain-changer">
-                                <div class="productView-full"></div>
-                                <div class="productView-small"></div>
-                                <div class="productView-list"></div>    
-                            </div>
-                            <div class="headListMain-sort">
-                                <ul>
-                                    <li class="sortOption"><span>Sort by relevant</span><div class="toggleMenu"></div></li>
-                                    <li class="sortOption"><span>Sort by popular</span></li>
-                                    <li class="sortOption"><span>Sort by -item-</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="productCatalogue">      <!-- ---------- general part ------- -->     
-                           
-            <!-- >item #1 --> <div class="productList-container">
+            </div><!-- /item #4 -->
+                </div>                          
+                </div>
+                    <!-- list view -->
+                <div class="productCatalogue listView">            
+    <!-- >item #1 --><div class="productList-container">
                                <div class="productList-general">
                                    <div class="productList-pic" style="background-image:url(img/productview/list/item2.png);"></div>
                                    <div class="productList-info">
@@ -493,8 +450,8 @@
                                        </div>
                                    </div>
                                </div>
-            <!-- /item #1 --></div>
-            <!-- >item #2 --> <div class="productList-container">
+            </div><!-- /item #1 -->
+    <!-- >item #2 --><div class="productList-container">
                                <div class="productList-general">
                                    <div class="productList-pic" style="background-image:url(img/productview/list/item1.png);"></div>
                                    <div class="productList-info">
@@ -513,8 +470,8 @@
                                        </div>
                                    </div>
                                </div>
-            <!-- /item #2 --></div>
-            <!-- >item #3 --> <div class="productList-container">
+            </div><!-- /item #2 -->
+    <!-- >item #3 --><div class="productList-container">
                                <div class="productList-general">
                                    <div class="productList-pic" style="background-image:url(img/productview/list/item2.png);"></div>
                                    <div class="productList-info">
@@ -533,8 +490,8 @@
                                        </div>
                                    </div>
                                </div>
-            <!-- /item #3 --></div>
-            <!-- >item #4 --> <div class="productList-container">
+            </div><!-- /item #3 -->
+    <!-- >item #4 --><div class="productList-container">
                                <div class="productList-general">
                                    <div class="productList-pic" style="background-image:url(img/productview/list/item1.png);"></div>
                                    <div class="productList-info">
@@ -553,8 +510,8 @@
                                        </div>
                                    </div>
                                </div>
-            <!-- /item #4 --></div>
-            <!-- >item #5 --> <div class="productList-container">
+            </div><!-- /item #4 -->
+    <!-- >item #5 --><div class="productList-container">
                                <div class="productList-general">
                                    <div class="productList-pic" style="background-image:url(img/productview/list/item2.png);"></div>
                                    <div class="productList-info">
@@ -573,8 +530,8 @@
                                        </div>
                                    </div>
                                </div>
-            <!-- /item #5 --></div>
-            <!-- >item #6 --> <div class="productList-container">
+            </div><!-- /item #5 -->
+    <!-- >item #6 --><div class="productList-container">
                                <div class="productList-general">
                                    <div class="productList-pic" style="background-image:url(img/productview/list/item1.png);"></div>
                                    <div class="productList-info">
@@ -593,8 +550,8 @@
                                        </div>
                                    </div>
                                </div>
-            <!-- /item #6 --></div>
-            <!-- >item #7 --> <div class="productList-container">
+            </div><!-- /item #6 -->
+    <!-- >item #7 --><div class="productList-container">
                                <div class="productList-general">
                                    <div class="productList-pic" style="background-image:url(img/productview/list/item2.png);"></div>
                                    <div class="productList-info">
@@ -613,8 +570,8 @@
                                        </div>
                                    </div>
                                </div>
-            <!-- /item #7 --></div>
-            <!-- >item #8 --> <div class="productList-container">
+            </div><!-- /item #7 -->
+    <!-- >item #8 --><div class="productList-container">
                                <div class="productList-general">
                                    <div class="productList-pic" style="background-image:url(img/productview/list/item1.png);"></div>
                                    <div class="productList-info">
@@ -633,103 +590,153 @@
                                        </div>
                                    </div>
                                </div>
-            <!-- /item #8 --></div>
-                            
-                        </div>
-                    </div>
-                    
+            </div><!-- /item #8 -->
                 </div>
-            </div>            
+            </div>                  
+         </div>
+    </div>        
 <!-- --------------------- /stop products catalogue ------------------ -->
 
-<!-- ----------------- start menu -------------------- -->
-			 <div class="menu-container">
-			     <div class="menu-general">
-			         <ul class="menu-list">
-			             <li class="menu-item">
-                             <div class="menu-item-name">
-                                 <p>MADEheart</p> 
-                                 <div class="toggleMenu"></div>
-                             </div>
-			                 <ul class="sub-menu">
-			                     <li class="sub-item">item 1</li>
-			                     <li class="sub-item">item 2</li>
-			                     <li class="sub-item">item 3</li>
-			                 </ul>
-			             </li>
-			             <li class="menu-item">
-			                  <div class="menu-item-name">
-                                 <p>Policies</p> 
-                                 <div class="toggleMenu"></div>
-                             </div>
-			                 <ul class="sub-menu">
-			                     <li class="sub-item">Discount Offer</li>
-			                     <li class="sub-item">Packing</li>
-			                     <li class="sub-item">Delivery policy</li>
-			                     <li class="sub-item">Return and refund policy</li>
-			                     <li class="sub-item">Cookie policy</li>
-			                 </ul>
-			             </li>
-			             <li class="menu-item">
-			                  <div class="menu-item-name">
-                                 <p>Community</p> 
-                                 <div class="toggleMenu"></div>
-                             </div>
-			                 <ul class="sub-menu">
-			                     <li class="sub-item">item 1</li>
-			                     <li class="sub-item">item 2</li>
-			                     <li class="sub-item">item 3</li>
-			                 </ul>
-			             </li>
-			             <li class="item-currency">
-			                  <div class="menu-item-name">
-                                 <p>regional &amp; currency settings</p>
-                             </div> 
-                             <div class="currency-selectors">
-                                <div class="select-region">
-                                  <div class="currency-toggle"></div>
-                                   <ul>
-                                       <li name="checked">us</li>
-                                       <li>eu</li>
-                                       <li>ua</li>
-                                   </ul>  
-                                 </div>
-                                 <div class="select-currency">
-                                   <div class="currency-toggle"></div>
-                                    <ul>
-                                       <li name="checked">USD</li>
-                                       <li>EUE</li>
-                                       <li>UAH</li>
-                                   </ul>
-                                 </div>
-                             </div>
-			             </li>
-			         </ul>
-			     </div>
-			 </div>
-			<!--  end menu -->
-			<div class="contact-container">
-			<div class="contact">
-			    <div class="telephone">
-			        <div class="phone-icon"><div class="icon"></div></div>
-			        <div class="phone-num">
-			            <p>Support hotline:</p>
-			            <a href="tel:+16463691375">+1 646 369 1375</a>
-			            <span>support@madeheart.com</span>
-			            
-			        </div>
-			    </div>
-			    <div class="adress">
-                    <p>8Queens Avenue,<br>
-                    London, N21 3 JE,<br>
-                    United Kindom</p>
-			    </div>
-			</div>
-				
-		</div>
-</div>
-<!--       ------------------------ >footer container----------------------->
-		<div class="footer">
+<!-- start menu --><div class="menuContainer">
+		     	<div class="menuGeneral">
+		     		<div class="menuItemList">
+	<!-- #1 menuItem --><div class="firstMenuItem">
+							<div class="menuItemName">
+								<div class="toggleMenu"></div>
+		     					 <p>MADEheart</p> 
+		     				</div>
+		     					<div class="clearfix"></div>
+		     				<div class="secondItemList">
+		     					<div class="secondMenuItem">
+		     						<div class="menuItemName">
+		     							<a href="cart2.html">Discount Offer</a>
+		     						</div>
+		     					</div><!-- end #1 secondMenuItem -->
+		     					<div class="secondMenuItem">
+		     						<div class="menuItemName">
+		     							<a href="cart.html">Discount Offer</a>
+		     						</div>
+		     					</div><!-- end #2 secondMenuItem -->
+		     					<div class="secondMenuItem">
+		     						<div class="menuItemName">
+		     							<a href="two.html">Discount Offer</a>
+		     						</div>
+		     					</div><!-- end #3 secondMenuItem -->
+		     				</div> 
+		     			</div><!-- end #1 menuItem -->
+		     				<div class="clearfix"></div>
+	<!-- #2 menuItem --><div class="firstMenuItem">
+							<div class="menuItemName">
+								<div class="toggleMenu"></div>
+		     					 <p>Policies</p> 
+		     				</div>
+		     					<div class="clearfix"></div>
+		     				<div class="secondItemList">
+		     					<div class="secondMenuItem">
+		     						<div class="menuItemName">
+		     							<a href="cart2.html">Discount Offer</a>
+		     						</div>
+		     					</div><!-- end #1 secondMenuItem -->
+		     					<div class="secondMenuItem">
+		     						<div class="menuItemName">
+		     							<a href="cart.html">Packing</a>
+		     						</div>
+		     					</div><!-- end #2 secondMenuItem -->
+		     					<div class="secondMenuItem">
+		     						<div class="menuItemName">
+		     							<a href="two.html">Delivery policy</a>
+		     						</div>
+		     					</div><!-- end #3 secondMenuItem -->
+		     					<div class="secondMenuItem">
+		     						<div class="menuItemName">
+		     							<a href="two.html">Return and refund policy</a>
+		     						</div>
+		     					</div><!-- end #4 secondMenuItem -->
+		     					<div class="secondMenuItem">
+		     						<div class="menuItemName">
+		     							<a href="two.html">Cookie policy</a>
+		     						</div>
+		     					</div><!-- end #5 secondMenuItem -->
+		     				</div> 
+		     			</div><!-- end #2 menuItem -->
+		     				<div class="clearfix"></div>
+	<!-- #3 menuItem --><div class="firstMenuItem">
+							<div class="menuItemName">
+								<div class="toggleMenu"></div>
+		     					 <p>Community</p> 
+		     				</div>
+		     					<div class="clearfix"></div>
+		     				<div class="secondItemList">
+		     					<div class="secondMenuItem">
+		     						<div class="menuItemName">
+		     							<a href="cart2.html">Discount Offer</a>
+		     						</div>
+		     					</div><!-- end #1 secondMenuItem -->
+		     					<div class="secondMenuItem">
+		     						<div class="menuItemName">
+		     							<a href="cart.html">Discount Offer</a>
+		     						</div>
+		     					</div><!-- end #2 secondMenuItem -->
+		     					<div class="secondMenuItem">
+		     						<div class="menuItemName">
+		     							<a href="two.html">Discount Offer</a>
+		     						</div>
+		     					</div><!-- end #3 secondMenuItem -->
+		     				</div> 
+		     			</div><!-- end #3 menuItem -->
+		     				<div class="clearfix"></div>
+		     		</div>
+		     			<div class="clearfix"></div>
+	<!-- #4 menuItem --><div class="regionSpecial">
+							<div class="menuItemName">
+		     					 <p>regional &amp; currency settings</p> 
+		     				</div>
+		     					<div class="clearfix"></div>
+		     				<div class="regionSettings">		     					
+		     					<div class="regionSelector langSelector">
+		     						<div class="regionArrow"></div>
+		     						<div class="selectOption visibleOption"><p>usd</p></div>
+		     						<div class="hiddenOption">
+		     							<div class="selectOption"><p>phs</p></div>
+		     							<div class="selectOption"><p>rub</p></div>
+		     						</div>
+		     					</div>
+
+	     						<div class="regionSelector currSelector">
+		     						<div class="regionArrow"></div>
+		     						<div class="selectOption visibleOption"><p>usd</p></div>
+		     						<div class="hiddenOption">
+		     							<div class="selectOption"><p>phs</p></div>
+		     							<div class="selectOption"><p>rub</p></div>
+		     						</div>
+		     					</div>
+		     				</div>
+		     			</div><!-- end #4 currency and lang -->
+		     		</div>
+		     	</div><!-- end menu -->
+		     </div> <!-- stop main block -->
+		     	<div class="clearfix"></div>
+		     	
+<!-- >contact --><div class="contact-container">
+				<div class="contact">
+				    <div class="telephone">
+				        <div class="phone-icon"><div class="icon"></div></div>
+				        <div class="phone-num">
+				            <p>Support hotline:</p>
+				            <a href="tel:+16463691375">+1 646 369 1375</a>
+				            <span>support@madeheart.com</span>
+				            
+				        </div>
+				    </div>
+				    <div class="adress">
+      			            <p>8Queens Avenue,<br>
+      			            London, N21 3 JE,<br>
+      			            United Kindom</p>
+				    </div>
+				</div>			
+			</div> <!-- stop contact container -->
+					<div class="clearfix"></div>
+<!-- >footer --><div class="footer">
 		    <div class="footer-container">
 		        <div class="container-name" name="footer-info">SUBSCRIBE TO OUR NEWSLETTER</div>
                 <div class="email-inp">
@@ -742,7 +749,9 @@
                     <span>Copyright  &copy; 2014 Madeheart.com LP</span>
                 </div>
 		    </div>
-		    
-		</div>	
+		</div> <!-- stop footer block -->
+					<div class="clearfix"></div> 
+
+        
 	</body>
 </html>
