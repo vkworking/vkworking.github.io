@@ -499,7 +499,6 @@ div[name="blog-chapter"]{
 }
 .menuGeneral{
     width: 100%;
-    background: #fff;
 	margin-top: 35px;
 	margin: 0 auto;
 	
@@ -555,6 +554,7 @@ div[name="blog-chapter"]{
 }
 .secondItemList.activeHeadMenu{
 	display: block;
+	width: 100%;
 }
 
 .menu-list{
