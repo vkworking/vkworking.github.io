@@ -561,10 +561,12 @@ div[name="blog-chapter"]{
 	height: 100%;
 }
 .regionSpecial .menuItemName p {
+    float: left;
     font-size: 28px;
     line-height: normal;
     margin-top: 53px;
     text-transform: uppercase;
+    width: 100%;
 }
 .secondItemList.activeHeadMenu{
 	display: block;
