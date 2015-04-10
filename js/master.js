@@ -71,6 +71,21 @@ showOption();
 sortOption();
     
     // зміна режиму перегляду - тогл класу activeView
+    function viewMode() {
+                var fullMode = document.getElementsByClassName("fullModeView")[0];
+                var smallMode = document.getElementsByClassName("smallModeView")[0];
+                var listMode = document.getElementsByClassName("listModeView")[0];
+                
+                var activeFull = document.getElementsByClassName("fullView")[0];
+                var activeSmall = document.getElementsByClassName("smallView")[0];
+                var activeList = document.getElementsByClassName("listView")[0];
+                    Event.add(fullMode,'click',function(){
+            
+            fullMode.classList.toggle("activeMode");
+            activeMode.classList.toggle("activeView");
+                    });
+            }
+viewMode();
 }
 
         

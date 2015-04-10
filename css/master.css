@@ -1433,7 +1433,13 @@ div[name="footer-info"]{
     float: left;
 	display: none;
 }
-.productCatalogue.activeView{
+.fullView.activeView{
+    display: block;
+}
+.smallView.activeView{
+    display: block;
+}
+.listView.activeView{
     display: block;
 }
 .productSmall-name span{
