@@ -82,7 +82,7 @@ sortOption();
                     Event.add(fullMode,'click',function(){
             
             fullMode.classList.toggle("activeMode");
-            activeMode.classList.toggle("activeView");
+            activeFull.classList.toggle("activeView");
                     });
             }
 viewMode();
