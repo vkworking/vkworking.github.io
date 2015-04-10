@@ -1,6 +1,7 @@
-window.onload = function(){
+window.onload = function () {
 // перемикач для головного меню - тогл класу activeHeadMenu
-function headMenuShow(){
+	'use strict';
+	function headMenuShow() {
              
                 var menuButton = document.getElementsByClassName("toggle-menu")[0];
                 var menuContainer = document.getElementsByClassName("headMenuContainer")[0];
@@ -12,9 +13,9 @@ function headMenuShow(){
             }
    headMenuShow();           
 // перемикач головного меню 2-го рівня - тогл класу showItems
-function showSubMenu(){
+	function showSubMenu() {
                 var mainMenuItem = document.getElementsByClassName("headMenuItem");
-                for(var i=0;i < mainMenuItem.length; i++){       
+                for (var i = 0;i < mainMenuItem.length; i++){       
                     Event.add(mainMenuItem[i],'click',function(){
                     var secondMenuItem = this.getElementsByClassName("subMenuOne")[0];
                     var arrowDown = this.getElementsByClassName("toggleMenu")[0];
@@ -25,10 +26,10 @@ function showSubMenu(){
           	} 
 showSubMenu();
 // перемикач нижнього меню - тогл класу activeHeadMenu
-function showFooterSubMenu(){
+	function showFooterSubMenu() {
                 var footerMenuItem = document.getElementsByClassName("firstMenuItem");
                 
-                for(var i=0;i < footerMenuItem.length; i++){
+                for (var i = 0;i < footerMenuItem.length; i++){
                     
                     Event.add(footerMenuItem[i],'click',function(){
                     var subFooterMenu = this.getElementsByClassName("secondItemList")[0];
@@ -39,7 +40,23 @@ function showFooterSubMenu(){
                 };
             }
 showFooterSubMenu();
+	
+// валюта і мова - тогл класу visibleOption
+	function showOption() {
+                var optionSelect = document.getElementsByClassName("regionSelector");
+                for(var i = 0;i < optionSelect.length; i++){
+                    
+                    Event.add(optionSelect[i],'click',function(){
+                    var showItem = this.getElementsByClassName("hiddenOption")[0];
+                    var arrowDown = this.getElementsByClassName("regionArrow")[0];
+			showItem .classList.toggle("visibleOption");
+			arrowDown.classList.toggle("toggleActive");
+                    });
+                };
+            }
+showOption();
 }
+
         
 
 
