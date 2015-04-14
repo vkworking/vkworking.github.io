@@ -865,8 +865,10 @@ div[name="footer-info"]{
     float:left;
     display: none;
 }
-.headMenuContainer.activeHeadMenu{
-    display: block;  /* trigger to headMenu*/
+.headMenuContainer.activeHeadMenu {
+    display: block;
+    position: relative;
+    z-index: 199;
 }
 .headMenuGeneral{
   width:100%;
@@ -1269,6 +1271,10 @@ div[name="footer-info"]{
     top: 248px;
     width: 87.5%;
     z-index: 999;
+    display: none;
+}
+.shoppingBag-container.activeNotify{
+    display: block;
 }
 
 .shoppingBag-general {
@@ -2728,4 +2734,10 @@ form[name='clientShippingInfo'] a{
 .contactInfo {
     float: left;
     width: 53%;
+}
+
+.shoppingInfinity {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
 }

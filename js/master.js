@@ -109,6 +109,23 @@ sortOption();
                     });
             }
 viewMode();
+    
+    // випадаюче вікно після додавання товару до корзини
+    function addToCart(){
+        var addButton = document.getElementsByClassName("addToCart");
+        var cartNotificator = document.getElementsByClassName("shoppingBag-container")[0];
+        var closeWindow = document.getElementsByClassName("shoppingBag-close")[0];
+        for(var i = 0; i < addButton.length; i++){        
+            Event.add(addButton[i], 'click', function(){
+            cartNotificator.classList.add("activeNotify");
+            });
+        }
+        Event.add(closeWindow, 'click', function(){
+           cartNotificator.classList.remove("activeNotify"); 
+        });
+    }
+    
+    addToCart();
 }
 
         
