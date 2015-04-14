@@ -2,19 +2,19 @@ window.onload = function () {
 // перемикач для головного меню - тогл класу activeHeadMenu
 	'use strict';
 // видалити після завершення роботи	
-	// alert('Документ завантажився, можна тестувати анімацію');
+
 	
 	function headMenuShow() {
              
                 var menuButton = document.getElementsByClassName("toggle-menu")[0];
                 var menuContainer = document.getElementsByClassName("headMenuContainer")[0];
                 var searchInput = document.getElementsByClassName("search")[0];
-                Event.add(menuButton,'click',function(){
+                Event.add(menuButton, 'click' ,function (){
                     menuContainer.classList.toggle("activeHeadMenu");
                     searchInput.classList.toggle("hideMenu");
                 });
             }
-   headMenuShow();           
+          
 // перемикач головного меню 2-го рівня - тогл класу showItems
 	function showSubMenu() {
                 var mainMenuItem = document.getElementsByClassName("headMenuItem");
@@ -27,7 +27,7 @@ window.onload = function () {
                 	});
             	};
           	} 
-showSubMenu();
+
 // перемикач нижнього меню - тогл класу activeHeadMenu
 	function showFooterSubMenu() {
                 var footerMenuItem = document.getElementsByClassName("firstMenuItem");
@@ -42,7 +42,7 @@ showSubMenu();
                     });
                 };
             }
-showFooterSubMenu();
+
 	
 // валюта і мова - тогл класу visibleOption
 	function showOption() {
@@ -57,18 +57,19 @@ showFooterSubMenu();
                     });
                 };
             }
-showOption();
+
 	// спосіб сортування - тогл класу visibleOption
 	function sortOption() {
-                var optionSelect = document.getElementsByClassName("sortList")[0];
-                    Event.add(optionSelect,'click',function(){
+                var optionSelect = document.getElementsByClassName("sortList");
+                    for(var i = 0; i<optionSelect.length; i++){
+                        Event.add(optionSelect[i],'click',function(){
                     var showItem = this.getElementsByClassName("hiddenOption")[0];
                     var arrowDown = this.getElementsByClassName("toggleMenuTwo")[0];
 			showItem .classList.toggle("visibleOption");
 			arrowDown.classList.toggle("toggleActive");
                     });
-            }
-sortOption();
+            };
+    }
     
     // зміна режиму перегляду - тогл класу activeView
     function viewMode() {
@@ -108,10 +109,10 @@ sortOption();
                     activeFull.classList.remove("activeView");
                     });
             }
-viewMode();
+
     
-    // випадаюче вікно після додавання товару до корзини
-    function addToCart(){
+   // випадаюче вікно після додавання товару до корзини
+   function addToCart(){
         var addButton = document.getElementsByClassName("addToCart");
         var cartNotificator = document.getElementsByClassName("shoppingBag-container")[0];
         var closeWindow = document.getElementsByClassName("shoppingBag-close")[0];
@@ -119,15 +120,37 @@ viewMode();
             Event.add(addButton[i], 'click', function(){
             cartNotificator.classList.add("activeNotify");
             });
-        }
         Event.add(closeWindow, 'click', function(){
            cartNotificator.classList.remove("activeNotify"); 
         });
+        }
+        
     }
     
+
+  // випадання форми зворотнього зв'язку    
+   function helpRequest(){
+        var helpButton = document.getElementsByClassName("askQuestionMain")[0];
+        var helpField = document.getElementsByClassName("askQuestionRequest")[0];
+        var downArrow = document.getElementsByClassName("downArrow")[0];
+            Event.add(helpButton, 'click', function(){
+            helpField.classList.toggle("activeBlock"); 
+            downArrow.classList.toggle("toggleActive");
+        });
+
+    }
+    
+
+    headMenuShow();  
+    showSubMenu();
+    showFooterSubMenu();
+    showOption();
+    sortOption();
     addToCart();
+    viewMode();
+ // helpRequest();
+
 }
 
-        
 
 

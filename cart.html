@@ -157,7 +157,7 @@
             <dic class="clearfix"></dic>
             <div class="askQuestionns">
                 <div class="askQuestionMain">
-                   <span></span>
+                   <span class="downArrow"></span>
                     <p>NEED HELP?   ASK QUESTIONNS</p>
                     
                 </div>
@@ -175,6 +175,18 @@
                     </div>
                 </div>
             </div>
+            <script>
+               function helpRequest(){
+        var helpButton = document.getElementsByClassName("askQuestionMain")[0];
+        var helpField = document.getElementsByClassName("askQuestionRequest")[0];
+        var downArrow = document.getElementsByClassName("downArrow")[0];
+            Event.add(helpButton, 'click', function(){
+            helpField.classList.toggle("activeBlock"); 
+            downArrow.classList.toggle("toggleActive");
+        });
+               }
+                   helpRequest();
+            </script>
         </div>
     </div>
 

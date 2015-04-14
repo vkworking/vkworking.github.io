@@ -627,7 +627,8 @@ div[name="blog-chapter"]{
 	cursor: pointer;
 	transition: .5s;
 }
-.regionArrow.toggleActive {
+.regionArrow.toggleActive,
+.downArrow.toggleActive{
     transform: rotate(180deg);
     transition: all 0.5s ease 0s;
 }
@@ -2557,8 +2558,9 @@ form[name='clientShippingInfo'] a{
     text-indent: 6.666666666667%;
     line-height: 100px;
     font-weight: 600;
+    cursor: pointer;
 }
-.askQuestionMain span{
+.askQuestionMain .downArrow{
     width: 50px;
     height: 30px;
     float: right;
@@ -2567,6 +2569,7 @@ form[name='clientShippingInfo'] a{
     background-position: center center;
     margin-top: 35px;
     margin-right: 4.166666666667%;
+    transition: .5s;
 }
 .askQuestionMain .noActiveArrow{
     background-image: url(../img/menu-togge.svg);
@@ -2576,6 +2579,10 @@ form[name='clientShippingInfo'] a{
     width: 100%;
     float: left;
     background: rgba(129,150,175,0.70);
+    display: none;
+}
+.askQuestionRequest.activeBlock{
+    display: block;
 }
 .askQuestionRequest input[type="text"], .askQuestionRequest textarea {
     border: 0 none;
