@@ -961,16 +961,26 @@ div[name="footer-info"]{
 }
 
 /* -------------------- >product list -------------------- */
+.productList-block{
+    width: 100%;
+    float: left;
+}
 .productList-container {
     width: 100%;
     max-width: 800px;
     float: left;
     margin-bottom: 40px;
 }
+
 .productList-container:last-child{
     margin-bottom: 150px;
 }
 
+.productList-settings{
+    width: 93.75%;
+    position: relative;
+    margin: 0 auto;
+}
 .productList-general {
     width: 100%;
 	position: relative;
@@ -1545,15 +1555,19 @@ div[name="footer-info"]{
 }
 .squareBadge.SQbest{
     color: #00CCCC;
-    box-shadow: inset 0 0 0 1px #00CCCC;
+    border: 1px solid #00CCCC;
+    box-sizing: border-box;
+    
 }
 .squareBadge.SQnew{
     color: #8196af;
-    box-shadow: 0 0 0 1px #8196af;
+    border: 1px solid #8196af;
+    box-sizing: border-box;
 }
 .squareBadge.SQsale{
     color: #FC3768;
-    box-shadow: inset 0 0 0 1px #FC3768;
+    border: 1px solid #fc3768;
+    box-sizing: border-box;
 }
 
 .itemShipping-head,
