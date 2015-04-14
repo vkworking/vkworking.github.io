@@ -123,6 +123,7 @@ input[name='top-search']{
 	width:100%;
 	height:94px;
     padding-left: 3.333333333333%;
+    padding-right: 100px;
 	border: 2px solid #8196AF;
 	font-size: 36px;
     font-weight: lighter;
@@ -2543,6 +2544,7 @@ form[name='clientShippingInfo'] a{
 .askQuestionns {
     width: 100%;
     float: left;
+    margin-bottom: 50px;
 }
 
 .askQuestionMain {
@@ -2555,7 +2557,6 @@ form[name='clientShippingInfo'] a{
     text-indent: 6.666666666667%;
     line-height: 100px;
     font-weight: 600;
-	 margin-bottom: 50px;
 }
 .askQuestionMain span{
     width: 50px;
