@@ -79,10 +79,33 @@ sortOption();
                 var activeFull = document.getElementsByClassName("fullView")[0];
                 var activeSmall = document.getElementsByClassName("smallView")[0];
                 var activeList = document.getElementsByClassName("listView")[0];
-                    Event.add(fullMode,'click',function(){
-            
-            fullMode.classList.toggle("activeMode");
-            activeFull.classList.toggle("activeView");
+ // full view
+                Event.add(fullMode,'click',function(){
+            listMode.classList.remove("activeMode");
+            smallMode.classList.remove("activeMode");
+            fullMode.classList.add("activeMode");
+                activeList.classList.remove("activeView");
+                activeSmall.classList.remove("activeView");
+                activeFull.classList.add("activeView");
+                    });
+// small view
+                Event.add(smallMode,'click',function(){
+            listMode.classList.remove("activeMode");
+            smallMode.classList.add("activeMode");
+            fullMode.classList.remove("activeMode");
+                    activeList.classList.remove("activeView");
+                    activeSmall.classList.add("activeView");
+                    activeFull.classList.remove("activeView");
+                    });
+        
+// list view
+               Event.add(listMode,'click',function(){
+            listMode.classList.add("activeMode");
+            smallMode.classList.remove("activeMode");
+            fullMode.classList.remove("activeMode");
+                    activeList.classList.add("activeView");
+                    activeSmall.classList.remove("activeView");
+                    activeFull.classList.remove("activeView");
                     });
             }
 viewMode();
