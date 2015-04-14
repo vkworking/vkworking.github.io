@@ -972,8 +972,7 @@ div[name="footer-info"]{
 }
 
 .productList-general {
-    width: 93.75%;
-    margin: 0 auto;
+    width: 100%;
 	position: relative;
 }
 .productList-head {
@@ -1524,11 +1523,12 @@ div[name="footer-info"]{
     width: 100%;
     height: 50px;
     float: right;
-    box-shadow: inset 0 0 0 1px #cdcdcd;
     font-size: 30px;
     line-height: 50px;
     text-align: center;
     color: #000;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
 }
 .itemDelivery-value{
     float: left;
