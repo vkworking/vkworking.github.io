@@ -1260,20 +1260,21 @@ div[name="footer-info"]{
 }
 
 .shoppingBag-container {
-    width: 93.233333333333%;
-    position: absolute;
-    left: 3.333333333334%;
-    top: 200px;
-    z-index: 109;
-    background: #fff;
+    background: none repeat scroll 0 0 #fff;
     border: 1px solid #979797;
-    
+    margin-left: 6.125%;
+    max-width: 700px;
+    min-width: 525px;
+    position: fixed;
+    top: 248px;
+    width: 87.5%;
+    z-index: 999;
 }
 
 .shoppingBag-general {
     width: 88.571428571429%;
-    float: left;
-    margin-left: 5.714285714286%;
+    margin: 0 auto;
+    display: block;
 }
 
 .shoppingBag-head {
