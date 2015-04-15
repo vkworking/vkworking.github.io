@@ -4,12 +4,15 @@
 		<title>Item cart - madeheart.com</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+		<link rel="stylesheet" href="swiper/idangerous.swiper.css">
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="handheld" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="css/adaptator.css">
+		<script src="swiper/idangerous.swiper.js"></script>
 		<script type="text/javascript" src="https://madeheart.com/lib/js/when/when.js?222229999911199803:00:00."></script>
         <script type="text/javascript" src="https://madeheart.com/goldcut/js/stacktrace.js?222229999911199803:00:00."></script>
         <script type="text/javascript" src="https://madeheart.com/goldcut/js/gcdom.js?222229999911199803:00:00."></script>
+        
         <script src="js/master.js"></script>
 	</head>
 	<body>
@@ -99,6 +102,30 @@
                 </div>
                 <div class="slideItemBadge"></div>
             </div>
+              <div class="clearfix"></div>
+               <div class="swiper-container">
+                   <div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                           <img src="img/slide1.png" alt="">
+                       </div>
+                       <div class="swiper-slide">
+                               <img src="img/slide2.png" alt="">
+                       </div>
+                       <div class="swiper-slide">
+                               <img src="img/slide3.png" alt="">
+                       </div>
+                   </div>
+    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+               </div>
+               <script>        
+                var mySwiper = new Swiper ('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    paginationClickable: true,
+                    spaceBetween: 100,
+                })    
+  </script>
                 <div class="clearfix"></div>
             <div class="itemPayInfo">
                 <span>handmade easter egg</span>

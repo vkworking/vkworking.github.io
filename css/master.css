@@ -2766,3 +2766,14 @@ form[name='clientShippingInfo'] a{
     width: 100%;
     float: left;
 }
+
+
+
+
+.swiper-pagination {
+    width: 10px;
+    height: 10px;
+    color: red;
+    border-radius: 50px;
+    position: relative;
+}
