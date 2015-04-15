@@ -940,7 +940,7 @@ div[name="footer-info"]{
   float:left;
   display: none;   /* trigger two subMenu*/
 }
-.subMenuTwo.showLastItem {
+.subMenuTwo.showItems {
     display: block;
 }
 
@@ -2278,8 +2278,20 @@ form[name='clientShippingInfo'] a{
     float: left;
     position: relative;
 }
-.itemSlideContainer img{
+.slidesImg{
     width: 100%;
+    float: left;
+}
+.slidesImg img{
+    width: 100%;
+    display: none;
+}
+.slidesImg .activeSlide{
+    display: block;
+}
+.navDots .activeSlide{
+    background-color: #fff;
+    border-width: 2px;
 }
 .customURL.itemFullCart {
     margin-bottom: 20px;
@@ -2288,7 +2300,7 @@ form[name='clientShippingInfo'] a{
     width: 100%;
     height: 75px;
     position: absolute;
-    bottom: 3px;
+    bottom: 0;
     background: rgba(0,0,0,0.30);
 }
 .slideArrow{
@@ -2748,4 +2760,9 @@ form[name='clientShippingInfo'] a{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .2);
+}
+
+.itemExpressBuy {
+    width: 100%;
+    float: left;
 }

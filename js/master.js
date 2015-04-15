@@ -11,29 +11,44 @@ window.onload = function () {
                 var searchInput = document.getElementsByClassName("search")[0];
                 Event.add(menuButton, 'click' ,function (){
                     menuContainer.classList.toggle("activeHeadMenu");
-                    searchInput.classList.toggle("hideMenu");
+                //    searchInput.classList.toggle("hideMenu");
                 });
             }
           
 // перемикач головного меню 2-го рівня - тогл класу showItems
 	function showSubMenu() {
-                var mainMenuItem = document.getElementsByClassName("headMenuItem");
-                for (var i = 0;i < mainMenuItem.length; i++){       
-                    Event.add(mainMenuItem[i],'click',function(){
-                    var secondMenuItem = this.getElementsByClassName("subMenuOne")[0];
+ 
+                var toggleElement = document.getElementsByClassName("toggleLink");
+                    for(var i=0; i<toggleElement.length; i++){
+                    Event.add(toggleElement[i],'click',function(){
+                    var secondMenuItem = document.getElementsByClassName("subMenuOne")[0];
                     var arrowDown = this.getElementsByClassName("toggleMenu")[0];
 					secondMenuItem.classList.toggle("showItems");
 					arrowDown.classList.toggle("toggleActive");         
                 	});
             	};
           	} 
+// перемикач головного меню 3-го рівня - тогл класу showItems
+	function showLastMenu() {
+                var thirdLevelMenu = document.getElementsByClassName("subMenuOneItem");
+                for(var i=0; i<thirdLevelMenu.length; i++){
+                    var toggleElement = thirdLevelMenu[i].getElementsByTagName("a")[0];
+                       Event.add(toggleElement,'click',function(){
+                            var lastMenu = this.parentNode.getElementsByClassName("subMenuTwo")[0];
+//                      var arrowDown = this.parentNode.getElementsByClassName("toggleMenu")[0];
+//                           console.log(arrowDown);
 
+			    	lastMenu.classList.toggle("showItems");
+
+                           
+                  	});
+                               
+         	};
+            }   
 // перемикач нижнього меню - тогл класу activeHeadMenu
 	function showFooterSubMenu() {
                 var footerMenuItem = document.getElementsByClassName("firstMenuItem");
-                
                 for (var i = 0;i < footerMenuItem.length; i++){
-                    
                     Event.add(footerMenuItem[i],'click',function(){
                     var subFooterMenu = this.getElementsByClassName("secondItemList")[0];
                     var arrowDown = this.getElementsByClassName("toggleMenu")[0];
@@ -140,7 +155,7 @@ window.onload = function () {
 
     }
     
-
+    showLastMenu();
     headMenuShow();  
     showSubMenu();
     showFooterSubMenu();
@@ -149,8 +164,10 @@ window.onload = function () {
     addToCart();
     viewMode();
  // helpRequest();
+    
 
 }
+
 
 
 
