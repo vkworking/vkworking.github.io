@@ -2302,6 +2302,7 @@ form[name='clientShippingInfo'] a{
     position: absolute;
     bottom: 0;
     background: rgba(0,0,0,0.30);
+    z-index: 999;
 }
 .slideArrow{
     width: 27px;
