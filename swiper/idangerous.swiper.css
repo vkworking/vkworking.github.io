@@ -118,11 +118,7 @@ sizes, pagination, etc.
 /* ===============================================================
 Pagination Styles
 ================================================================*/
-/*.swiper-pagination{
-    position: absolute;
-    bottom: 0;
-    left: 100px;
-}*/
+
 .swiper-pagination-switch {
 	/* Stylize pagination button: */	
     background-color: #d8d8d8;
@@ -131,9 +127,9 @@ Pagination Styles
     box-sizing: border-box;
     height: 19px;
     margin-right: 21px;
-    margin-top: 26px;
+    margin-top: 30px;
     width: 19px;
-    float: left;
+    display: inline-block;
 }
 .swiper-active-switch {
 	/* Specific active button style: */	
@@ -143,29 +139,32 @@ Pagination Styles
 .swiper-visible-switch {
 	/* Specific visible button style: */	
 }
-.swiper-slide > img {
-    width: 100%;
-}
 .swiper-button-prev {
-    width: 27px;
-    height: 40px;
+    background-image: url("../img/leftarrow.svg");
+    background-position: 50% center;
     background-repeat: no-repeat;
-    background-position: center center;
-    cursor: pointer; 
-    background-image: url(../img/leftarrow.svg);
+    cursor: pointer;
     float: left;
-    margin-top: 17px;
-    margin-left: 50px;
+    height: 100%;
+    width: 16.6667%;
 }
 
 .swiper-button-next {
-    width: 27px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    cursor: pointer;
     background-image: url(../img/rightarrow.svg);
+    background-position: 25% center;
+    background-repeat: no-repeat;
+    cursor: pointer;
     float: right;
-    margin-right: 50px;
-    margin-top: 17px;
+    width: 16.6667%;
+    height: 100%;
+}
+
+.navigationDots {
+    width: 66%;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.swiper-pagination{
+    text-align: center;
 }
