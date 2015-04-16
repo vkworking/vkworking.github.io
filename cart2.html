@@ -4,12 +4,15 @@
 		<title>Item cart - madeheart.com</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+		<link rel="stylesheet" href="css/swiper.css">
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="handheld" title="no title" charset="utf-8">
-        <link rel="stylesheet" href="css/adaptator.css">
- 		<script type="text/javascript" src="https://madeheart.com/lib/js/when/when.js?222229999911199803:00:00."></script>
+		<link rel="stylesheet" href="css/adaptator.css">
+		
+		<script type="text/javascript" src="https://madeheart.com/lib/js/when/when.js?222229999911199803:00:00."></script>
         <script type="text/javascript" src="https://madeheart.com/goldcut/js/stacktrace.js?222229999911199803:00:00."></script>
         <script type="text/javascript" src="https://madeheart.com/goldcut/js/gcdom.js?222229999911199803:00:00."></script>
+        <script src="js/swiper.min.js"></script>
         <script src="js/master.js"></script>
 	</head>
 	<body>
@@ -78,22 +81,37 @@
     </div>
     <div class="itemCartContainer">
         <div class="itemCartGeneral">
-            <div class="itemSlideContainer">
-                <img src="img/slide1.png" alt="">
-                <div class="slideNavigation">
-                    <div class="slideArrow arrowRight"></div>
-                    <div class="slideArrow arrowLeft"></div>
-                    <div class="navDots">
-                       <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="slideItemBadge"></div>
-            </div>
+              <div class="clearfix"></div>
+               <div class="swiper-container">
+                   <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(img/slide1.png)"></div>
+                        <div class="swiper-slide" style="background-image:url(img/slide2.png)"></div>
+                        <div class="swiper-slide" style="background-image:url(img/slide3.png)"></div>
+                        <div class="swiper-slide" style="background-image:url(img/slide4.png)"></div>
+                   </div>
+                   <div class="slideNavigation">
+                        <div class="buttonNext"></div>
+                        <div class="buttonPrev"></div>
+                        <div class="navigationDots">
+                            <div class="swiper-pagination"></div>
+                        </div>  
+                   </div>
+               </div>
+               <script>        
+                var cartSlider = new Swiper ('.swiper-container', {
+                    direction: 'horizontal',
+                    loop: true,
+                    slidesPerView: 1,
+                    spaceBetween: 2,
+                    pagination: '.swiper-pagination',
+                    paginationClickable: true,
+                    prevButton: '.buttonPrev',
+                    nextButton: '.buttonNext',
+                    effect:'slide',
+                });   
+                   
+            </script>
+                <div class="clearfix"></div>
             <div class="itemPayInfo">
                 <span>handmade easter egg</span>
                     <div class="clearfix"></div>
