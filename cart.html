@@ -82,7 +82,7 @@
     </div>
     <div class="itemCartContainer">
         <div class="itemCartGeneral">
-            <div class="itemSlideContainer">
+           <!-- <div class="itemSlideContainer">
                 <div class="slidesImg">
                     <img src="img/slide1.png" alt="">
                     <img class="activeSlide" src="img/slide2.png" alt="">
@@ -101,29 +101,30 @@
                     </div>
                 </div>
                 <div class="slideItemBadge"></div>
-            </div>
+            </div> -->
               <div class="clearfix"></div>
                <div class="swiper-container">
                    <div class="swiper-wrapper">
-                       <div class="swiper-slide">
-                           <img src="img/slide1.png" alt="">
-                       </div>
-                       <div class="swiper-slide">
-                               <img src="img/slide2.png" alt="">
-                       </div>
-                       <div class="swiper-slide">
-                               <img src="img/slide3.png" alt="">
-                       </div>
+                       <div class="swiper-slide" style="background-image:url(img/slide1.png)"></div>
+                       <div class="swiper-slide" style="background-image:url(img/slide2.png)"></div>
+                       <div class="swiper-slide" style="background-image:url(img/slide3.png)"></div>
+                        <div class="swiper-slide" style="background-image:url(img/slide4.png)"></div>
                    </div>
-    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
+                   <div class="slideNavigation">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                   </div>
                </div>
                <script>        
                 var mySwiper = new Swiper ('.swiper-container', {
+                    loop: true,
+                    slidesPerView: 1,
+                    spaceBetween: 30,
                     pagination: '.swiper-pagination',
                     paginationClickable: true,
-                    spaceBetween: 100,
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
                 })    
   </script>
                 <div class="clearfix"></div>
