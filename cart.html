@@ -8,11 +8,11 @@
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="handheld" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="css/adaptator.css">
-		<script src="swiper/idangerous.swiper.js"></script>
+		
 		<script type="text/javascript" src="https://madeheart.com/lib/js/when/when.js?222229999911199803:00:00."></script>
         <script type="text/javascript" src="https://madeheart.com/goldcut/js/stacktrace.js?222229999911199803:00:00."></script>
         <script type="text/javascript" src="https://madeheart.com/goldcut/js/gcdom.js?222229999911199803:00:00."></script>
-        
+        <script src="swiper/idangerous.swiper.js"></script>
         <script src="js/master.js"></script>
 	</head>
 	<body>
@@ -111,12 +111,11 @@
                         <div class="swiper-slide" style="background-image:url(img/slide4.png)"></div>
                    </div>
                    <div class="slideNavigation">
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="buttonNext"></div>
+                        <div class="buttonPrev"></div>
                         <div class="navigationDots">
                             <div class="swiper-pagination"></div>
-                        </div>
-                        
+                        </div>  
                    </div>
                </div>
                <script>        
@@ -126,10 +125,12 @@
                     spaceBetween: 30,
                     pagination: '.swiper-pagination',
                     paginationClickable: true,
-                    nextButton: '.swiper-button-next',
-                    prevButton: '.swiper-button-prev',
-                })    
-  </script>
+                    //prevButton: '.buttonPrev',
+                    nextButton: '.buttonNext',
+                    effect:'slide'
+                });   
+                   
+                </script>
                 <div class="clearfix"></div>
             <div class="itemPayInfo">
                 <span>handmade easter egg</span>
