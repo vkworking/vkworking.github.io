@@ -72,17 +72,24 @@
                 </div>
             </div>
         </div>
-    </div>            
-<!-- ----------------------- /general top menu ----------------------- -->	
+        </div>            
+<!-- /general top menu -->	
 <div class="main">
+    
+        <!-- >top custom url -->
     <div class="customURL itemFullCart">
         <a href="cut.html">home</a>
         <a href="">kitchen</a>
         <a href="">tea pots and coffee pots</a>
     </div>
+    <div class="clearfix"></div>
+        <!-- /top custom url -->
+        
+        <!-- >main info block -->
     <div class="itemCartContainer">
         <div class="itemCartGeneral">
               <div class="clearfix"></div>
+                <!-- >swiper block -->
                <div class="swiper-container">
                    <div class="swiper-wrapper">
                         <div class="swiper-slide" style="background-image:url(img/slide1.png)"></div>
@@ -98,21 +105,10 @@
                         </div>  
                    </div>
                </div>
-               <script>        
-                var cartSlider = new Swiper ('.swiper-container', {
-                    direction: 'horizontal',
-                    loop: true,
-                    slidesPerView: 1,
-                    spaceBetween: 2,
-                    pagination: '.swiper-pagination',
-                    paginationClickable: true,
-                    prevButton: '.buttonPrev',
-                    nextButton: '.buttonNext',
-                    effect:'slide',
-                });   
-                   
-            </script>
-                <div class="clearfix"></div>
+                    <div class="clearfix"></div>
+                <!-- /swiper block -->
+                
+                <!-- >pay block -->
             <div class="itemPayInfo">
                 <span>handmade easter egg</span>
                     <div class="clearfix"></div>
@@ -124,11 +120,15 @@
                 <p>Estimated delivery to Germany <time datetime="2015-04-02">02.04.2015</time></p>
             </div>
                 <div class="clearfix"></div>
+                
             <div class="itemExpressBuy">
                 <button class="btnAddToCart"><span></span>add to cart</button>
                 <button class="btnExpressCheckout"><span></span>Express checkout</button>
             </div>
                 <div class="clearfix"></div>
+                <!-- /pay block -->
+                
+                <!-- >item info block -->
             <div class="itemDetail">
                 <span>DETAILS</span>
                 <p>This handmade Easter egg is an excellent present, which contains the message. Every pattern on the egg has its meaning: the bird symbolizes happiness in love, and deer symbolizes wishing health and longevity.</p>
@@ -150,6 +150,9 @@
                 </table>
             </div>
                 <div class="clearfix"></div>
+                <!-- /item info block -->
+                
+                <!-- >delivery & return -->
             <div class="infoAboutDelivery">
                 <div class="deliveryTime">
                     <div class="logo"></div>
@@ -161,6 +164,7 @@
                 </div>
             </div>
                 <div class="clearfix"></div>
+                
             <div class="itemShippingReturn">
                 <span>SHIPPING &amp; RETURN</span>
                 <p>This handmade Easter egg is an excellent present, which contains the message. Every pattern on the egg has its meaning: the bird symbolizes happiness in love, and deer symbolizes wishing health and longevity.</p>
@@ -169,16 +173,22 @@
                 <p>This handmade Easter egg is an excellent present, which contains the message. Every pattern on the egg has its meaning: the bird symbolizes happiness in love, and deer symbolizes wishing health and longevity.</p>
             </div>
                 <div class="clearfix"></div>
+                <!-- /delivery & return -->
+                
+                <!-- >social block -->
             <div class="socialShareButton">
                 <span>SHARE THIS PRODUCT</span>
                 <div class="clearfix"></div>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+                <a href="" target="_blank" name="facebook"></a>
+                <a href="" target="_blank" name="twitter"></a>
+                <a href="" target="_blank" name="pinterest"></a>
+                <a href="" target="_blank" name="google+"></a>
+                <a href="" target="_blank" name="mail"></a>
             </div>
-            <dic class="clearfix"></dic>
+               <div class="clearfix"></div>
+                <!-- /social block -->
+            
+                <!-- >reguest field block-->
             <div class="askQuestionns">
                 <div class="askQuestionMain">
                    <span class="downArrow"></span>
@@ -199,22 +209,16 @@
                     </div>
                 </div>
             </div>
-            <script>
-               function helpRequest(){
-        var helpButton = document.getElementsByClassName("askQuestionMain")[0];
-        var helpField = document.getElementsByClassName("askQuestionRequest")[0];
-        var downArrow = document.getElementsByClassName("downArrow")[0];
-            Event.add(helpButton, 'click', function(){
-            helpField.classList.toggle("activeBlock"); 
-            downArrow.classList.toggle("toggleActive");
-        });
-               }
-                   helpRequest();
-            </script>
+                <div class="clearfix"></div>
+                <!-- /reguest field block-->
+            
         </div>
     </div>
-
-<!-- start menu --><div class="menuContainer">
+        <div class="clearfix"></div>
+         <!-- /main info block-->
+            
+                <!-- >footer widget - menu-->
+             <div class="menuContainer">
 		     	<div class="menuGeneral">
 		     		<div class="menuItemList">
 	<!-- #1 menuItem --><div class="firstMenuItem">
@@ -330,11 +334,12 @@
 		     				</div>
 		     			</div><!-- end #4 currency and lang -->
 		     		</div>
-		     	</div><!-- end menu -->
-		     </div> <!-- stop main block -->
-		     	<div class="clearfix"></div>
-		     	
-<!-- >contact --><div class="contact-container">
+		     	</div>
+		     	    <div class="clearfix"></div>
+		     	<!-- /footer widget - menu-->
+
+           <!-- >footer widget - contact -->
+            <div class="contact-container">
 				<div class="contact">
 				    <div class="telephone">
 				        <div class="phone-icon"><div class="icon"></div></div>
@@ -351,9 +356,13 @@
       			            United Kindom</p>
 				    </div>
 				</div>			
-			</div> <!-- stop contact container -->
-					<div class="clearfix"></div>
-<!-- >footer --><div class="footer">
+			        </div>
+				<div class="clearfix"></div>
+            <!-- /footer widget - contact -->	
+</div>
+    
+       <!-- >footer block-->
+        <div class="footer">
 		    <div class="footer-container">
 		        <div class="container-name" name="footer-info">SUBSCRIBE TO OUR NEWSLETTER</div>
                 <div class="email-inp">
@@ -366,9 +375,37 @@
                     <span>Copyright  &copy; 2014 Madeheart.com LP</span>
                 </div>
 		    </div>
-		</div> <!-- stop footer block -->
-					<div class="clearfix"></div> 
-
-        
+		</div> 
+            <div class="clearfix"></div> 
+        <!-- /footer block -->
+           
+            <script>
+                // show/hide help request field
+               function helpRequest(){
+        var helpButton = document.getElementsByClassName("askQuestionMain")[0];
+        var helpField = document.getElementsByClassName("askQuestionRequest")[0];
+        var downArrow = document.getElementsByClassName("downArrow")[0];
+            Event.add(helpButton, 'click', function(){
+            helpField.classList.toggle("activeBlock"); 
+            downArrow.classList.toggle("toggleActive");
+        });
+               }
+                   helpRequest();
+            </script>
+            <script>
+                // slider-swiper script
+                var cartSlider = new Swiper ('.swiper-container', {
+                    direction: 'horizontal',
+                    loop: true,
+                    slidesPerView: 1,
+                    spaceBetween: 2,
+                    pagination: '.swiper-pagination',
+                    paginationClickable: true,
+                    prevButton: '.buttonPrev',
+                    nextButton: '.buttonNext',
+                    effect:'slide',
+                });   
+                   
+            </script>
 	</body>
 </html>

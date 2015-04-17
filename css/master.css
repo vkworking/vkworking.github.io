@@ -914,7 +914,8 @@ div[name="footer-info"]{
 .subMenuOne.showItems {
     display: block;
 }
-.subMenuOneItem a{
+.subMenuOneItem a,
+.subMenuOneItem span{
   width: 100%;
   height: 118px;
   /* border: 2px solid #ddd; */
@@ -2353,7 +2354,7 @@ form[name='clientShippingInfo'] a{
 }
 .itemCost .oldItemPrice {
     color: #fc3768;
-    float: left;
+/*    float: left;*/
     font-size: 36px;
     margin-bottom: 15px;
     margin-top: 15px;
