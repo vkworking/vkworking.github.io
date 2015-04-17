@@ -608,16 +608,16 @@ div[name="blog-chapter"]{
     text-transform: uppercase;
 }
 .hiddenOption{
-    margin-top: -100px;
+    margin-top: -95px;
     opacity: 0;
     transition: all 0.1s ease 0s;
 }
 .hiddenOption.visibleOption {
     opacity: 1;
-    transform: translateY(100px);
     transition-delay: 0s;
     transition-duration: 0.5s, 0.2s;
-    transition-property: transform, opacity;
+    margin-top: 0;
+    transition-property: margin, opacity;
     transition-timing-function: ease;
 }
 .hiddenOption .selectOption {
