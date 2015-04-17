@@ -153,7 +153,41 @@ window.onload = function () {
         });
 
     }
-    
+
+////прозрачное окно на весь экран
+//function whiteNiggaShow(){
+//    var whiteNigga = document.getElementsByClassName("whiteNigga")[0];
+//    whiteNigga.classList.add("activeNigga");
+//}
+////прозрачное окно на весь экран при нажатии на которое сворачиваем все открытые блоки
+//function whiteNiggaOff(){
+//    var whiteNigga = document.getElementsByClassName("whiteNigga")[0];
+//    console.log(whiteNigga)
+//    Event.add(whiteNigga,'click',function(){
+//        this.classList.remove("activeNigga");
+//        try{
+//            //help block
+//            var helpBlock = document.getElementsByClassName("help-block")[0];
+//            helpBlock.classList.remove("activeHelp");
+//            //help block
+//        }catch(e) {console.log(e);}
+//
+//        try{
+//            //account
+//            var blockAccount = document.getElementsByClassName("block-in-account")[0];
+//            blockAccount.classList.remove("activeAcc");
+//            //account
+//        }catch(e) {console.log(e);}
+//
+//        try{
+//            var agreeBlockText = document.getElementsByClassName("agreeBlockText")[0]
+//            agreeBlockText.classList.remove("agreeBlActive");
+//        }catch(e) {console.log(e);}
+//
+//    });
+// }
+//    whiteNiggaShow();
+//    whiteNiggaOff();
     showLastMenu();
     headMenuShow();  
     showSubMenu();
