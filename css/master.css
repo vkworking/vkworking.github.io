@@ -30,6 +30,7 @@ clear: both;
     width: 100%;
     height: 96px;
     background: rgba(0, 0, 0, 1);
+    position: relative;
 }
 .general-head-third{
     width: 100%;
@@ -45,11 +46,13 @@ clear: both;
 	background-size: 100%;
 	margin: 0 auto;
 }
-.head-top{
-	width:100%;
-	height:96px;
-	background: rgba(0, 0, 0, .45);
+.head-top {
+    background-color: #000;
     float: left;
+    height: 96px;
+    position: relative;
+    width: 100%;
+    z-index: 999;
 }
 .toggle-menu{
 	width: 40px;
@@ -876,14 +879,16 @@ div[name="footer-info"]{
 
 /* ------------------ >start topmenu ----------------- */
 
-.headMenuContainer{
-    width:100%;
-    float:left;
-    display: none;
+.headMenuContainer {
+    float: left;
+    margin-top: -3000px;
+    transition: all 0.5s ease 0s;
+    width: 100%;
 }
 .headMenuContainer.activeHeadMenu {
-    display: block;
+    margin-top: 0;
     position: relative;
+    transition: all 0.5s ease 0s;
     z-index: 199;
 }
 .headMenuGeneral{
