@@ -4,14 +4,13 @@ window.onload = function () {
 // видалити після завершення роботи	
 
 	
-	function headMenuShow() {
-             
+	function headMenuShow() {   
                 var menuButton = document.getElementsByClassName("toggle-menu")[0];
                 var menuContainer = document.getElementsByClassName("headMenuContainer")[0];
                 var searchInput = document.getElementsByClassName("search")[0];
                 Event.add(menuButton, 'click' ,function (){
                     menuContainer.classList.toggle("activeHeadMenu");
-                //    searchInput.classList.toggle("hideMenu");
+                    searchInput.classList.toggle("hideMenu");
                 });
             }
           
@@ -21,7 +20,7 @@ window.onload = function () {
                 var toggleElement = document.getElementsByClassName("toggleLink");
                     for(var i=0; i<toggleElement.length; i++){
                     Event.add(toggleElement[i],'click',function(){
-                    var secondMenuItem = document.getElementsByClassName("subMenuOne")[0];
+                    var secondMenuItem = this.parentNode.getElementsByClassName("subMenuOne")[0];
                     var arrowDown = this.getElementsByClassName("toggleMenu")[0];
 					secondMenuItem.classList.toggle("showItems");
 					arrowDown.classList.toggle("toggleActive");         

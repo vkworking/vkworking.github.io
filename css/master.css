@@ -585,18 +585,21 @@ div[name="blog-chapter"]{
 	width: 46.666666666667%;
 	min-height: 95px;
 	height: auto;
-	background-color: #fff;
+/*	background-color: #fff;*/
 	float: left;
 }
 .regionSelector.langSelector{
 	margin-right: 6.666666666667%;	
 }
-.selectOption{
-	width: 100%;
-	height: 95px;
-	padding: 25px 14.285714285714%;
-	box-sizing: border-box;
-	cursor: pointer;
+.selectOption {
+    background: none repeat scroll 0 0 #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 95px;
+    padding: 25px 14.2857%;
+    position: relative;
+    width: 100%;
+    z-index: 999;
 }
 .selectOption > p {
     color: #666;
@@ -605,27 +608,37 @@ div[name="blog-chapter"]{
     text-transform: uppercase;
 }
 .hiddenOption{
-	display: none;
+    margin-top: -100px;
+    opacity: 0;
+    transition: all 0.1s ease 0s;
 }
 .hiddenOption.visibleOption {
-    display: block;
+    opacity: 1;
+    transform: translateY(100px);
+    transition-delay: 0s;
+    transition-duration: 0.5s, 0.2s;
+    transition-property: transform, opacity;
+    transition-timing-function: ease;
 }
 .hiddenOption .selectOption {
     border-top: 1px solid #ddd;
     box-shadow: 0 0 1px 0 #ddd;
     box-sizing: border-box;
+    z-index: 88;
 }
 .regionArrow {
     background-image: url("../img/currency-toggle.svg");
     background-position: center center;
     background-repeat: no-repeat;
+    cursor: pointer;
     float: right;
     height: 50px;
     margin-right: 40px;
     margin-top: 25px;
+    position: relative;
+    transition: all 0.5s ease 0s;
     width: 50px;
-	cursor: pointer;
-	transition: .5s;
+    z-index: 9999;
 }
 .regionArrow.toggleActive,
 .downArrow.toggleActive{
@@ -890,7 +903,8 @@ div[name="footer-info"]{
     font-weight: 600;
 }
 /* -------------------- */
-.headMenuItem a{
+.headMenuItem a,
+.headMenuItem span{
   width:100%;
   height:118px;
   border-top: 2px solid #ddd;
