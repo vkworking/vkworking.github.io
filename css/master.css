@@ -951,7 +951,7 @@ div[name="footer-info"]{
     line-height: 76px;
 /*  padding: 15px 0;*/
   background: #fff;
-  border: none;
+  border: 0;
   color: #8196AF;
 }
 .subMenuTwoItem a:hover{
