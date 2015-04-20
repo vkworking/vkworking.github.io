@@ -609,6 +609,12 @@ div[name="blog-chapter"]{
     position: relative;
     width: 100%;
     z-index: 999;
+    
+    /* text */
+        color: #666;
+    font-size: 36px;
+    line-height: 45px;
+    text-transform: uppercase;
 }
 .selectOption > p {
     color: #666;
@@ -621,7 +627,7 @@ div[name="blog-chapter"]{
     opacity: 0;
     transition: all 0.1s ease 0s;
 }
-.hiddenOption.visibleOption {
+.hiddenOption.jsShowItems {
     opacity: 1;
     transition-delay: 0s;
     transition-duration: 0.5s, 0.2s;
@@ -1077,9 +1083,7 @@ div[name="footer-info"]{
     white-space: nowrap;  
 
 }
-.sortOption:hover{
-    background: #f9f9f9;
-}
+
 .hiddenOption .sortOption {
     border-top: medium none;
 }
@@ -1128,7 +1132,7 @@ div[name="footer-info"]{
 	width: 57px;
 	height: 32px;
 	position: absolute;
-	top: 25px;
+	top: 20px;
     transition: all 0.5s ease 0s;
 	right: 15px;
 	z-index: 199;
@@ -2782,11 +2786,16 @@ form[name='clientShippingInfo'] a{
     margin-right: 40px;
     margin-bottom: 15px;
 }
-.aboutUsSection.usContacts p{
-    font-size: 34px;
+.aboutUsSection.usContacts p {
     color: #333;
-    font-family: 'Myriad Pro', sans-serif;
+    float: left;
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 34px;
+    margin-top: 24px;
     text-align: left;
+}
+.contactInfo > p:first-child {
+    margin-top: 10px;
 }
 .sectionHeader {
     width: 100%;
@@ -2817,8 +2826,7 @@ form[name='clientShippingInfo'] a{
 
 .itemExpressBuy {
     width: 100%;
-    float: left;
-    
+    float: left;  
 }
 
 

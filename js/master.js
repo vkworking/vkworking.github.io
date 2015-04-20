@@ -132,30 +132,62 @@ window.onload = function () {
 	
 // валюта і мова - тогл класу visibleOption
 	function showOption() {
-                var optionSelect = document.getElementsByClassName("regionSelector");
+                var optionSelect = document.querySelectorAll(".regionSelector");
                 for(var i = 0;i < optionSelect.length; i++){
-                    
-                    Event.add(optionSelect[i],'click',function(){
-                    var showItem = this.getElementsByClassName("hiddenOption")[0];
-                    var arrowDown = this.getElementsByClassName("regionArrow")[0];
-			showItem .classList.toggle("visibleOption");
+                    var checkedItems = optionSelect[i].querySelectorAll(".selectOption.visibleOption")[0];
+                    Event.add(checkedItems,'click',function(){
+                    var showItem = this.parentNode.querySelectorAll(".hiddenOption")[0];
+                    var arrowDown = this.parentNode.querySelectorAll(".regionArrow")[0];
+			showItem .classList.toggle("jsShowItems");
 			arrowDown.classList.toggle("toggleActive");
                     });
-                };
+            
+            var willBePickItem = optionSelect[i].querySelectorAll(".hiddenOption .selectOption");
+            for(var j = 0; j < willBePickItem.length; j++){
+            Event.add(willBePickItem[j], "click", function(){
+                var checkedItems  = this.parentNode.parentNode.querySelectorAll(".visibleOption")[0];
+                var arrowDown = this.parentNode.parentNode.querySelectorAll(".regionArrow")[0];
+                var showItem  = this.parentNode.parentNode.querySelectorAll(".hiddenOption")[0];
+                showItem.classList.remove("jsShowItems");
+                arrowDown.classList.remove("toggleActive"); 
+
+                var innerHtmlValue = this.querySelector("p").innerHTML;
+                checkedItems.innerHTML = innerHtmlValue;
+            });
             }
+        };
+    }
 
 	// спосіб сортування - тогл класу visibleOption
 	function sortOption() {
-                var optionSelect = document.getElementsByClassName("sortList");
-                    for(var i = 0; i<optionSelect.length; i++){
-                        Event.add(optionSelect[i],'click',function(){
-                    var showItem = this.getElementsByClassName("hiddenOption")[0];
-                    var arrowDown = this.getElementsByClassName("toggleMenuTwo")[0];
-			showItem .classList.toggle("visibleOption");
-			arrowDown.classList.toggle("toggleActive");
+                var optionSelect = document.querySelectorAll(".sortList");
+                    for(var i = 0; i < optionSelect.length; i++){
+                        var checkedItems = optionSelect[i].querySelectorAll(".sortOption.visibleOption")[0];
+                        Event.add(checkedItems,'click',function(){
+                    var showItem = this.parentNode.querySelectorAll(".hiddenOption")[0];
+                    var arrowDown = this.parentNode.querySelectorAll(".toggleMenuTwo")[0];           
+			     showItem .classList.toggle("jsShowItems");
+			     arrowDown.classList.toggle("toggleActive");
                     });
-            };
+                        
+            }
+            var willBePickItem = optionSelect[i].querySelectorAll(".hiddenOption .sortOption");
+            for(var j = 0; j < willBePickItem.length; j++){
+            Event.add(willBePickItem[j], "click", function(){
+                alert('go');
+//                var checkedItems  = this.parentNode.parentNode.querySelectorAll(".visibleOption")[0];
+//                var arrowDown = this.parentNode.parentNode.querySelectorAll(".toggleMenuTwo")[0];
+//                var showItem  = this.parentNode.parentNode.querySelectorAll(".hiddenOption")[0];
+//                showItem.classList.remove("jsShowItems");
+//                arrowDown.classList.remove("toggleActive"); 
+//
+//                var innerHtmlValue = this.querySelector("p").innerHTML;
+//                checkedItems.innerHTML = innerHtmlValue;
+            });
+            }
     }
+    
+    
     // зміна режиму перегляду - тогл класу activeView
     function viewMode() {
                 var fullMode = document.getElementsByClassName("fullModeView")[0];
