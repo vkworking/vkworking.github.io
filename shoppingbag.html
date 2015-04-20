@@ -3,9 +3,13 @@
 	<head>
 		<title>shopping bag - madeheart.com</title>
 		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="handheld" title="no title" charset="utf-8">
-		<script src="http://code.jquery.com/jquery-2.1.3.min.js"> </script>
+		<script type="text/javascript" src="https://madeheart.com/lib/js/when/when.js?222229999911199803:00:00."></script>
+        <script type="text/javascript" src="https://madeheart.com/goldcut/js/stacktrace.js?222229999911199803:00:00."></script>
+        <script type="text/javascript" src="https://madeheart.com/goldcut/js/gcdom.js?222229999911199803:00:00."></script>
+        <script src="js/master.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -16,10 +20,24 @@
                     <a class="head-logo" href="index.html"></a>
 				</div>
 				<div class="clearfix"></div>
-                   <!-- > topMenu widget-->
+                  <!-- > topMenu widget-->
                <div class="headMenuContainer">
 				    <div class="headMenuGeneral">
-				        <div class="headMenuItem"><a href="#">Celebrations<div class="toggleMenu"></div></a></div>
+				        <div class="headMenuItem">
+				            <a href="#" class="toggleLink">Celebrations<div class="toggleMenu"></div></a>
+				            <div class="subMenuOne">
+                                <div class="subMenuOneItem"><a href="about.html">About</a></div>
+				                <div class="subMenuOneItem"><a href="interview.html">Interview</a></div>
+				                <div class="subMenuOneItem"><a href="blogpost.html">Blog</a></div>
+				                <div class="subMenuOneItem"><a href="cart.html">Item card</a></div>
+				                <div class="subMenuOneItem"><a href="cart2.html">Item card with old price</a></div>
+				                <div class="subMenuOneItem"><a href="cut.html">Items gallery</a></div>
+				                <div class="subMenuOneItem"><a href="search.html">Search'es relust</a></div>
+				                <div class="subMenuOneItem"><a href="shoppingbag.html">Shopping bag</a></div>
+				                <div class="subMenuOneItem"><a href="checkout.html">Checkout</a></div>
+				                <div class="subMenuOneItem"><a href="thank.html">Thank you</a></div>
+                            </div>
+				        </div>
 				        <div class="headMenuItem"><a class="toggleLink" href="#">Jewelry<div class="toggleMenu"></div></a>
                             <div class="subMenuOne">
                                 <div class="subMenuOneItem"><a href="#">Braceletes</a></div>
@@ -61,7 +79,7 @@
                 </div>
                 </div>
 <!-- ----------------------- /general top menu ----------------------- -->	
-<div class="main">
+<div class="main jsHiddenContent">
     <div class="shopBag-container">
         <div class="shopBag-general">
             <div class="shopStage">
@@ -74,31 +92,30 @@
             <div class="shopList-container">
                 <div class="shopList-general">
 
-<!-- >shop item #1 --><div class="shopItem-container">
-                       <div class="deleteItem"></div>
+<!-- >item #1 --><div class="shopItem-container">
+                    <div class="deleteItem"></div>
                         <div class="shopItem-pic"><img src="img/productview/small/item6.png" alt="clock"></div>
                         <div class="shopItem-info">
                             <div class="shopItemInfo-head"><span>Wall balance wheel clock</span></div>
                             <div class="shopItemInfo-foot">
                                 <div class="shopItem-price">
                                     <div class="shopItemPrice-actual"><span class="currency-char">&#36;<span>3 345.00</span></span></div>
-                                    <div class="shopItemPrice-old"><span class="currency-char">&#36;<span>3 395.00</span></span></div></div>
-                               
+                                    <div class="shopItemPrice-old"><span class="currency-char">&#36;<span>3 395.00</span></span></div>
+                                </div>
                                 <div class="shopItem-quantity">
-                                <div class="openDropDown"></div>
-                                 <ul>
-                                     <li>1</li>
-                                     <li class="itemChecked">2</li>
-                                     <li>3</li>
-                                     <li>4</li>
-                                     <li>5</li>
-                                 </ul>   
+                                    <div class="openDropDown"></div>
+                                     <div class="quantityItem visibleItem"><span>2</span></div>
+                                     <div class="hiddenItems">
+                                         <div class="quantityItem"><span>1</span></div>
+                                         <div class="quantityItem"><span>3</span></div>
+                                         <div class="quantityItem"><span>4</span></div>
+                                     </div>
                                 </div>
                             </div>
                         </div>
-                        </div>
+                    </div>
                         <div class="clearfix"></div>
-<!-- >shop item #1 --></div>
+<!-- >shop item #1 -->
 <!-- >shop item #2 --><div class="shopItem-container">
                        <div class="deleteItem"></div>
                         <div class="shopItem-pic"><img src="img/productview/small/item5.png" alt="clock"></div>
@@ -110,20 +127,21 @@
 <!--                                    <div class="shopItemPrice-old"><span class="currency-char">&#36;<span>3 395.00</span></span></div>--></div>
                                
                                 <div class="shopItem-quantity">
-                                <div class="openDropDown"></div>
-                                 <ul>
-                                     <li>1</li>
-                                     <li>2</li>
-                                     <li class="itemChecked">10</li>
-                                     <li>15</li>
-                                     <li>20</li>
-                                 </ul>   
+                                    <div class="openDropDown"></div>
+                                     <div class="quantityItem visibleItem"><span>10</span></div>
+                                     <div class="hiddenItems">
+                                         <div class="quantityItem"><span>1</span></div>
+                                         <div class="quantityItem"><span>3</span></div>
+                                         <div class="quantityItem"><span>5</span></div>
+                                         <div class="quantityItem"><span>6</span></div>
+                                         <div class="quantityItem"><span>7</span></div>
+                                     </div>
                                 </div>
                             </div>
                         </div>
                         </div>
                         <div class="clearfix"></div>
-<!-- >shop item #2 --></div>
+<!-- >shop item #2 -->
 <!-- >shop item #3 --><div class="shopItem-container">
                        <div class="deleteItem"></div>
                         <div class="shopItem-pic"><img src="img/productview/small/item7.png" alt="clock"></div>
@@ -135,39 +153,38 @@
 <!--                                    <div class="shopItemPrice-old"><span class="currency-char">&#36;<span>3 395.00</span></span></div>--></div>
                                
                                 <div class="shopItem-quantity">
-                                <div class="openDropDown"></div>
-                                 <ul>
-                                     <li class="itemChecked">1</li>
-                                     <li>2</li>
-                                     <li>3</li>
-                                     <li>4</li>
-                                     <li>5</li>
-                                 </ul>   
+                                    <div class="openDropDown"></div>
+                                     <div class="quantityItem visibleItem"><span>1</span></div>
+                                     <div class="hiddenItems">
+                                         <div class="quantityItem"><span>2</span></div>
+                                         <div class="quantityItem"><span>3</span></div>
+                                         <div class="quantityItem"><span>4</span></div>
+                                     </div>
                                 </div>
                             </div>
                         </div>
-                        </div>
+<!-- >shop item #3 --></div>
                         <div class="clearfix"></div>
-<!-- >shop item #3 --></div>                    
+
+               </div>                    
                 </div>
                 
-            </div>
-        </div>
+
         <div class="shopDelivery-container">
             <div class="shopDelivery-general">
                 <div class="shopDelivery-head">
                     <p>Select a country for delivery</p>
                     <div class="deliverySelectCountry">
                     <div class="openDropDown"></div>
-                    <ul>
-                        <li class="countryChecked">Ukraine</li>
-                        <li>France</li>
-                        <li>Romania</li>
-                        <li>England</li>
-                        <li>USA</li>
-                    </ul>
+                    <div class="countryItem visibleItem"><span>Ukraine</span></div>
+                    <div class="hiddenItems">
+                        <div class="countryItem"><span>France</span></div>
+                        <div class="countryItem"><span>Romania</span></div>
+                        <div class="countryItem"><span>England</span></div>
+                        <div class="countryItem"><span>USA</span></div>
                     </div>
                 </div>
+                    <div class="clearfix"></div>
                 <div class="shopDelivery-foot">
                     <span class="totalDelivery">Total qty: <span>13</span></span>
                     <span class="totalDelivery">Total item <span>&#36;3 395.00</span></span>
@@ -195,7 +212,7 @@
         </div>
         
     </div>
-    
+    </div>
  <!-- start menu --><div class="menuContainer">
 		     	<div class="menuGeneral">
 		     		<div class="menuItemList">
@@ -294,10 +311,10 @@
 		     				<div class="regionSettings">		     					
 		     					<div class="regionSelector langSelector">
 		     						<div class="regionArrow"></div>
-		     						<div class="selectOption visibleOption"><p>usd</p></div>
+		     						<div class="selectOption visibleOption"><p>eng</p></div>
 		     						<div class="hiddenOption">
-		     							<div class="selectOption"><p>phs</p></div>
-		     							<div class="selectOption"><p>rub</p></div>
+		     							<div class="selectOption"><p>pl</p></div>
+		     							<div class="selectOption"><p>ru</p></div>
 		     						</div>
 		     					</div>
 
@@ -313,7 +330,7 @@
 		     			</div><!-- end #4 currency and lang -->
 		     		</div>
 		     	</div><!-- end menu -->
-		     </div> <!-- stop main block -->
+
 		     	<div class="clearfix"></div>
 		     	
 <!-- >contact --><div class="contact-container">
@@ -334,8 +351,9 @@
 				    </div>
 				</div>			
 			</div> <!-- stop contact container -->
+		  </div> <!-- stop main block -->
 					<div class="clearfix"></div>
-<!-- >footer --><div class="footer">
+<!-- >footer --><div class="footer jsHiddenContent">
 		    <div class="footer-container">
 		        <div class="container-name" name="footer-info">SUBSCRIBE TO OUR NEWSLETTER</div>
                 <div class="email-inp">
@@ -351,6 +369,6 @@
 		</div> <!-- stop footer block -->
 					<div class="clearfix"></div> 
 
-        
+        <div class="whiteNigga"></div>
 	</body>
 </html>

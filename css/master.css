@@ -54,6 +54,9 @@ clear: both;
     width: 100%;
     z-index: 999;
 }
+.head-top.semiColor {
+    background-color: rgba(0, 0, 0, 0.45);
+}
 .toggle-menu{
 	width: 40px;
 	height:36px;
@@ -119,7 +122,7 @@ clear: both;
 /*    margin: 50px auto;*/
     float: left;
 }
-.search.hideMenu{
+.jsHiddenContent.hideMenu{
     display: none; 
 }
 input[name='top-search']{
@@ -154,6 +157,9 @@ input[name="search-btn"]{
 	background:#fff;
 /*    overflow-x: scroll;*/
     margin: 0 auto;
+}
+.main.hideMenu{
+    display: none;
 }
 .goods-part{
 	width: 93.75%;  /* 600/640 */
@@ -825,6 +831,7 @@ div[name="blog-chapter"]{
      width: 100%;
     float: left;
 }
+
 .footer-container{
     width: 100%; /* 640px */
     background: #ECECEC;
@@ -1691,21 +1698,35 @@ div[name="footer-info"]{
     height: auto;
     max-height: 200px;
 }
-
+.quantityItem{
+    position: relative;
+    z-index: 999;
+    border: 2px solid #D6D6D6;
+    border-top: 0;
+    background-color: #fff;
+}
+.quantityItem.visibleItem {
+    border-top: 2px solid #d6d6d6;
+    display: block;
+    z-index: 888;
+}
+.hiddenItems{
+    display: none;
+}
+.hiddenItems.jsShowItems {
+    display: block;
+}
 .shopItem-quantity {
     width: 33.860045146727%;
     height: 60px;
     background: #fff;
-    border: 2px solid #D6D6D6;
+/*    border: 2px solid #D6D6D6;*/
     font-size: 36px;
     color: #000;
     line-height: 60px;
     text-align: left;
     text-indent: 20px;
     position: relative;
-}
-.shopItem-quantity:hover{
-    border: 2px solid #00CCCC;
 }
 .shopItem-quantity ul li{
     border: 1px solid #d6d6d6;
@@ -1762,10 +1783,8 @@ div[name="footer-info"]{
     color: #FC3768;
     text-decoration: line-through;
     line-height: 29px;
-    text-indent: 29px;
-    
+    text-indent: 29px;   
 }
-
 .openDropDown {
     width: 40px;
     height: 18px;
@@ -1774,6 +1793,12 @@ div[name="footer-info"]{
     right: 16px;
     background: url(../img/dropdown.svg) no-repeat 50% 50%;
     background-size: contain;
+    z-index: 889;
+    transition: .5s;
+}
+.openDropDown.toggleActive{
+    transform: rotate(180deg);
+    transition: .5s;
 }
 .deliverySelectCountry .openDropDown{
     width: 50px;
@@ -1792,13 +1817,14 @@ div[name="footer-info"]{
 }
 
 .shopDelivery-foot {
-    width: 100%;
+    border-bottom: 1px solid #979797;
+    color: #333;
     float: left;
-    text-align: left;
     font-size: 36px;
     line-height: 41px;
-    color: #333;
-    border-bottom: 1px solid #979797;
+    margin-top: 40px;
+    text-align: left;
+    width: 100%;
 }
 
 .totalDelivery{
@@ -1824,8 +1850,7 @@ div[name="footer-info"]{
 .deliverySelectCountry {
     width: 100%;
     height: 95px;
-    background: #fff;
-    border: 2px solid #D6D6D6;
+
     font-size: 40px;
     color: #000;
     line-height: 95px;
@@ -2793,9 +2818,39 @@ form[name='clientShippingInfo'] a{
 .itemExpressBuy {
     width: 100%;
     float: left;
+    
 }
 
 
 
 
 
+.whiteNigga {
+	cursor: pointer;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 120px;
+	width: 100%;
+	z-index: 5000;
+    display: none;
+	}
+
+.whiteNigga.activeNigga {
+	display: block !important;
+}
+
+
+.countryItem {
+    background: #fff;
+    border: 2px solid #D6D6D6;
+    position: relative;
+    z-index: 888;
+}
+
+.hiddenItems .countryItem {
+    background-color: #fff;
+    border-top: 0;
+    position: relative;
+    z-index: 999;
+}

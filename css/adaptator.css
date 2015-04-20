@@ -27,18 +27,3 @@
         margin-right: 10%;
     }
 }
-
-
-.whiteNigga {
-	cursor: pointer;
-	height: 100%;
-	left: 0;
-	position: fixed;
-	top: 120px;
-	width: 100%;
-	z-index: 5000;
-	}
-
-.whiteNigga.activeNigga {
-	display: block !important;
-}

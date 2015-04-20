@@ -5,15 +5,92 @@ window.onload = function () {
 
 	
 	function headMenuShow() {   
-                var menuButton = document.getElementsByClassName("toggle-menu")[0];
-                var menuContainer = document.getElementsByClassName("headMenuContainer")[0];
-                var searchInput = document.getElementsByClassName("search")[0];
-                Event.add(menuButton, 'click' ,function (){
+            var menuButton = document.getElementsByClassName("toggle-menu")[0];
+            var menuContainer = document.getElementsByClassName("headMenuContainer")[0];
+            
+                Event.add(menuButton, 'click' , function (){
                     menuContainer.classList.toggle("activeHeadMenu");
-                    searchInput.classList.toggle("hideMenu");
+                    var toggleContent = document.getElementsByClassName("jsHiddenContent");
+                    for(var i = 0; i < toggleContent.length; i++){
+                         toggleContent[i].classList.toggle("hideMenu");
+                    }
                 });
             }
-          
+   
+    
+        // випадаюче меню для вибору кількості на сторінці shopping bag
+    function showQuantity(){
+        var dropDownMenu = document.querySelectorAll(".shopItem-quantity");
+        for (var i = 0; i < dropDownMenu.length; i++){
+            var visirItem = dropDownMenu[i].querySelectorAll(".quantityItem.visibleItem")[0];   
+            Event.add(visirItem, "click", function(){
+            var dropDownIcon = this.parentNode.querySelectorAll(".openDropDown")[0];
+            var hidenItems  = this.parentNode.querySelectorAll(".hiddenItems")[0];  
+                hidenItems.classList.toggle("jsShowItems");
+                dropDownIcon.classList.toggle("toggleActive");
+                whiteNiggaShow();
+            });
+            var willBePickItem = dropDownMenu[i].querySelectorAll(".hiddenItems .quantityItem");
+            for(var j = 0; j < willBePickItem.length; j++){
+            Event.add(willBePickItem[j], "click", function(){
+                var checkedItems  = this.parentNode.parentNode.querySelectorAll(".visibleItem")[0];
+                var dropDownIcon = this.parentNode.parentNode.querySelectorAll(".openDropDown")[0];
+                var hidenItems  = this.parentNode.parentNode.querySelectorAll(".hiddenItems")[0]; 
+                hidenItems.classList.remove("jsShowItems");
+                dropDownIcon.classList.remove("toggleActive"); 
+                
+                var innerHtmlValue = this.querySelector("span").innerHTML;
+                checkedItems.innerHTML = innerHtmlValue;
+                whiteNiggaOff();
+            });
+            }
+        }
+    }
+    showQuantity();
+    
+            // випадаюче меню для вибору країни на сторінці shopping bag
+    function showMeCountry(){
+        var dropDownMenu = document.querySelectorAll(".deliverySelectCountry");
+        for (var i = 0; i < dropDownMenu.length; i++){
+            var visirItem = dropDownMenu[i].querySelectorAll(".countryItem.visibleItem")[0];   
+            Event.add(visirItem, "click", function(){
+            var dropDownIcon = this.parentNode.querySelectorAll(".openDropDown")[0];
+            var hidenItems  = this.parentNode.querySelectorAll(".hiddenItems")[0];  
+                hidenItems.classList.toggle("jsShowItems");
+                dropDownIcon.classList.toggle("toggleActive");
+                whiteNiggaShow();
+            });
+            var willBePickItem = dropDownMenu[i].querySelectorAll(".hiddenItems .countryItem");
+            for(var j = 0; j < willBePickItem.length; j++){
+            Event.add(willBePickItem[j], "click", function(){
+                var checkedItems  = this.parentNode.parentNode.querySelectorAll(".visibleItem")[0];
+                var dropDownIcon = this.parentNode.parentNode.querySelectorAll(".openDropDown")[0];
+                var hidenItems  = this.parentNode.parentNode.querySelectorAll(".hiddenItems")[0]; 
+                hidenItems.classList.remove("jsShowItems");
+                dropDownIcon.classList.remove("toggleActive"); 
+
+                var innerHtmlValue = this.querySelector("span").innerHTML;
+                checkedItems.innerHTML = innerHtmlValue;
+                whiteNiggaOff();
+            });
+            }
+        }
+    }
+    showMeCountry();
+    
+    // видалення елементу на строрінці shopping bag
+         function deleteItem(){
+             var deleteButton = document.querySelectorAll(".deleteItem");
+             for(var i = 0; i < deleteButton.length; i++){  
+                 Event.add(deleteButton[i], "click", function(){
+                    var itemContainer = this.parentNode;
+                     console.log(itemContainer);
+                    itemContainer.classList.add("hiddenItems");
+                 });
+             }
+             
+         }
+    deleteItem();
 // перемикач головного меню 2-го рівня - тогл класу showItems
 	function showSubMenu() {
  
@@ -34,16 +111,11 @@ window.onload = function () {
                     var toggleElement = thirdLevelMenu[i].getElementsByTagName("a")[0];
                        Event.add(toggleElement,'click',function(){
                             var lastMenu = this.parentNode.getElementsByClassName("subMenuTwo")[0];
-//                      var arrowDown = this.parentNode.getElementsByClassName("toggleMenu")[0];
-//                           console.log(arrowDown);
-
-			    	lastMenu.classList.toggle("showItems");
-
-                           
+			    	lastMenu.classList.toggle("showItems");    
                   	});
                                
          	};
-            }   
+        }   
 // перемикач нижнього меню - тогл класу activeHeadMenu
 	function showFooterSubMenu() {
                 var footerMenuItem = document.getElementsByClassName("firstMenuItem");
@@ -84,7 +156,6 @@ window.onload = function () {
                     });
             };
     }
-    
     // зміна режиму перегляду - тогл класу activeView
     function viewMode() {
                 var fullMode = document.getElementsByClassName("fullModeView")[0];
@@ -124,7 +195,8 @@ window.onload = function () {
                     });
             }
 
-    
+
+        
    // випадаюче вікно після додавання товару до корзини
    function addToCart(){
         var addButton = document.getElementsByClassName("addToCart");
@@ -154,7 +226,7 @@ window.onload = function () {
 
     }
 
-////прозрачное окно на весь экран
+//прозрачное окно на весь экран
 //function whiteNiggaShow(){
 //    var whiteNigga = document.getElementsByClassName("whiteNigga")[0];
 //    whiteNigga.classList.add("activeNigga");
@@ -165,29 +237,8 @@ window.onload = function () {
 //    console.log(whiteNigga)
 //    Event.add(whiteNigga,'click',function(){
 //        this.classList.remove("activeNigga");
-//        try{
-//            //help block
-//            var helpBlock = document.getElementsByClassName("help-block")[0];
-//            helpBlock.classList.remove("activeHelp");
-//            //help block
-//        }catch(e) {console.log(e);}
-//
-//        try{
-//            //account
-//            var blockAccount = document.getElementsByClassName("block-in-account")[0];
-//            blockAccount.classList.remove("activeAcc");
-//            //account
-//        }catch(e) {console.log(e);}
-//
-//        try{
-//            var agreeBlockText = document.getElementsByClassName("agreeBlockText")[0]
-//            agreeBlockText.classList.remove("agreeBlActive");
-//        }catch(e) {console.log(e);}
-//
 //    });
 // }
-//    whiteNiggaShow();
-//    whiteNiggaOff();
     showLastMenu();
     headMenuShow();  
     showSubMenu();
