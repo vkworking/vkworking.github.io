@@ -158,34 +158,35 @@ window.onload = function () {
         };
     }
 
-	// спосіб сортування - тогл класу visibleOption
-	function sortOption() {
-                var optionSelect = document.querySelectorAll(".sortList");
-                    for(var i = 0; i < optionSelect.length; i++){
-                        var checkedItems = optionSelect[i].querySelectorAll(".sortOption.visibleOption")[0];
-                        Event.add(checkedItems,'click',function(){
-                    var showItem = this.parentNode.querySelectorAll(".hiddenOption")[0];
-                    var arrowDown = this.parentNode.querySelectorAll(".toggleMenuTwo")[0];           
-			     showItem .classList.toggle("jsShowItems");
-			     arrowDown.classList.toggle("toggleActive");
-                    });
-                        
-            }
-            var willBePickItem = optionSelect[i].querySelectorAll(".hiddenOption .sortOption");
-            for(var j = 0; j < willBePickItem.length; j++){
-            Event.add(willBePickItem[j], "click", function(){
-                alert('go');
-//                var checkedItems  = this.parentNode.parentNode.querySelectorAll(".visibleOption")[0];
-//                var arrowDown = this.parentNode.parentNode.querySelectorAll(".toggleMenuTwo")[0];
-//                var showItem  = this.parentNode.parentNode.querySelectorAll(".hiddenOption")[0];
-//                showItem.classList.remove("jsShowItems");
-//                arrowDown.classList.remove("toggleActive"); 
+//	// спосіб сортування - тогл класу visibleOption
+//	function sortOption() {
+//                var optionSelect = document.querySelectorAll(".sortList");
+//                    for(var i = 0; i < optionSelect.length; i++){
+//                        var checkedItems = optionSelect[i].querySelectorAll(".sortOption.visibleOption")[0];
+//                        Event.add(checkedItems,'click',function(){
+//                    var showItem = this.parentNode.querySelectorAll(".hiddenOption")[0];
+//                    var arrowDown = this.parentNode.querySelectorAll(".toggleMenuTwo")[0];
+//			     showItem .classList.toggle("jsShowItems");
+//			     arrowDown.classList.toggle("toggleActive");
+//                    });
 //
-//                var innerHtmlValue = this.querySelector("p").innerHTML;
-//                checkedItems.innerHTML = innerHtmlValue;
-            });
-            }
-    }
+//            }
+//            var willBePickItem = optionSelect[i].querySelectorAll(".hiddenOption .sortOption");
+//            for(var j = 0; j < willBePickItem.length; j++){
+//            Event.add(willBePickItem[j], "click", function(){
+//                alert('go');
+////                var checkedItems  = this.parentNode.parentNode.querySelectorAll(".visibleOption")[0];
+////                var arrowDown = this.parentNode.parentNode.querySelectorAll(".toggleMenuTwo")[0];
+////                var showItem  = this.parentNode.parentNode.querySelectorAll(".hiddenOption")[0];
+////                showItem.classList.remove("jsShowItems");
+////                arrowDown.classList.remove("toggleActive");
+////
+////                var innerHtmlValue = this.querySelector("p").innerHTML;
+////                checkedItems.innerHTML = innerHtmlValue;
+//            });
+//            }
+//    }
+//    sortOption();
     
     
     // зміна режиму перегляду - тогл класу activeView
@@ -276,7 +277,6 @@ window.onload = function () {
     showSubMenu();
     showFooterSubMenu();
     showOption();
-    sortOption();
     addToCart();
     viewMode();
  // helpRequest();

@@ -138,10 +138,6 @@ input[name='top-search']{
     border-radius: 0;
     box-sizing: border-box
 }
-#top-search>input::webkit-input-placeholder,
-#top-search>input::moz-input-placeholder{
-    color: rgba(193, 193, 193);
-}
 input[name="search-btn"]{
 	width:40px;
 	height:40px;
@@ -1028,11 +1024,11 @@ div[name="footer-info"]{
     float: left;
     margin-bottom: 31px;
 }
-.productList-head p{
+.productList-head p {
+    color: #000;
     font-size: 28px;
-    color: #8196AF;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
 }
 .productList-main {
     float: left;
@@ -1456,7 +1452,7 @@ div[name="footer-info"]{
     float: left;
     clear: right;
     position: relative;
-    margin-bottom: 29px;
+    margin-bottom: 40px;
 /*    margin-right: 1.666666666667%;*/
     z-index: 1;
 }
@@ -2861,4 +2857,45 @@ form[name='clientShippingInfo'] a{
     border-top: 0;
     position: relative;
     z-index: 999;
+}
+
+/*23 april fixed*/
+
+.newSearchContainer {
+    margin: 0 auto;
+    width: 93.75%;
+}
+.newSearchInput {
+    float: left;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+.newSearchInput > input {
+    background-color: #fff;
+    border: 2px solid #8196af;
+    box-sizing: border-box;
+    color: #000;
+    float: left;
+    font-family: Gill Sans,Arial,sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    height: 95px;
+    padding-left: 6.66667%;
+    padding-right: 170px;
+    width: 100%;
+}
+.newSearchInput > button {
+    background-color: #8196af;
+    background-image: url("../img/whitelince.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 0 none;
+    box-sizing: border-box;
+    height: 85px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 145px;
 }
