@@ -83,8 +83,12 @@ clear: both;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.customURL a:not(:last-child):after{
-    content: ' /';
+.customURL a::before {
+     content: " / ";
+ }
+.customURL a::after{
+    content: ".";
+    opacity: 0;
 }
 .head-logo{
     display: block;
@@ -305,7 +309,7 @@ div[name="blog-chapter"]{
 .slide-price{
 	float:left;
 	color: #0a0a0a;
-	font-size: 25.1875px;
+	font-size: 25px;
 	padding-top: 19px;
     font-weight: 600;
 }
@@ -490,7 +494,7 @@ div[name="blog-chapter"]{
 .feed-comment{
 /*    display: inline-block;*/
     float: right;
-    width: 24.7px;
+    width: 24px;
     height: 20px;
     background: url(../img/inst-feed/comment.svg) no-repeat 0 0;
     background-size: contain;
@@ -652,7 +656,8 @@ div[name="blog-chapter"]{
     z-index: 9999;
 }
 .regionArrow.toggleActive,
-.downArrow.toggleActive{
+.downArrow.toggleActive,
+.moreArrow.toggleActive{
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
     transition: all 0.5s ease 0s;
@@ -912,7 +917,7 @@ div[name="footer-info"]{
     font-style: italic;
 }
 .subMenuOneItem.newWeek a{
-    color: #FC3768;
+    color: #fff;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 600;
@@ -928,8 +933,19 @@ div[name="footer-info"]{
   text-decoration: none;
   font-size: 40px;
   color: #fff;
-    line-height: 118px; /* equel height block */
+    line-height: 114px; /* equel height block */
     text-indent: 63px;
+}
+.subMenuOneItem.newWeek > a::before {
+    background-color: #fc3768;
+    border-radius: 45px;
+    content: "";
+    float: left;
+    height: 24px;
+    margin-left: 67px;
+    margin-right: -50px;
+    margin-top: 45px;
+    width: 24px;
 }
 .headMenuItem:last-child a{
   border-bottom: 2px solid #ddd;
@@ -1423,18 +1439,16 @@ div[name="footer-info"]{
     line-height: 43px;
     color: #000;
 }
-
 .searchResult-general {
-    width: 100%;
-    margin-bottom: 30px;
+    color: #000;
     font-size: 28px;
     line-height: 32px;
-    color: #8196AF;
-    text-align: center;
+    margin-bottom: 30px;
     overflow: hidden;
+    text-align: center;
     text-overflow: ellipsis;
+    width: 100%;
 }
-
 .smallSideRight {
     width: 48.333333333333%;
     float: right;
@@ -1915,22 +1929,22 @@ div[name="footer-info"]{
 }
 
 .shopCheckout {
-    width: 93.75%;
+    width: 100%;
     margin: 0 auto;
 }
-.shopCheckout button{
-    float: left;
-    width: 99%;
-    height: 95px;
-    border: 0;
-    background: #00CCCC;
+.shopCheckout button {
+    background: none repeat scroll 0 0 #00cccc;
+    border: 0 none;
+    box-shadow: 6px 6px 0 0 rgba(149, 149, 149, 0.5);
     color: #fff;
-    text-transform: uppercase;
+    float: left;
     font-size: 30px;
-    box-shadow: 6px 6px 0 0 rgba(149, 149, 149, .5);
+    height: 95px;
+    margin-bottom: 70px;
     margin-top: 38px;
+    text-transform: uppercase;
+    width: 99%;
 }
-
 .shopStage-second {
     display: block;
     float: left;
@@ -2049,7 +2063,7 @@ div[name="footer-info"]{
 }
 
 .shopDiscountGeneral {
-    width: 93.75%;
+    width: 100%;
     height: 95px;
     margin:0 auto;
 }
@@ -2178,7 +2192,10 @@ form[name='clientShippingInfo'] a{
     float: left;
     margin-bottom: 100px;
 }
-
+.paymentMethodHeader {
+    font-size: 30px;
+    font-weight: 600;
+}
 .paymentLogo {
     margin-left: 6.666666666667%;
     
@@ -2489,6 +2506,9 @@ form[name='clientShippingInfo'] a{
     padding: 30px 6.666666666667%;
     margin-bottom: 28px;
 }
+.itemDetail {
+    position: relative;
+}
 .itemDetail span,
 .itemShippingReturn span{
     font-size: 30px;
@@ -2510,8 +2530,9 @@ form[name='clientShippingInfo'] a{
     float: left;
     margin-bottom: 30px;
 }
-.itemDetail table{
+.itemDetail table {
     float: left;
+    width: 100%;
 }
 .itemDetail td {
     border: 2px solid #d6d6d6;
@@ -2898,4 +2919,53 @@ form[name='clientShippingInfo'] a{
     right: 5px;
     top: 5px;
     width: 145px;
+}
+
+.itemDetail.noMoreInfo > p {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.itemDetail.noMoreInfo > p::after {
+    background: linear-gradient(rgba(255, 255, 255, 0.33), rgba(255, 255, 255, 0.8)) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    content: "";
+    height: 100px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+.activeValue{
+    display: block !important;
+}
+.itemDetail .moreInfo,
+.itemDetail .lessInfo {
+    display: none;
+    bottom: 170px;
+    color: #999999;
+    cursor: pointer;
+    float: left;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 0;
+    position: absolute;
+    right: 6.66667%;
+    text-transform: lowercase;
+}
+.moreArrow {
+    float: right !important;
+    height: 17px;
+    width: 30px;
+    background-image: url("../img/moretoggle.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-left: 15px;
+    margin-top: 12px;
+}
+.itemDetail > p {
+    margin-bottom: 110px;
+}
+.lessInfo .moreArrow{
+    transform: rotate(180deg);
 }

@@ -189,10 +189,10 @@ Pagination Styles
     display: inline-block;
     opacity: 1 !important;
 }
+	/* Specific active button style: */
 .swiper-pagination-bullet-active {
-	/* Specific active button style: */	
-	background-color: #fff;
-    border: none;
+    background-color: #00cccc;
+    border: medium none;
 }
 .swiper-visible-bullet {
 	/* Specific visible button style: */	

@@ -199,17 +199,58 @@
             <p>TOTAL <span>$<span>3 440.00</span></span></p></div>
             <span class="includingDelivery">Including delivery: </span>
         </div>
-        <div class="shopCheckout">
-            <a href="checkout.html"><button>checkout</button></a>
-        </div>
+            <div class="clearfix"></div>
         <div class="shopDiscountGeneral">
-        <div class="shopDiscount">
-            <input type="text" class="discountCode" placeholder="Discount code">
+            <div class="shopDiscount">
+                <input type="text" class="discountCode" placeholder="Discount code">
+            </div>
+            <div class="shopDiscountBtn">
+                <span>activate</span>
+            </div>
         </div>
-        <div class="shopDiscountBtn">
-            <span>activate</span>
-        </div>
-        </div>
+            <dic class="clearfix"></dic>
+            <!-- ----------------- >start payment method ----------- -->
+            <div class="paymentMethod-container">
+                <div class="paymentMethod-general">
+                    <p class="paymentMethodHeader">CHOOSE PAYMENT METHOD</p>
+                    <div class="paymentMethodBody">
+                        <button class="paymentMethodSame">
+                            <div class="paymentLogo"></div>
+                            <span class="paymentName">pay by paypal</span>
+                        </button>
+                        <button class="paymentMethodSame">
+                            <div class="paymentLogo"></div>
+                            <div class="paymentLogo2"></div>
+                            <span class="paymentName">pay by credit card</span>
+                        </button>
+                        <a href="thank.html"><button class="paymentMethodSame">
+                            <div class="paymentLogo twocheck"></div>
+                            <span class="paymentName">pay by 2 checkout</span>
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------- >stop payment method ----------- -->
+            <div class="askQuestionns">
+                <div class="askQuestionMain">
+                    <span class="downArrow"></span>
+                    <p>NEED HELP?   ASK QUESTIONNS</p>
+
+                </div>
+                <div class="askQuestionRequest">
+                    <div class="askQuestionRequestContainer">
+                        <label for="askerName">Name</label>
+                        <input type="text" id="askerName">
+
+                        <label for="askerMail">E-mail</label>
+                        <input type="text" id="askerMail">
+                        <label for="askerQuest">Ask question</label>
+                        <textarea name="" id="askerQuest" ></textarea>
+
+                        <button type="submit">send</button>
+                    </div>
+                </div>
+            </div>
         
     </div>
     </div>

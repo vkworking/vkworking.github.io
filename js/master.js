@@ -16,7 +16,7 @@ window.onload = function () {
                     }
                 });
             }
-   
+        headMenuShow();
     
         // випадаюче меню для вибору кількості на сторінці shopping bag
     function showQuantity(){
@@ -103,7 +103,9 @@ window.onload = function () {
 					arrowDown.classList.toggle("toggleActive");         
                 	});
             	};
-          	} 
+          	}
+    showSubMenu();
+
 // перемикач головного меню 3-го рівня - тогл класу showItems
 	function showLastMenu() {
                 var thirdLevelMenu = document.getElementsByClassName("subMenuOneItem");
@@ -187,7 +189,17 @@ window.onload = function () {
 //            }
 //    }
 //    sortOption();
-    
+    // випадання форми зворотнього зв'язку
+    function helpRequest(){
+        var helpButton = document.getElementsByClassName("askQuestionMain")[0];
+        var helpField = document.getElementsByClassName("askQuestionRequest")[0];
+        var downArrow = document.getElementsByClassName("downArrow")[0];
+        Event.add(helpButton, 'click', function(){
+            helpField.classList.toggle("activeBlock");
+            downArrow.classList.toggle("toggleActive");
+        });
+    }
+    helpRequest();
     
     // зміна режиму перегляду - тогл класу activeView
     function viewMode() {
@@ -245,19 +257,23 @@ window.onload = function () {
         }
         
     }
-    
-
-  // випадання форми зворотнього зв'язку    
-   function helpRequest(){
-        var helpButton = document.getElementsByClassName("askQuestionMain")[0];
-        var helpField = document.getElementsByClassName("askQuestionRequest")[0];
-        var downArrow = document.getElementsByClassName("downArrow")[0];
-            Event.add(helpButton, 'click', function(){
-            helpField.classList.toggle("activeBlock"); 
-            downArrow.classList.toggle("toggleActive");
+    // відкривання повної інформації про товар
+    function showMoreInfo(){
+        var itemDetail = document.querySelector(".itemDetail");
+        var moreInfo = itemDetail.querySelector(".moreInfo");
+        var lessInfo = itemDetail.querySelector(".lessInfo");
+        Event.add(moreInfo, 'click', function(){
+            itemDetail.classList.remove("noMoreInfo");
+            moreInfo.classList.remove("activeValue");
+            lessInfo.classList.add("activeValue");
         });
-
+        Event.add(lessInfo, 'click', function(){
+            itemDetail.classList.add("noMoreInfo");
+            moreInfo.classList.add("activeValue");
+            lessInfo.classList.remove("activeValue");
+        });
     }
+    showMoreInfo();
 
 //прозрачное окно на весь экран
 //function whiteNiggaShow(){
@@ -272,16 +288,13 @@ window.onload = function () {
 //        this.classList.remove("activeNigga");
 //    });
 // }
+
     showLastMenu();
-    headMenuShow();  
-    showSubMenu();
+
     showFooterSubMenu();
     showOption();
     addToCart();
     viewMode();
- // helpRequest();
-    
-
 }
 
 

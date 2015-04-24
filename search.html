@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>search - madeheart.com</title>
+        <meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, user-scalable=no"/>
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="css/master.css" type="text/css" media="handheld" title="no title" charset="utf-8">
@@ -68,14 +69,14 @@
 <!-- ----------------------- /general top menu ----------------------- -->	
  
   
-<!-- ----------------------- >search input ----------------------- -->	
-                    <div class="search-page">
-						<form action="index_submit" method="get" id="top-search" accept-charset="utf-8">
-							<input type="text" name="top-search" value="" id="search-inpt" placeholder="handmade toys">
-							<input type="submit" name="search-btn" value="" id="search-btn">
-						</form>	
-					</div>
-<!-- ----------------------- /search input ----------------------- -->	
+<!-- ----------------------- >search input ----------------------- -->
+            <div class="newSearchContainer">
+                <div class="newSearchInput">
+                    <input type="text" placeholder="I’m looking for..."/>
+                    <button type="submit"></button>
+                </div>
+            </div>
+<!-- ----------------------- /search input ----------------------- -->
 
    
 <!-- --------------------- > start products catalogue ------------------ -->
@@ -91,8 +92,8 @@
                  <!-- >menu view mode and sort -->
                  <div class="catalogueTools">
                      <div class="modeViewChanger">
-                         <div class="fullModeView"></div>
                          <div class="smallModeView activeMode"></div>
+                         <div class="fullModeView"></div>
                          <div class="listModeView"></div>    
                      </div>
                      <div class="sortList">
@@ -179,25 +180,14 @@
                                     <span><span class="currency-char rub">7 </span>3 908</span>
                                 </div>
                             </div>
-                            <div class="productSmall-footer">
-                                <div class="productSmall-name">
-                                    <span>Clay painted bowl, for about go clay fot</span>
-                                </div>
-                            </div>            
                          </div>
                     </div><!-- /item #1 -->
     <!-- >item #2 --><div class="productSmall-container">
                                      <div class="productSmall-general">
                                          <div class="productSmall-pic">
                                              <img src="img/productview/small/item7.png" alt="">
-
-                                     <div class="productSmall-price"><span><span class="currency-char rub">7 </span>3 908</span></div>
-                                         </div>
-                                         <div class="productSmall-footer">
-                                             <div class="productSmall-name"><span>Clay painted bowl, for about go clay fot</span></div>
-                                         </div>
-                                         
-                                         
+                                             <div class="productSmall-price"><span><span class="currency-char rub">7 </span>3 908</span></div>
+                                       </div>
                                      </div>
                     </div><!-- /item #2 -->
     <!-- >item #3 --><div class="productSmall-container">
@@ -206,11 +196,6 @@
                                              <img src="img/productview/small/item5.png" alt="">
 <!--                                             <div class="productLabel-new"><span class="smallBadgeNew">new</span></div>-->                                        <div class="productSmall-price"><span><span class="currency-char rub">7 </span>3 908</span></div>
                                          </div>
-                                         <div class="productSmall-footer">
-                                             <div class="productSmall-name"><span>Clay painted bowl, for about go clay fot</span></div>
-                                         </div>
-                                         
-                                         
                                      </div>
                     </div><!-- /item #3 -->
     <!-- >item #4 --><div class="productSmall-container">
@@ -230,16 +215,11 @@
                                      <div class="productSmall-general">
                                          <div class="productSmall-pic">
                                              <img src="img/productview/small/item1.png" alt="">
-<!--                                      <div class="productLabel-new"><span class="smallBadgeNew">new</span></div>-->
-                                        <div class="productSmall-price"><span><span class="currency-char rub">7 </span>3 908</span></div>
+<!--                                         <div class="productLabel-new"><span class="smallBadgeNew">new</span></div>-->
+                                             <div class="productSmall-price"><span><span class="currency-char rub">7 </span>3 908</span></div>
                                          </div>
-                                         <div class="productSmall-footer">
-                                             <div class="productSmall-name"><span>Clay painted bowl, for about go clay fot</span></div>
-                                         </div>
-                                         
-                                         
                                      </div>
-                </div><!-- /item #5 -->             
+                    </div><!-- /item #5 -->
                 </div> 
                 <div class="cataRightSide"> <!-- right column -->
     <!-- >item #1 --><div class="productSmall-container">
@@ -251,13 +231,7 @@
                                                 <span class="savePercent">15%</span>
                                              </span></div>
                                              <div class="productSmall-price"><span><span class="currency-char">&#36; </span>50.00</span></div>
-
                                          </div>
-                                         <div class="productSmall-footer">
-                                             <div class="productSmall-name"><span>Clay painted bowl, for about go clay fot</span></div>
-                                         </div>
-                                         
-                                         
                                      </div>
                 </div><!-- /item #1 -->              
     <!-- >item #2 --><div class="productSmall-container">
@@ -267,40 +241,27 @@
                                              <div class="productLabel-new"><span class="smallBadgeNew">new</span></div>
                                              <div class="productSmall-price"><span><span class="currency-char">&#36;</span>789.00</span></div>
                                          </div>
-                                         <div class="productSmall-footer">
-                                             <div class="productSmall-name"><span>Clay painted bowl, for about go clay fot</span></div>
-                                         </div>
-                                         
-                                         
                                      </div>
                             </div><!-- /item #2 -->
     <!-- >item #3 --><div class="productSmall-container">
                                      <div class="productSmall-general">
                                          <div class="productSmall-pic">
                                              <img src="img/productview/small/item6.png" alt="">
-<!--                                             <div class="productLabel-new"><span class="smallBadgeNew">new</span></div>-->                                 <div class="productSmall-price"><span><span class="currency-char rub">7 </span>3 908</span></div>
+<!--                                             <div class="productLabel-new"><span class="smallBadgeNew">new</span></div>-->
+                                             <div class="productSmall-price"><span><span class="currency-char rub">7 </span>3 908</span></div>
                                          </div>
-                                         <div class="productSmall-footer">
-                                             <div class="productSmall-name"><span>Clay painted bowl, for about go clay fot</span></div>
-                                         </div>
-                                         
-                                         
                                      </div>
-                </div><!-- /item #3 -->
+                    </div><!-- /item #3 -->
     <!-- >item #4 --><div class="productSmall-container">
                                      <div class="productSmall-general">
                                          <div class="productSmall-pic">
                                              <img src="img/productview/small/item2.png" alt="">
-<!--                                             <div class="productLabel-new"><span class="smallBadgeNew">new</span></div>-->                                         <div class="productSmall-price"><span><span class="currency-char rub">7 </span>3 908</span></div>
+<!--                                             <div class="productLabel-new"><span class="smallBadgeNew">new</span></div>-->
+                                             <div class="productSmall-price"><span><span class="currency-char rub">7 </span>3 908</span></div>
                                          </div>
-                                         <div class="productSmall-footer">
-                                             <div class="productSmall-name"><span>Clay painted bowl, for about go clay fot</span></div>
-                                         </div>
-                                         
-                                         
                                      </div>
-            </div><!-- /item #4 -->
-                </div>                          
+                     </div><!-- /item #4 -->
+                </div>
                 </div>
                     <!-- list view -->
                 <div class="productCatalogue listView">            
