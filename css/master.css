@@ -845,33 +845,37 @@ div[name="blog-chapter"]{
     margin: 0 auto;
 }
 .email-inp {
-    width: 93.75%; /* 600/640 */
     height: 91px;
     margin: 0 auto 81px;
     overflow: hidden;
+    position: relative;
+    width: 93.75%;
 }
-.email-inp input[type="text"]{
-    width: 77.333333333333%;
-    height: 93px;
-    padding-left: 6.666666666667%;
-    border: 0;
-    float: left;
-    background: #fff; /*  placeholder settings  */
-    font-size: 30px;
-    color: #a1a1a1;
+.email-inp input[type="text"] {
+    background: none repeat scroll 0 0 #fff;
+    border: 0 none;
     border-radius: 0;
     box-sizing: border-box;
-}
-.add-email{
-    width: 20%;
-    max-width: 120px;
-    height: 91px;
-    background: #AFC4DB url(../img/add-email.svg) no-repeat 50% 50%;
+    color: #a1a1a1;
     float: left;
-    cursor: pointer;
-    transition: .5s;
+    font-size: 30px;
+    height: 93px;
+    padding-left: 6.66667%;
+    padding-right: 6%;
+    width: 85.333%;
 }
-
+.add-email {
+    background: url("/img/newmobile/add-email.svg") no-repeat scroll 50% 50% #afc4db;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    height: 91px;
+    max-width: 120px;
+    position: absolute;
+    right: 0;
+    transition: all 0.5s ease 0s;
+    width: 20%;
+}
 div[name="footer-info"]{
     font-size: 28px;
     color: #333333;
