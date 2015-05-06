@@ -2283,9 +2283,9 @@ form[name='clientShippingInfo'] a{
 .orderNumContainer{
     margin-top: 35px;
 }
-.thanksGivingGeneral{
-    width: 520px;
-    margin: 0 auto;
+.thanksGivingGeneral {
+    margin: 100px auto 50px;
+    width: 81.75%;
 }
 .orderNumGeneral{
     width: 520px;
@@ -2308,17 +2308,53 @@ form[name='clientShippingInfo'] a{
 }
 
 .thanksMessage {
-    font-size: 48px;
-    color: #8196AF;
+    color: #000;
+    font-size: 30px;
     font-weight: 600;
     line-height: 65px;
-    text-align: center;   
+    text-align: center;
+    text-transform: uppercase;
 }
 .thanksGivingContaiter {
-    width: 100%;
     float: left;
-    margin-top: 100px;
+    width: 100%;
 }
+.justPaid {
+    margin: 0 auto 80px;
+    width: 81.75%;
+}
+.justPaid > p {
+    color: #666;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.confirmOrder {
+    border: 1px solid #8196af;
+    box-sizing: border-box;
+    margin: 0 auto 50px;
+    padding: 40px 6.66667%;
+    width: 93.75%;
+}
+
+.checkMail {
+    border-bottom: 1px solid #8096af;
+    color: #000;
+    float: left;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    width: 100%;
+}
+.orderNum, .deliveryDay {
+    color: #666;
+    float: left;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+
 .head-wideLogo {
     width: 100%;
     height: 150px;

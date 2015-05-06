@@ -1,0 +1,81 @@
+<script>
+    function showAddToCartWindow(){
+        //Selecting our node
+        var addButton = document.querySelectorAll('.addToCart');
+        for (var i = 0; i < addButton.length; i ++){
+            Event.add(addButton[i],"click", function(e) {
+
+
+                console.log("target is button");
+                var myOverlay = document.createElement('div');
+                myOverlay.id = 'overlay';
+                document.body.appendChild(myOverlay);
+
+                //set up overlay styles
+                myOverlay.style.position = 'absolute';
+                myOverlay.style.top = 0;
+                myOverlay.style.backgroundColor = 'rgba(0,0,0,0.7)';
+                myOverlay.style.zIndex = 9999; // for to cover item image
+
+                //resize and position overlay
+                myOverlay.style.width = window.innerWidth + 'px';
+                myOverlay.style.height = window.innerHeight + 'px';
+                myOverlay.style.top = window.pageYOffset + 'px';
+                myOverlay.style.left = window.pageXOffset + 'px';
+
+                //add event when notify window will be show
+                var cartWindow = document.querySelector('.shoppingBag-container');
+                cartWindow.style.position = 'absolute';
+                cartWindow.style.zIndex = 99991;
+                centerWindow(cartWindow);
+
+////                //wait until the notify window has loaded
+//                cartWindow.addEventListener('load', function() {
+//
+//                    //Resize if taller
+//                    if (this.height > window.innerHeight) {
+//                        this.ratio = window.innerHeight / this.height;
+//                        this.height = this.height * this.ratio;
+//                        this.width = this.width * this.ratio;
+//                    }
+//
+////                    //Resize if wider
+////                    if (this.width > window.innerWidth) {
+////                        this.ratio = window.innerWidth / this.width;
+////                        this.height = this.height * this.ratio;
+////                        this.width = this.width * this.ratio;
+////                    }
+//
+//                    centerWindow(this);
+//                    myOverlay.appendChild(cartWindow);
+//
+//                }); //image has loaded
+
+
+                window.addEventListener('scroll', function() {
+                    if (myOverlay) {
+                        myOverlay.style.top = window.pageYOffset + 'px';
+                        myOverlay.style.left = window.pageXOffset + 'px';
+                    }
+                    if (cartWindow){
+                        cartWindow.style.top = window.pageYOffset + 'px';
+                        cartWindow.style.left = 6.25%;
+                    }
+                }, false);
+
+
+        }, false); // clicked button
+       } // buttons array
+
+        function centerWindow(theWindow) {
+            var myDifX = (window.innerWidth - theWindow.width)/2;
+            var myDifY = (window.innerHeight - theWindow.height)/2;
+
+            theWindow.style.top = myDifY + 'px';
+            theWindow.style.left = myDifX + 'px';
+
+            return theWindow;
+        }
+ }
+ showAddToCartWindow();
+</script>

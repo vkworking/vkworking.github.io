@@ -190,16 +190,7 @@ window.onload = function () {
 //    }
 //    sortOption();
     // випадання форми зворотнього зв'язку
-    function helpRequest(){
-        var helpButton = document.getElementsByClassName("askQuestionMain")[0];
-        var helpField = document.getElementsByClassName("askQuestionRequest")[0];
-        var downArrow = document.getElementsByClassName("downArrow")[0];
-        Event.add(helpButton, 'click', function(){
-            helpField.classList.toggle("activeBlock");
-            downArrow.classList.toggle("toggleActive");
-        });
-    }
-    helpRequest();
+
     
     // зміна режиму перегляду - тогл класу activeView
     function viewMode() {
