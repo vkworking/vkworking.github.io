@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1aecabdf-7502-49d8-b59f-13761f5cc3a9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/master.css" afterPath="$PROJECT_DIR$/css/master.css" />
     </list>
     <ignored path="vkworking.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="8" selection-start="256" selection-end="256" vertical-scroll-proportion="0.1" vertical-offset="0" max-vertical-offset="9300">
+            <state line="6" column="0" selection-start="248" selection-end="248" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="9300">
               <folding />
             </state>
           </provider>
@@ -81,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="master.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="master.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/master.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="316" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="45300">
+            <state line="11" column="17" selection-start="333" selection-end="333" vertical-scroll-proportion="0.17857143" vertical-offset="0" max-vertical-offset="45270">
               <folding />
             </state>
           </provider>
@@ -133,8 +134,8 @@
         <option value="$PROJECT_DIR$/cart2.html" />
         <option value="$PROJECT_DIR$/interview.html" />
         <option value="$PROJECT_DIR$/shoppingbag.html" />
-        <option value="$PROJECT_DIR$/css/master.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/master.css" />
       </list>
     </option>
   </component>
@@ -581,13 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/master.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="316" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="45300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="38" selection-start="975" selection-end="975" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="9360">
@@ -604,7 +598,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="256" selection-end="256" vertical-scroll-proportion="0.1" vertical-offset="0" max-vertical-offset="9300">
+        <state line="6" column="0" selection-start="248" selection-end="248" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="9300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/master.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="333" selection-end="333" vertical-scroll-proportion="0.17857143" vertical-offset="0" max-vertical-offset="45270">
           <folding />
         </state>
       </provider>
