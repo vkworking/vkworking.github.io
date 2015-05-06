@@ -9,8 +9,8 @@
 /* ----------------------< start general settings >---------------------- */
 body{
 	font-family: "Gill Sans", "Arial", sans-serif;
-    min-width: 600px;
-    max-width: 800px; 
+    /*min-width: 600px;*/
+    /*max-width: 800px; */
     margin: 0 auto;
 }
 .clearfix {
@@ -1316,7 +1316,7 @@ div[name="footer-info"]{
     border: 1px solid #979797;
     margin-left: 6.125%;
     max-width: 700px;
-    min-width: 525px;
+    /*min-width: 525px;*/
     position: fixed;
     top: 248px;
     width: 87.5%;
