@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aecabdf-7502-49d8-b59f-13761f5cc3a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/master.css" afterPath="$PROJECT_DIR$/css/master.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="vkworking.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="62" selection-end="171" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="9270">
+            <state line="2" column="10" selection-start="30" selection-end="30" vertical-scroll-proportion="0.033333335" vertical-offset="0" max-vertical-offset="9270">
               <folding />
             </state>
           </provider>
@@ -79,10 +79,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swiper.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="swiper.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/swiper.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="3" selection-start="1903" selection-end="1904" vertical-scroll-proportion="1.0690423" vertical-offset="0" max-vertical-offset="3645">
+            <state line="8" column="13" selection-start="281" selection-end="281" vertical-scroll-proportion="-4.6153846" vertical-offset="0" max-vertical-offset="3645">
               <folding />
             </state>
           </provider>
@@ -139,9 +139,9 @@
         <option value="$PROJECT_DIR$/css/posts.css" />
         <option value="$PROJECT_DIR$/cart2.html" />
         <option value="$PROJECT_DIR$/interview.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/shoppingbag.html" />
         <option value="$PROJECT_DIR$/css/master.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -564,13 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="62" selection-end="171" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="9270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cart2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="32" selection-start="5656" selection-end="5656" vertical-scroll-proportion="1.6403607" vertical-offset="0" max-vertical-offset="5505">
@@ -615,7 +608,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/swiper.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="3" selection-start="1903" selection-end="1904" vertical-scroll-proportion="1.0690423" vertical-offset="0" max-vertical-offset="3645">
+        <state line="8" column="13" selection-start="281" selection-end="281" vertical-scroll-proportion="-4.6153846" vertical-offset="0" max-vertical-offset="3645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="30" selection-end="30" vertical-scroll-proportion="0.033333335" vertical-offset="0" max-vertical-offset="9270">
           <folding />
         </state>
       </provider>
