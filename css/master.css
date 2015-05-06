@@ -24,7 +24,7 @@ clear: both;
 /* ---------------------< header part >----------------------*/
 .header{
 	width:100%;
-    max-width: 800px;
+    /*max-width: 800px;*/
     margin: 0 auto;
 }
 /*black bg header*/
@@ -165,7 +165,7 @@ input[name="search-btn"]{
 }
 .goods-part{
 	width: 93.75%;  /* 600/640 */
-    max-width: 760px; /* maxwidth(800) - right+left margins(20+20)*/
+    /*max-width: 760px; *//* maxwidth(800) - right+left margins(20+20)*/
 	margin: 0 auto;
 }
 .goods-list{
@@ -872,7 +872,7 @@ div[name="blog-chapter"]{
     cursor: pointer;
     float: left;
     height: 91px;
-    max-width: 120px;
+    /*max-width: 120px;*/
     position: absolute;
     right: 0;
     transition: all 0.5s ease 0s;
@@ -988,7 +988,7 @@ div[name="footer-info"]{
 /* >second sub menu */
 .subMenuTwo{
   width:100%;
-    max-width: 800px;
+    /*max-width: 800px;*/
   float:left;
   display: none;   /* trigger two subMenu*/
 }
@@ -1023,7 +1023,7 @@ div[name="footer-info"]{
 }
 .productList-container {
     width: 100%;
-    max-width: 800px;
+    /*max-width: 800px;*/
     float: left;
     margin-bottom: 40px;
 }
@@ -1317,7 +1317,7 @@ div[name="footer-info"]{
     background: none repeat scroll 0 0 #fff;
     border: 1px solid #979797;
     margin-left: 6.125%;
-    max-width: 700px;
+    /*max-width: 700px;*/
     /*min-width: 525px;*/
     position: fixed;
     top: 248px;
