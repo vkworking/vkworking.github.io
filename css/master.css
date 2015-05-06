@@ -11,7 +11,6 @@ body{
 	font-family: "Gill Sans", "Arial", sans-serif;
     width: 640px;
     margin: 0 auto;
-    resize: none;
 }
 .clearfix {
 clear: both;
