@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aecabdf-7502-49d8-b59f-13761f5cc3a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shoppingbag.html" afterPath="$PROJECT_DIR$/shoppingbag.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/master.css" afterPath="$PROJECT_DIR$/css/master.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vkworking.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +29,7 @@
       <file leaf-file-name="cart.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="159" column="41" selection-start="5995" selection-end="8217" vertical-scroll-proportion="0.0" vertical-offset="1453" max-vertical-offset="6345">
+            <state line="159" column="41" selection-start="5995" selection-end="8217" vertical-scroll-proportion="-38.833332" vertical-offset="1453" max-vertical-offset="6345">
               <folding />
             </state>
           </provider>
@@ -55,7 +56,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="112" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="9270">
+            <state line="4" column="0" selection-start="62" selection-end="171" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="9270">
               <folding />
             </state>
           </provider>
@@ -64,34 +65,16 @@
       <file leaf-file-name="interview.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="78" selection-start="4568" selection-end="4568" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="4680">
+            <state line="73" column="78" selection-start="4568" selection-end="4568" vertical-scroll-proportion="-38.75" vertical-offset="165" max-vertical-offset="4680">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/posts.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="1" selection-start="1977" selection-end="1979" vertical-scroll-proportion="0.0" vertical-offset="1605" max-vertical-offset="4395">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cart2.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cart2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="32" selection-start="5656" selection-end="5656" vertical-scroll-proportion="0.0" vertical-offset="1455" max-vertical-offset="5505">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="master.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="master.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/master.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="316" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="45270">
+            <state line="18" column="12" selection-start="449" selection-end="449" vertical-scroll-proportion="0.29220778" vertical-offset="0" max-vertical-offset="45300">
               <folding />
             </state>
           </provider>
@@ -106,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shoppingbag.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="shoppingbag.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shoppingbag.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="74" selection-start="257" selection-end="257" vertical-scroll-proportion="0.083333336" vertical-offset="0" max-vertical-offset="6330">
+            <state line="17" column="100" selection-start="1001" selection-end="1001" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="6330">
               <folding />
             </state>
           </provider>
@@ -140,8 +123,8 @@
         <option value="$PROJECT_DIR$/cart2.html" />
         <option value="$PROJECT_DIR$/interview.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/master.css" />
         <option value="$PROJECT_DIR$/shoppingbag.html" />
+        <option value="$PROJECT_DIR$/css/master.css" />
       </list>
     </option>
   </component>
@@ -529,7 +512,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="41" selection-start="5995" selection-end="8217" vertical-scroll-proportion="0.0" vertical-offset="1453" max-vertical-offset="6345">
+        <state line="159" column="41" selection-start="5995" selection-end="8217" vertical-scroll-proportion="-38.833332" vertical-offset="1453" max-vertical-offset="6345">
           <folding />
         </state>
       </provider>
@@ -558,27 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/posts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="1" selection-start="1977" selection-end="1979" vertical-scroll-proportion="0.0" vertical-offset="871" max-vertical-offset="4395">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="32" selection-start="5656" selection-end="5656" vertical-scroll-proportion="0.0" vertical-offset="1455" max-vertical-offset="5505">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="78" selection-start="4568" selection-end="4568" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="4680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/phrase.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="331" column="23" selection-start="6295" selection-end="6295" vertical-scroll-proportion="0.0" vertical-offset="4965" max-vertical-offset="6090">
@@ -593,23 +555,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shoppingbag.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="100" selection-start="1001" selection-end="1001" vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="6330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="112" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="9270">
+        <state line="4" column="0" selection-start="62" selection-end="171" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="9270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/posts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="1" selection-start="1977" selection-end="1979" vertical-scroll-proportion="1.737013" vertical-offset="0" max-vertical-offset="4395">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="32" selection-start="5656" selection-end="5656" vertical-scroll-proportion="1.6403607" vertical-offset="0" max-vertical-offset="5505">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="78" selection-start="4568" selection-end="4568" vertical-scroll-proportion="-38.75" vertical-offset="165" max-vertical-offset="4680">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/master.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="316" selection-end="359" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="45270">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shoppingbag.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="74" selection-start="257" selection-end="257" vertical-scroll-proportion="0.083333336" vertical-offset="0" max-vertical-offset="6330">
+        <state line="18" column="12" selection-start="449" selection-end="449" vertical-scroll-proportion="0.29220778" vertical-offset="0" max-vertical-offset="45300">
           <folding />
         </state>
       </provider>
